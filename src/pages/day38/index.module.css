@@ -1,0 +1,27 @@
+.frame {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #9b59b6;
+  color: #fff;
+  cursor: pointer;
+}
+.logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo.small {
+  transform: scale(0);
+  transition: all 0.5s ease-in;
+}
+.logo.normal {
+  transform: scale(1);
+  transition: all 0.5s ease-out 0.3s;
+}
+.logo.big {
+  transform: scale(30);
+  transition: all 0.5s ease-in;
+}

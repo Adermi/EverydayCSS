@@ -1,0 +1,113 @@
+.frame {
+  position: relative;
+  height: 100vh;
+  background-color: #3f3f3f;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .card {
+      position: relative;
+      flex-direction: column;
+      width: 280px;
+      height: 210px;
+      background-color: #fff;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: 4px 9px 12px 0 rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      animation: card-appear 0.5s ease-in-out both 0.5s;
+
+      &.hidden {
+        animation: card-hidden 0.5s ease-in-out both;
+      }
+
+      img {
+        display: block;
+        margin: 24px auto 0;
+      }
+
+      .title {
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 14px 0 5px 0;
+      }
+
+      p {
+        padding: 0 30px;
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+      .button {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 40px;
+        background-color: #f65656;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+      }
+    }
+    .appear {
+      position: absolute;
+      left: 50%;
+      bottom: 50%;
+      // right: 0%;
+      width: 280px;
+      height: 40px;
+      margin-top: -20px;
+      margin-left: -140px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      background-color: #f65656;
+      border-radius: 4px;
+
+      &.active {
+        animation: card-appear 0.5s ease-in-out both 0.5s;
+      }
+
+      &.hidden {
+        animation: card-hidden 0.5s ease-in-out both;
+      }
+    }
+  }
+}
+
+@keyframes card-hidden {
+  0% {
+  }
+
+  20% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes card-appear {
+  0% {
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

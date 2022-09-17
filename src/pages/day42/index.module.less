@@ -1,0 +1,64 @@
+.frame {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    // background: linear-gradient(to bottom, #1d4253 0%, #6bb5c4 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 78%,
+      rgba(0, 112, 255, 1) 100%
+    );
+    border-radius: 50%;
+    overflow: hidden;
+
+    .star {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      background-color: #fff;
+    }
+
+    .shooting-star {
+      position: absolute;
+      top: 0px;
+      left: -120px;
+      width: 120px;
+      height: 2px;
+      background: url(https://100dayscss.com/codepen/shooting-star.png) center
+        center no-repeat;
+      background-size: 100% 100%;
+      transform: rotate(20deg);
+    }
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes shooting {
+  0% {
+    transform: translate(0, 0) rotate(20deg);
+  }
+  20%,
+  100% {
+    transform: translate(451px, 164px) rotate(20deg);
+  }
+}

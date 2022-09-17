@@ -1,0 +1,28 @@
+.box {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: gold;
+  overflow: hidden;
+}
+.box .center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 400px;
+  border: 2px solid black;
+  transform: translate(-50%, -50%);
+}
+.box .center .red {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+  color: #fff;
+  transform: rotate(20deg);
+  transform-origin: 0px 200px;
+  border-radius: 50%;
+}

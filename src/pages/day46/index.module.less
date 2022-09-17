@@ -1,0 +1,132 @@
+@radius: 100px;
+@numberOfRings: 6; // update together with HTML
+@numberOfDots: 12; // update together with HTML
+@dotsPerCircle: 12;
+@angle: 360deg / @dotsPerCircle;
+
+.frame {
+  position: relative;
+  height: 100vh;
+  background-color: #27ae60;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .ring {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      margin-left: -100px;
+      margin-top: -100px;
+      each(range(6), {
+        &.ring-@{value} {
+          // animation: inOut-@value 3s ease-in-out infinite alternate;
+          .dot {
+            opacity: (1 - (@index / 10) );
+          }
+        }
+      });
+
+      &.ring-1 {
+        animation: inOut-1 5s ease-in-out infinite alternate;
+      }
+
+      &.ring-2 {
+        animation: inOut-2 5s ease-in-out infinite alternate;
+      }
+
+      &.ring-3 {
+        animation: inOut-3 5s ease-in-out infinite alternate;
+      }
+
+      &.ring-4 {
+        animation: inOut-4 5s ease-in-out infinite alternate;
+      }
+
+      &.ring-5 {
+        animation: inOut-5 5s ease-in-out infinite alternate;
+      }
+
+      &.ring-6 {
+        animation: inOut-6 5s ease-in-out infinite alternate;
+      }
+    }
+
+    .dot {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 50%;
+      left: 50%;
+      background-color: #fff;
+      margin-top: -5px;
+      margin-left: -5px;
+      border-radius: 50%;
+
+      each(range(12), {
+        &.dot-@{value} {
+          @index: @value - 1;
+          transform: translate(0, -95px) rotate((@index * @angle));
+          transform-origin: 5px 100px
+        }
+      });
+    }
+  }
+}
+
+@keyframes inOut-1 {
+  0% {
+    transform: scale(1.3) rotate(20deg);
+  }
+  100% {
+    transform: scale(1.5) rotate(360deg);
+  }
+}
+
+@keyframes inOut-2 {
+  0% {
+    transform: scale(1.1) rotate(40deg);
+  }
+  100% {
+    transform: scale(1.3) rotate(380deg);
+  }
+}
+
+@keyframes inOut-3 {
+  0% {
+    transform: scale(0.9) rotate(60deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(400deg);
+  }
+}
+
+@keyframes inOut-4 {
+  0% {
+    transform: scale(0.7) rotate(80deg);
+  }
+  100% {
+    transform: scale(0.9) rotate(420deg);
+  }
+}
+
+@keyframes inOut-5 {
+  0% {
+    transform: scale(0.5) rotate(100deg);
+  }
+  100% {
+    transform: scale(0.7) rotate(440deg);
+  }
+}
+
+@keyframes inOut-6 {
+  0% {
+    transform: scale(0.3) rotate(120deg);
+  }
+  100% {
+    transform: scale(0.5) rotate(460deg);
+  }
+}

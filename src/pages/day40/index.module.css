@@ -1,0 +1,90 @@
+.frame {
+  position: relative;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.frame .center .pics {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 4px;
+}
+.frame .center .pics .pic {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: small 0.5s ease-in-out both;
+  transition: all 0.5s ease-in-out;
+  background-color: #000;
+}
+.frame .center .pics .pic.active {
+  animation: big 0.5s ease-in-out both;
+}
+.frame .center .pics .pic.away img {
+  opacity: 0;
+}
+.frame .center .pics .pic img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.frame .center .pics .pic.pic-1 {
+  transform-origin: 0% 0%;
+}
+.frame .center .pics .pic.pic-2 {
+  transform-origin: 50% 0%;
+}
+.frame .center .pics .pic.pic-3 {
+  transform-origin: 100% 0%;
+}
+.frame .center .pics .pic.pic-4 {
+  transform-origin: 0% 50%;
+}
+.frame .center .pics .pic.pic-5 {
+  transform-origin: 50% 50%;
+}
+.frame .center .pics .pic.pic-6 {
+  transform-origin: 100% 50%;
+}
+.frame .center .pics .pic.pic-7 {
+  transform-origin: 0% 100%;
+}
+.frame .center .pics .pic.pic-8 {
+  transform-origin: 50% 100%;
+}
+.frame .center .pics .pic.pic-9 {
+  transform-origin: 100% 100%;
+}
+@keyframes big {
+  0% {
+    transform: scale(1);
+    z-index: 999;
+  }
+  100% {
+    transform: scale(3.061);
+    z-index: 999;
+  }
+}
+@keyframes small {
+  0% {
+    transform: scale(3.061);
+    z-index: 99;
+  }
+  99% {
+    z-index: 99;
+  }
+  100% {
+    transform: scale(1);
+    z-index: 1;
+  }
+}

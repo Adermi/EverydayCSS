@@ -1,0 +1,47 @@
+.frame {
+  position: relative;
+  height: 100vh;
+  background-color: #5ca4ea;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .btn {
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+}
+.frame .center .btn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 60px;
+  font-size: 18px;
+}
+.frame .center .btn .border {
+  fill: none;
+  stroke-width: 1;
+}
+.frame .center .btn .border .bgLine {
+  fill: #5ca4ea;
+  stroke: #91c9ff;
+  transition: all 0.8s ease-in-out;
+}
+.frame .center .btn .border .hlLine {
+  stroke: red;
+  stroke-dasharray: 50 480;
+  stroke-dashoffset: 50;
+  transition: all 0.8s ease-in-out;
+}
+.frame .center .btn:hover .border .bgLine {
+  fill: rgba(0, 0, 0, 0.3);
+}
+.frame .center .btn:hover .border .hlLine {
+  stroke: gold;
+  stroke-dashoffset: -480;
+}

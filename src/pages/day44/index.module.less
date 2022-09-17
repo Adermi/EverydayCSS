@@ -1,0 +1,50 @@
+@item: 20;
+
+.frame {
+  position: relative;
+  background-color: #222222;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+
+    &:hover .rect {
+      animation-play-state: paused !important;
+    }
+
+    .rect {
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      width: 400px;
+      height: 400px;
+      border: 1px solid #fff;
+      background: #222;
+
+      each(range(20), {
+        &.rect-@{value} {
+          @color: 250 - (@value * 8);
+          width: (@value * 20px);
+          height: (@value * 20px);
+          margin-top: (@value * -10px);
+          margin-left: (@value * -10px);
+          z-index: 20 - @value;
+          border-color: rgb(@color, @color, @color);
+          animation: rotate 2s ease-in-out infinite alternate  (@value / 35s)
+        }
+      });
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,14 @@
+.returnBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+.returnBtn a {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s ease-out;
+}
+.returnBtn a:hover {
+  color: gold;
+}
