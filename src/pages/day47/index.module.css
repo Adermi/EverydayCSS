@@ -1,0 +1,3218 @@
+.frame {
+  position: relative;
+  background-color: aquamarine;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .pixel {
+  width: 400px;
+  height: 400px;
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 1px;
+}
+.frame .center .pixel .pixel-1 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-1.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-2 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-2.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-3 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-3.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-4 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-4.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-5 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-5.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-6 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-6.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-7 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-7.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-8 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-8.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-9 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-9.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-10 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-10.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-11 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-11.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-12 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-12.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-13 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-13.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-14 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-14.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-15 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-15.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-16 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-16.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-17 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-17.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-18 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-18.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-19 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-19.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-20 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-20.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-21 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-21.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-22 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-22.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-23 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-23.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-24 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-24.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-25 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-25.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-26 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-26.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-27 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-27.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-28 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-28.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-29 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-29.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-30 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-30.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-31 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-31.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-32 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-32.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-33 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-33.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-34 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-34.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-35 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-35.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-36 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-36.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-37 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-37.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-38 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-38.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-39 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-39.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-40 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-40.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-41 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-41.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-42 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-42.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-43 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-43.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-44 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-44.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-45 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-45.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-46 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-46.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-47 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-47.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-48 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-48.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-49 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-49.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-50 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-50.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-51 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-51.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-52 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-52.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-53 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-53.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-54 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-54.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-55 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-55.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-56 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-56.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-57 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-57.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-58 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-58.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-59 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-59.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-60 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-60.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-61 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-61.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-62 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-62.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-63 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-63.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-64 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-64.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-65 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-65.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-66 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-66.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-67 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-67.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-68 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-68.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-69 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-69.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-70 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-70.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-71 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-71.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-72 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-72.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-73 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-73.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-74 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-74.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-75 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-75.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-76 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-76.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-77 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-77.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-78 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-78.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-79 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-79.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-80 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-80.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-81 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-81.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-82 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-82.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-83 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-83.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-84 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-84.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-85 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-85.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-86 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-86.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-87 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-87.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-88 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-88.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-89 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-89.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-90 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-90.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-91 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-91.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-92 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-92.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-93 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-93.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-94 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-94.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-95 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-95.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-96 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-96.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-97 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-97.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-98 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-98.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-99 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-99.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-100 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-100.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-101 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-101.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-102 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-102.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-103 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-103.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-104 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-104.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-105 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-105.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-106 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-106.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-107 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-107.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-108 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-108.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-109 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-109.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-110 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-110.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-111 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-111.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-112 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-112.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-113 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-113.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-114 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-114.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-115 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-115.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-116 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-116.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-117 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-117.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-118 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-118.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-119 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-119.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-120 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-120.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-121 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-121.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-122 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-122.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-123 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-123.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-124 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-124.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-125 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-125.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-126 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-126.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-127 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-127.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-128 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-128.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-129 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-129.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-130 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-130.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-131 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-131.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-132 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-132.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-133 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-133.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-134 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-134.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-135 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-135.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-136 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-136.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-137 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-137.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-138 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-138.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-139 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-139.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-140 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-140.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-141 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-141.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-142 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-142.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-143 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-143.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-144 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-144.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-145 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-145.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-146 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-146.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-147 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-147.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-148 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-148.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-149 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-149.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-150 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-150.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-151 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-151.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-152 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-152.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-153 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-153.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-154 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-154.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-155 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-155.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-156 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-156.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-157 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-157.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-158 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-158.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-159 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-159.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-160 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-160.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-161 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-161.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-162 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-162.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-163 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-163.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-164 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-164.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-165 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-165.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-166 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-166.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-167 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-167.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-168 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-168.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-169 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-169.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-170 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-170.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-171 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-171.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-172 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-172.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-173 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-173.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-174 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-174.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-175 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-175.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-176 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-176.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-177 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-177.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-178 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-178.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-179 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-179.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-180 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-180.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-181 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-181.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-182 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-182.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-183 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-183.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-184 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-184.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-185 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-185.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-186 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-186.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-187 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-187.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-188 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-188.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-189 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-189.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-190 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-190.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-191 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-191.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-192 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-192.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-193 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-193.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-194 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-194.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-195 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-195.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-196 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-196.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-197 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-197.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-198 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-198.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-199 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-199.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-200 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-200.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-201 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-201.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-202 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-202.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-203 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-203.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-204 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-204.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-205 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-205.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-206 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-206.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-207 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-207.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-208 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-208.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-209 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-209.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-210 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-210.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-211 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-211.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-212 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-212.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-213 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-213.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-214 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-214.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-215 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-215.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-216 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-216.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-217 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-217.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-218 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-218.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-219 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-219.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-220 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-220.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-221 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-221.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-222 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-222.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-223 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-223.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-224 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-224.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-225 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-225.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-226 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-226.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-227 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-227.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-228 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-228.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-229 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-229.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-230 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-230.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-231 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-231.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-232 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-232.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-233 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-233.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-234 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-234.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-235 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-235.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-236 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-236.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-237 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-237.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-238 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-238.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-239 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-239.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-240 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-240.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-241 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-241.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-242 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-242.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-243 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-243.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-244 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-244.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-245 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-245.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-246 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-246.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-247 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-247.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-248 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-248.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-249 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-249.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-250 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-250.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-251 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-251.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-252 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-252.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-253 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-253.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-254 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-254.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-255 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-255.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-256 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-256.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-257 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-257.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-258 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-258.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-259 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-259.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-260 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-260.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-261 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-261.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-262 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-262.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-263 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-263.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-264 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-264.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-265 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-265.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-266 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-266.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-267 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-267.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-268 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-268.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-269 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-269.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-270 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-270.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-271 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-271.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-272 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-272.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-273 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-273.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-274 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-274.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-275 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-275.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-276 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-276.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-277 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-277.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-278 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-278.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-279 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-279.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-280 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-280.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-281 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-281.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-282 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-282.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-283 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-283.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-284 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-284.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-285 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-285.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-286 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-286.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-287 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-287.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-288 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-288.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-289 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-289.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-290 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-290.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-291 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-291.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-292 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-292.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-293 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-293.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-294 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-294.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-295 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-295.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-296 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-296.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-297 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-297.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-298 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-298.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-299 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-299.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-300 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-300.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-301 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-301.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-302 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-302.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-303 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-303.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-304 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-304.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-305 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-305.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-306 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-306.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-307 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-307.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-308 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-308.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-309 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-309.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-310 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-310.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-311 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-311.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-312 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-312.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-313 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-313.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-314 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-314.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-315 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-315.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-316 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-316.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-317 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-317.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-318 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-318.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-319 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-319.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-320 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-320.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-321 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-321.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-322 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-322.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-323 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-323.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-324 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-324.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-325 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-325.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-326 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-326.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-327 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-327.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-328 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-328.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-329 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-329.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-330 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-330.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-331 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-331.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-332 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-332.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-333 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-333.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-334 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-334.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-335 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-335.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-336 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-336.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-337 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-337.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-338 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-338.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-339 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-339.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-340 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-340.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-341 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-341.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-342 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-342.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-343 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-343.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-344 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-344.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-345 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-345.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-346 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-346.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-347 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-347.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-348 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-348.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-349 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-349.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-350 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-350.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-351 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-351.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-352 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-352.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-353 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-353.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-354 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-354.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-355 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-355.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-356 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-356.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-357 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-357.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-358 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-358.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-359 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-359.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-360 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-360.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-361 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-361.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-362 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-362.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-363 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-363.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-364 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-364.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-365 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-365.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-366 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-366.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-367 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-367.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-368 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-368.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-369 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-369.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-370 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-370.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-371 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-371.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-372 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-372.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-373 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-373.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-374 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-374.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-375 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-375.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-376 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-376.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-377 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-377.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-378 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-378.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-379 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-379.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-380 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-380.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-381 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-381.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-382 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-382.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-383 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-383.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-384 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-384.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-385 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-385.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-386 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-386.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-387 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-387.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-388 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-388.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-389 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-389.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-390 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-390.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-391 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-391.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-392 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-392.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-393 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-393.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-394 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-394.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-395 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-395.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-396 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-396.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-397 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-397.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-398 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-398.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-399 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-399.active {
+  background-color: aquamarine;
+}
+.frame .center .pixel .pixel-400 {
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+.frame .center .pixel .pixel-400.active {
+  background-color: aquamarine;
+}

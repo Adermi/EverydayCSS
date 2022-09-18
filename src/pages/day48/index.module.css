@@ -1,0 +1,49 @@
+.frame {
+  position: relative;
+  background-color: #e47512;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  transform-style: preserve-3d;
+  transform: rotateX(70deg) rotateZ(-45deg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  transform-origin: center center;
+}
+.frame .center:hover {
+  transform: translateZ(-100px) rotateX(-120deg) rotateZ(135deg);
+}
+.frame .center .side {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+}
+.frame .center .front {
+  transform: rotateY(0deg) translateZ(100px);
+  background: #fff;
+}
+.frame .center .back {
+  transform: rotateX(180deg) translateZ(100px);
+  background: #ccc;
+}
+.frame .center .right {
+  transform: rotateY(90deg) translateZ(100px);
+  background: #ddd;
+}
+.frame .center .left {
+  transform: rotateY(-90deg) translateZ(100px);
+  background: #eee;
+}
+.frame .center .top {
+  transform: rotateX(90deg) translateZ(100px);
+  background: #eee;
+}
+.frame .center .bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+  background: #ddd;
+}
