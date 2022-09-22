@@ -1,0 +1,49 @@
+.frame {
+  height: 100vh;
+  background-color: #27ae60;
+
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .makeCircle(@len, @index:0) when(@index<@len) {
+      .circle-@{index} {
+        @point: (12 + 6 * @index);
+
+        .point {
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background-color: #fff;
+          border-radius: 50%;
+
+          .makePoint(@pointLen, @pointIdx:0, @circleIdx)
+            when(@pointIdx < @pointLen) {
+            &.point-@{pointIdx} {
+              @angle: (360deg / @pointLen);
+              @move: 40px + 15px * @circleIdx;
+              background-color: #fff;
+              transform: translate(0, (-@move)) rotate(@pointIdx * @angle);
+              transform-origin: 0 (@move);
+            }
+            .makePoint(@pointLen, @pointIdx + 1, @circleIdx);
+          }
+
+          .makePoint(@point, 0, @index);
+        }
+      }
+      .makeCircle(@len, @index + 1);
+    }
+
+    .makeCircle(10);
+  }
+}
+
+@keyframes showAnd {
+  from {
+  }
+  to {
+  }
+}

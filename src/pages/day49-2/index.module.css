@@ -1,0 +1,1230 @@
+.frame {
+  position: relative;
+  background-color: #2ecc71;
+}
+.frame .center {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+}
+.frame .center .trigger {
+  background-color: #2c3e50;
+  font-size: 8px;
+  cursor: pointer;
+}
+.frame .center .trigger.trigger-1:hover ~ .mouse {
+  transform: translate(0px, 0px);
+}
+.frame .center .trigger.trigger-2:hover ~ .mouse {
+  transform: translate(20px, 0px);
+}
+.frame .center .trigger.trigger-3:hover ~ .mouse {
+  transform: translate(40px, 0px);
+}
+.frame .center .trigger.trigger-4:hover ~ .mouse {
+  transform: translate(60px, 0px);
+}
+.frame .center .trigger.trigger-5:hover ~ .mouse {
+  transform: translate(80px, 0px);
+}
+.frame .center .trigger.trigger-6:hover ~ .mouse {
+  transform: translate(100px, 0px);
+}
+.frame .center .trigger.trigger-7:hover ~ .mouse {
+  transform: translate(120px, 0px);
+}
+.frame .center .trigger.trigger-8:hover ~ .mouse {
+  transform: translate(140px, 0px);
+}
+.frame .center .trigger.trigger-9:hover ~ .mouse {
+  transform: translate(160px, 0px);
+}
+.frame .center .trigger.trigger-10:hover ~ .mouse {
+  transform: translate(180px, 0px);
+}
+.frame .center .trigger.trigger-11:hover ~ .mouse {
+  transform: translate(200px, 0px);
+}
+.frame .center .trigger.trigger-12:hover ~ .mouse {
+  transform: translate(220px, 0px);
+}
+.frame .center .trigger.trigger-13:hover ~ .mouse {
+  transform: translate(240px, 0px);
+}
+.frame .center .trigger.trigger-14:hover ~ .mouse {
+  transform: translate(260px, 0px);
+}
+.frame .center .trigger.trigger-15:hover ~ .mouse {
+  transform: translate(280px, 0px);
+}
+.frame .center .trigger.trigger-16:hover ~ .mouse {
+  transform: translate(300px, 0px);
+}
+.frame .center .trigger.trigger-17:hover ~ .mouse {
+  transform: translate(320px, 0px);
+}
+.frame .center .trigger.trigger-18:hover ~ .mouse {
+  transform: translate(340px, 0px);
+}
+.frame .center .trigger.trigger-19:hover ~ .mouse {
+  transform: translate(360px, 0px);
+}
+.frame .center .trigger.trigger-20:hover ~ .mouse {
+  transform: translate(380px, 20px);
+}
+.frame .center .trigger.trigger-21:hover ~ .mouse {
+  transform: translate(0px, 20px);
+}
+.frame .center .trigger.trigger-22:hover ~ .mouse {
+  transform: translate(20px, 20px);
+}
+.frame .center .trigger.trigger-23:hover ~ .mouse {
+  transform: translate(40px, 20px);
+}
+.frame .center .trigger.trigger-24:hover ~ .mouse {
+  transform: translate(60px, 20px);
+}
+.frame .center .trigger.trigger-25:hover ~ .mouse {
+  transform: translate(80px, 20px);
+}
+.frame .center .trigger.trigger-26:hover ~ .mouse {
+  transform: translate(100px, 20px);
+}
+.frame .center .trigger.trigger-27:hover ~ .mouse {
+  transform: translate(120px, 20px);
+}
+.frame .center .trigger.trigger-28:hover ~ .mouse {
+  transform: translate(140px, 20px);
+}
+.frame .center .trigger.trigger-29:hover ~ .mouse {
+  transform: translate(160px, 20px);
+}
+.frame .center .trigger.trigger-30:hover ~ .mouse {
+  transform: translate(180px, 20px);
+}
+.frame .center .trigger.trigger-31:hover ~ .mouse {
+  transform: translate(200px, 20px);
+}
+.frame .center .trigger.trigger-32:hover ~ .mouse {
+  transform: translate(220px, 20px);
+}
+.frame .center .trigger.trigger-33:hover ~ .mouse {
+  transform: translate(240px, 20px);
+}
+.frame .center .trigger.trigger-34:hover ~ .mouse {
+  transform: translate(260px, 20px);
+}
+.frame .center .trigger.trigger-35:hover ~ .mouse {
+  transform: translate(280px, 20px);
+}
+.frame .center .trigger.trigger-36:hover ~ .mouse {
+  transform: translate(300px, 20px);
+}
+.frame .center .trigger.trigger-37:hover ~ .mouse {
+  transform: translate(320px, 20px);
+}
+.frame .center .trigger.trigger-38:hover ~ .mouse {
+  transform: translate(340px, 20px);
+}
+.frame .center .trigger.trigger-39:hover ~ .mouse {
+  transform: translate(360px, 20px);
+}
+.frame .center .trigger.trigger-40:hover ~ .mouse {
+  transform: translate(380px, 40px);
+}
+.frame .center .trigger.trigger-41:hover ~ .mouse {
+  transform: translate(0px, 40px);
+}
+.frame .center .trigger.trigger-42:hover ~ .mouse {
+  transform: translate(20px, 40px);
+}
+.frame .center .trigger.trigger-43:hover ~ .mouse {
+  transform: translate(40px, 40px);
+}
+.frame .center .trigger.trigger-44:hover ~ .mouse {
+  transform: translate(60px, 40px);
+}
+.frame .center .trigger.trigger-45:hover ~ .mouse {
+  transform: translate(80px, 40px);
+}
+.frame .center .trigger.trigger-46:hover ~ .mouse {
+  transform: translate(100px, 40px);
+}
+.frame .center .trigger.trigger-47:hover ~ .mouse {
+  transform: translate(120px, 40px);
+}
+.frame .center .trigger.trigger-48:hover ~ .mouse {
+  transform: translate(140px, 40px);
+}
+.frame .center .trigger.trigger-49:hover ~ .mouse {
+  transform: translate(160px, 40px);
+}
+.frame .center .trigger.trigger-50:hover ~ .mouse {
+  transform: translate(180px, 40px);
+}
+.frame .center .trigger.trigger-51:hover ~ .mouse {
+  transform: translate(200px, 40px);
+}
+.frame .center .trigger.trigger-52:hover ~ .mouse {
+  transform: translate(220px, 40px);
+}
+.frame .center .trigger.trigger-53:hover ~ .mouse {
+  transform: translate(240px, 40px);
+}
+.frame .center .trigger.trigger-54:hover ~ .mouse {
+  transform: translate(260px, 40px);
+}
+.frame .center .trigger.trigger-55:hover ~ .mouse {
+  transform: translate(280px, 40px);
+}
+.frame .center .trigger.trigger-56:hover ~ .mouse {
+  transform: translate(300px, 40px);
+}
+.frame .center .trigger.trigger-57:hover ~ .mouse {
+  transform: translate(320px, 40px);
+}
+.frame .center .trigger.trigger-58:hover ~ .mouse {
+  transform: translate(340px, 40px);
+}
+.frame .center .trigger.trigger-59:hover ~ .mouse {
+  transform: translate(360px, 40px);
+}
+.frame .center .trigger.trigger-60:hover ~ .mouse {
+  transform: translate(380px, 60px);
+}
+.frame .center .trigger.trigger-61:hover ~ .mouse {
+  transform: translate(0px, 60px);
+}
+.frame .center .trigger.trigger-62:hover ~ .mouse {
+  transform: translate(20px, 60px);
+}
+.frame .center .trigger.trigger-63:hover ~ .mouse {
+  transform: translate(40px, 60px);
+}
+.frame .center .trigger.trigger-64:hover ~ .mouse {
+  transform: translate(60px, 60px);
+}
+.frame .center .trigger.trigger-65:hover ~ .mouse {
+  transform: translate(80px, 60px);
+}
+.frame .center .trigger.trigger-66:hover ~ .mouse {
+  transform: translate(100px, 60px);
+}
+.frame .center .trigger.trigger-67:hover ~ .mouse {
+  transform: translate(120px, 60px);
+}
+.frame .center .trigger.trigger-68:hover ~ .mouse {
+  transform: translate(140px, 60px);
+}
+.frame .center .trigger.trigger-69:hover ~ .mouse {
+  transform: translate(160px, 60px);
+}
+.frame .center .trigger.trigger-70:hover ~ .mouse {
+  transform: translate(180px, 60px);
+}
+.frame .center .trigger.trigger-71:hover ~ .mouse {
+  transform: translate(200px, 60px);
+}
+.frame .center .trigger.trigger-72:hover ~ .mouse {
+  transform: translate(220px, 60px);
+}
+.frame .center .trigger.trigger-73:hover ~ .mouse {
+  transform: translate(240px, 60px);
+}
+.frame .center .trigger.trigger-74:hover ~ .mouse {
+  transform: translate(260px, 60px);
+}
+.frame .center .trigger.trigger-75:hover ~ .mouse {
+  transform: translate(280px, 60px);
+}
+.frame .center .trigger.trigger-76:hover ~ .mouse {
+  transform: translate(300px, 60px);
+}
+.frame .center .trigger.trigger-77:hover ~ .mouse {
+  transform: translate(320px, 60px);
+}
+.frame .center .trigger.trigger-78:hover ~ .mouse {
+  transform: translate(340px, 60px);
+}
+.frame .center .trigger.trigger-79:hover ~ .mouse {
+  transform: translate(360px, 60px);
+}
+.frame .center .trigger.trigger-80:hover ~ .mouse {
+  transform: translate(380px, 80px);
+}
+.frame .center .trigger.trigger-81:hover ~ .mouse {
+  transform: translate(0px, 80px);
+}
+.frame .center .trigger.trigger-82:hover ~ .mouse {
+  transform: translate(20px, 80px);
+}
+.frame .center .trigger.trigger-83:hover ~ .mouse {
+  transform: translate(40px, 80px);
+}
+.frame .center .trigger.trigger-84:hover ~ .mouse {
+  transform: translate(60px, 80px);
+}
+.frame .center .trigger.trigger-85:hover ~ .mouse {
+  transform: translate(80px, 80px);
+}
+.frame .center .trigger.trigger-86:hover ~ .mouse {
+  transform: translate(100px, 80px);
+}
+.frame .center .trigger.trigger-87:hover ~ .mouse {
+  transform: translate(120px, 80px);
+}
+.frame .center .trigger.trigger-88:hover ~ .mouse {
+  transform: translate(140px, 80px);
+}
+.frame .center .trigger.trigger-89:hover ~ .mouse {
+  transform: translate(160px, 80px);
+}
+.frame .center .trigger.trigger-90:hover ~ .mouse {
+  transform: translate(180px, 80px);
+}
+.frame .center .trigger.trigger-91:hover ~ .mouse {
+  transform: translate(200px, 80px);
+}
+.frame .center .trigger.trigger-92:hover ~ .mouse {
+  transform: translate(220px, 80px);
+}
+.frame .center .trigger.trigger-93:hover ~ .mouse {
+  transform: translate(240px, 80px);
+}
+.frame .center .trigger.trigger-94:hover ~ .mouse {
+  transform: translate(260px, 80px);
+}
+.frame .center .trigger.trigger-95:hover ~ .mouse {
+  transform: translate(280px, 80px);
+}
+.frame .center .trigger.trigger-96:hover ~ .mouse {
+  transform: translate(300px, 80px);
+}
+.frame .center .trigger.trigger-97:hover ~ .mouse {
+  transform: translate(320px, 80px);
+}
+.frame .center .trigger.trigger-98:hover ~ .mouse {
+  transform: translate(340px, 80px);
+}
+.frame .center .trigger.trigger-99:hover ~ .mouse {
+  transform: translate(360px, 80px);
+}
+.frame .center .trigger.trigger-100:hover ~ .mouse {
+  transform: translate(380px, 100px);
+}
+.frame .center .trigger.trigger-101:hover ~ .mouse {
+  transform: translate(0px, 100px);
+}
+.frame .center .trigger.trigger-102:hover ~ .mouse {
+  transform: translate(20px, 100px);
+}
+.frame .center .trigger.trigger-103:hover ~ .mouse {
+  transform: translate(40px, 100px);
+}
+.frame .center .trigger.trigger-104:hover ~ .mouse {
+  transform: translate(60px, 100px);
+}
+.frame .center .trigger.trigger-105:hover ~ .mouse {
+  transform: translate(80px, 100px);
+}
+.frame .center .trigger.trigger-106:hover ~ .mouse {
+  transform: translate(100px, 100px);
+}
+.frame .center .trigger.trigger-107:hover ~ .mouse {
+  transform: translate(120px, 100px);
+}
+.frame .center .trigger.trigger-108:hover ~ .mouse {
+  transform: translate(140px, 100px);
+}
+.frame .center .trigger.trigger-109:hover ~ .mouse {
+  transform: translate(160px, 100px);
+}
+.frame .center .trigger.trigger-110:hover ~ .mouse {
+  transform: translate(180px, 100px);
+}
+.frame .center .trigger.trigger-111:hover ~ .mouse {
+  transform: translate(200px, 100px);
+}
+.frame .center .trigger.trigger-112:hover ~ .mouse {
+  transform: translate(220px, 100px);
+}
+.frame .center .trigger.trigger-113:hover ~ .mouse {
+  transform: translate(240px, 100px);
+}
+.frame .center .trigger.trigger-114:hover ~ .mouse {
+  transform: translate(260px, 100px);
+}
+.frame .center .trigger.trigger-115:hover ~ .mouse {
+  transform: translate(280px, 100px);
+}
+.frame .center .trigger.trigger-116:hover ~ .mouse {
+  transform: translate(300px, 100px);
+}
+.frame .center .trigger.trigger-117:hover ~ .mouse {
+  transform: translate(320px, 100px);
+}
+.frame .center .trigger.trigger-118:hover ~ .mouse {
+  transform: translate(340px, 100px);
+}
+.frame .center .trigger.trigger-119:hover ~ .mouse {
+  transform: translate(360px, 100px);
+}
+.frame .center .trigger.trigger-120:hover ~ .mouse {
+  transform: translate(380px, 120px);
+}
+.frame .center .trigger.trigger-121:hover ~ .mouse {
+  transform: translate(0px, 120px);
+}
+.frame .center .trigger.trigger-122:hover ~ .mouse {
+  transform: translate(20px, 120px);
+}
+.frame .center .trigger.trigger-123:hover ~ .mouse {
+  transform: translate(40px, 120px);
+}
+.frame .center .trigger.trigger-124:hover ~ .mouse {
+  transform: translate(60px, 120px);
+}
+.frame .center .trigger.trigger-125:hover ~ .mouse {
+  transform: translate(80px, 120px);
+}
+.frame .center .trigger.trigger-126:hover ~ .mouse {
+  transform: translate(100px, 120px);
+}
+.frame .center .trigger.trigger-127:hover ~ .mouse {
+  transform: translate(120px, 120px);
+}
+.frame .center .trigger.trigger-128:hover ~ .mouse {
+  transform: translate(140px, 120px);
+}
+.frame .center .trigger.trigger-129:hover ~ .mouse {
+  transform: translate(160px, 120px);
+}
+.frame .center .trigger.trigger-130:hover ~ .mouse {
+  transform: translate(180px, 120px);
+}
+.frame .center .trigger.trigger-131:hover ~ .mouse {
+  transform: translate(200px, 120px);
+}
+.frame .center .trigger.trigger-132:hover ~ .mouse {
+  transform: translate(220px, 120px);
+}
+.frame .center .trigger.trigger-133:hover ~ .mouse {
+  transform: translate(240px, 120px);
+}
+.frame .center .trigger.trigger-134:hover ~ .mouse {
+  transform: translate(260px, 120px);
+}
+.frame .center .trigger.trigger-135:hover ~ .mouse {
+  transform: translate(280px, 120px);
+}
+.frame .center .trigger.trigger-136:hover ~ .mouse {
+  transform: translate(300px, 120px);
+}
+.frame .center .trigger.trigger-137:hover ~ .mouse {
+  transform: translate(320px, 120px);
+}
+.frame .center .trigger.trigger-138:hover ~ .mouse {
+  transform: translate(340px, 120px);
+}
+.frame .center .trigger.trigger-139:hover ~ .mouse {
+  transform: translate(360px, 120px);
+}
+.frame .center .trigger.trigger-140:hover ~ .mouse {
+  transform: translate(380px, 140px);
+}
+.frame .center .trigger.trigger-141:hover ~ .mouse {
+  transform: translate(0px, 140px);
+}
+.frame .center .trigger.trigger-142:hover ~ .mouse {
+  transform: translate(20px, 140px);
+}
+.frame .center .trigger.trigger-143:hover ~ .mouse {
+  transform: translate(40px, 140px);
+}
+.frame .center .trigger.trigger-144:hover ~ .mouse {
+  transform: translate(60px, 140px);
+}
+.frame .center .trigger.trigger-145:hover ~ .mouse {
+  transform: translate(80px, 140px);
+}
+.frame .center .trigger.trigger-146:hover ~ .mouse {
+  transform: translate(100px, 140px);
+}
+.frame .center .trigger.trigger-147:hover ~ .mouse {
+  transform: translate(120px, 140px);
+}
+.frame .center .trigger.trigger-148:hover ~ .mouse {
+  transform: translate(140px, 140px);
+}
+.frame .center .trigger.trigger-149:hover ~ .mouse {
+  transform: translate(160px, 140px);
+}
+.frame .center .trigger.trigger-150:hover ~ .mouse {
+  transform: translate(180px, 140px);
+}
+.frame .center .trigger.trigger-151:hover ~ .mouse {
+  transform: translate(200px, 140px);
+}
+.frame .center .trigger.trigger-152:hover ~ .mouse {
+  transform: translate(220px, 140px);
+}
+.frame .center .trigger.trigger-153:hover ~ .mouse {
+  transform: translate(240px, 140px);
+}
+.frame .center .trigger.trigger-154:hover ~ .mouse {
+  transform: translate(260px, 140px);
+}
+.frame .center .trigger.trigger-155:hover ~ .mouse {
+  transform: translate(280px, 140px);
+}
+.frame .center .trigger.trigger-156:hover ~ .mouse {
+  transform: translate(300px, 140px);
+}
+.frame .center .trigger.trigger-157:hover ~ .mouse {
+  transform: translate(320px, 140px);
+}
+.frame .center .trigger.trigger-158:hover ~ .mouse {
+  transform: translate(340px, 140px);
+}
+.frame .center .trigger.trigger-159:hover ~ .mouse {
+  transform: translate(360px, 140px);
+}
+.frame .center .trigger.trigger-160:hover ~ .mouse {
+  transform: translate(380px, 160px);
+}
+.frame .center .trigger.trigger-161:hover ~ .mouse {
+  transform: translate(0px, 160px);
+}
+.frame .center .trigger.trigger-162:hover ~ .mouse {
+  transform: translate(20px, 160px);
+}
+.frame .center .trigger.trigger-163:hover ~ .mouse {
+  transform: translate(40px, 160px);
+}
+.frame .center .trigger.trigger-164:hover ~ .mouse {
+  transform: translate(60px, 160px);
+}
+.frame .center .trigger.trigger-165:hover ~ .mouse {
+  transform: translate(80px, 160px);
+}
+.frame .center .trigger.trigger-166:hover ~ .mouse {
+  transform: translate(100px, 160px);
+}
+.frame .center .trigger.trigger-167:hover ~ .mouse {
+  transform: translate(120px, 160px);
+}
+.frame .center .trigger.trigger-168:hover ~ .mouse {
+  transform: translate(140px, 160px);
+}
+.frame .center .trigger.trigger-169:hover ~ .mouse {
+  transform: translate(160px, 160px);
+}
+.frame .center .trigger.trigger-170:hover ~ .mouse {
+  transform: translate(180px, 160px);
+}
+.frame .center .trigger.trigger-171:hover ~ .mouse {
+  transform: translate(200px, 160px);
+}
+.frame .center .trigger.trigger-172:hover ~ .mouse {
+  transform: translate(220px, 160px);
+}
+.frame .center .trigger.trigger-173:hover ~ .mouse {
+  transform: translate(240px, 160px);
+}
+.frame .center .trigger.trigger-174:hover ~ .mouse {
+  transform: translate(260px, 160px);
+}
+.frame .center .trigger.trigger-175:hover ~ .mouse {
+  transform: translate(280px, 160px);
+}
+.frame .center .trigger.trigger-176:hover ~ .mouse {
+  transform: translate(300px, 160px);
+}
+.frame .center .trigger.trigger-177:hover ~ .mouse {
+  transform: translate(320px, 160px);
+}
+.frame .center .trigger.trigger-178:hover ~ .mouse {
+  transform: translate(340px, 160px);
+}
+.frame .center .trigger.trigger-179:hover ~ .mouse {
+  transform: translate(360px, 160px);
+}
+.frame .center .trigger.trigger-180:hover ~ .mouse {
+  transform: translate(380px, 180px);
+}
+.frame .center .trigger.trigger-181:hover ~ .mouse {
+  transform: translate(0px, 180px);
+}
+.frame .center .trigger.trigger-182:hover ~ .mouse {
+  transform: translate(20px, 180px);
+}
+.frame .center .trigger.trigger-183:hover ~ .mouse {
+  transform: translate(40px, 180px);
+}
+.frame .center .trigger.trigger-184:hover ~ .mouse {
+  transform: translate(60px, 180px);
+}
+.frame .center .trigger.trigger-185:hover ~ .mouse {
+  transform: translate(80px, 180px);
+}
+.frame .center .trigger.trigger-186:hover ~ .mouse {
+  transform: translate(100px, 180px);
+}
+.frame .center .trigger.trigger-187:hover ~ .mouse {
+  transform: translate(120px, 180px);
+}
+.frame .center .trigger.trigger-188:hover ~ .mouse {
+  transform: translate(140px, 180px);
+}
+.frame .center .trigger.trigger-189:hover ~ .mouse {
+  transform: translate(160px, 180px);
+}
+.frame .center .trigger.trigger-190:hover ~ .mouse {
+  transform: translate(180px, 180px);
+}
+.frame .center .trigger.trigger-191:hover ~ .mouse {
+  transform: translate(200px, 180px);
+}
+.frame .center .trigger.trigger-192:hover ~ .mouse {
+  transform: translate(220px, 180px);
+}
+.frame .center .trigger.trigger-193:hover ~ .mouse {
+  transform: translate(240px, 180px);
+}
+.frame .center .trigger.trigger-194:hover ~ .mouse {
+  transform: translate(260px, 180px);
+}
+.frame .center .trigger.trigger-195:hover ~ .mouse {
+  transform: translate(280px, 180px);
+}
+.frame .center .trigger.trigger-196:hover ~ .mouse {
+  transform: translate(300px, 180px);
+}
+.frame .center .trigger.trigger-197:hover ~ .mouse {
+  transform: translate(320px, 180px);
+}
+.frame .center .trigger.trigger-198:hover ~ .mouse {
+  transform: translate(340px, 180px);
+}
+.frame .center .trigger.trigger-199:hover ~ .mouse {
+  transform: translate(360px, 180px);
+}
+.frame .center .trigger.trigger-200:hover ~ .mouse {
+  transform: translate(380px, 200px);
+}
+.frame .center .trigger.trigger-201:hover ~ .mouse {
+  transform: translate(0px, 200px);
+}
+.frame .center .trigger.trigger-202:hover ~ .mouse {
+  transform: translate(20px, 200px);
+}
+.frame .center .trigger.trigger-203:hover ~ .mouse {
+  transform: translate(40px, 200px);
+}
+.frame .center .trigger.trigger-204:hover ~ .mouse {
+  transform: translate(60px, 200px);
+}
+.frame .center .trigger.trigger-205:hover ~ .mouse {
+  transform: translate(80px, 200px);
+}
+.frame .center .trigger.trigger-206:hover ~ .mouse {
+  transform: translate(100px, 200px);
+}
+.frame .center .trigger.trigger-207:hover ~ .mouse {
+  transform: translate(120px, 200px);
+}
+.frame .center .trigger.trigger-208:hover ~ .mouse {
+  transform: translate(140px, 200px);
+}
+.frame .center .trigger.trigger-209:hover ~ .mouse {
+  transform: translate(160px, 200px);
+}
+.frame .center .trigger.trigger-210:hover ~ .mouse {
+  transform: translate(180px, 200px);
+}
+.frame .center .trigger.trigger-211:hover ~ .mouse {
+  transform: translate(200px, 200px);
+}
+.frame .center .trigger.trigger-212:hover ~ .mouse {
+  transform: translate(220px, 200px);
+}
+.frame .center .trigger.trigger-213:hover ~ .mouse {
+  transform: translate(240px, 200px);
+}
+.frame .center .trigger.trigger-214:hover ~ .mouse {
+  transform: translate(260px, 200px);
+}
+.frame .center .trigger.trigger-215:hover ~ .mouse {
+  transform: translate(280px, 200px);
+}
+.frame .center .trigger.trigger-216:hover ~ .mouse {
+  transform: translate(300px, 200px);
+}
+.frame .center .trigger.trigger-217:hover ~ .mouse {
+  transform: translate(320px, 200px);
+}
+.frame .center .trigger.trigger-218:hover ~ .mouse {
+  transform: translate(340px, 200px);
+}
+.frame .center .trigger.trigger-219:hover ~ .mouse {
+  transform: translate(360px, 200px);
+}
+.frame .center .trigger.trigger-220:hover ~ .mouse {
+  transform: translate(380px, 220px);
+}
+.frame .center .trigger.trigger-221:hover ~ .mouse {
+  transform: translate(0px, 220px);
+}
+.frame .center .trigger.trigger-222:hover ~ .mouse {
+  transform: translate(20px, 220px);
+}
+.frame .center .trigger.trigger-223:hover ~ .mouse {
+  transform: translate(40px, 220px);
+}
+.frame .center .trigger.trigger-224:hover ~ .mouse {
+  transform: translate(60px, 220px);
+}
+.frame .center .trigger.trigger-225:hover ~ .mouse {
+  transform: translate(80px, 220px);
+}
+.frame .center .trigger.trigger-226:hover ~ .mouse {
+  transform: translate(100px, 220px);
+}
+.frame .center .trigger.trigger-227:hover ~ .mouse {
+  transform: translate(120px, 220px);
+}
+.frame .center .trigger.trigger-228:hover ~ .mouse {
+  transform: translate(140px, 220px);
+}
+.frame .center .trigger.trigger-229:hover ~ .mouse {
+  transform: translate(160px, 220px);
+}
+.frame .center .trigger.trigger-230:hover ~ .mouse {
+  transform: translate(180px, 220px);
+}
+.frame .center .trigger.trigger-231:hover ~ .mouse {
+  transform: translate(200px, 220px);
+}
+.frame .center .trigger.trigger-232:hover ~ .mouse {
+  transform: translate(220px, 220px);
+}
+.frame .center .trigger.trigger-233:hover ~ .mouse {
+  transform: translate(240px, 220px);
+}
+.frame .center .trigger.trigger-234:hover ~ .mouse {
+  transform: translate(260px, 220px);
+}
+.frame .center .trigger.trigger-235:hover ~ .mouse {
+  transform: translate(280px, 220px);
+}
+.frame .center .trigger.trigger-236:hover ~ .mouse {
+  transform: translate(300px, 220px);
+}
+.frame .center .trigger.trigger-237:hover ~ .mouse {
+  transform: translate(320px, 220px);
+}
+.frame .center .trigger.trigger-238:hover ~ .mouse {
+  transform: translate(340px, 220px);
+}
+.frame .center .trigger.trigger-239:hover ~ .mouse {
+  transform: translate(360px, 220px);
+}
+.frame .center .trigger.trigger-240:hover ~ .mouse {
+  transform: translate(380px, 240px);
+}
+.frame .center .trigger.trigger-241:hover ~ .mouse {
+  transform: translate(0px, 240px);
+}
+.frame .center .trigger.trigger-242:hover ~ .mouse {
+  transform: translate(20px, 240px);
+}
+.frame .center .trigger.trigger-243:hover ~ .mouse {
+  transform: translate(40px, 240px);
+}
+.frame .center .trigger.trigger-244:hover ~ .mouse {
+  transform: translate(60px, 240px);
+}
+.frame .center .trigger.trigger-245:hover ~ .mouse {
+  transform: translate(80px, 240px);
+}
+.frame .center .trigger.trigger-246:hover ~ .mouse {
+  transform: translate(100px, 240px);
+}
+.frame .center .trigger.trigger-247:hover ~ .mouse {
+  transform: translate(120px, 240px);
+}
+.frame .center .trigger.trigger-248:hover ~ .mouse {
+  transform: translate(140px, 240px);
+}
+.frame .center .trigger.trigger-249:hover ~ .mouse {
+  transform: translate(160px, 240px);
+}
+.frame .center .trigger.trigger-250:hover ~ .mouse {
+  transform: translate(180px, 240px);
+}
+.frame .center .trigger.trigger-251:hover ~ .mouse {
+  transform: translate(200px, 240px);
+}
+.frame .center .trigger.trigger-252:hover ~ .mouse {
+  transform: translate(220px, 240px);
+}
+.frame .center .trigger.trigger-253:hover ~ .mouse {
+  transform: translate(240px, 240px);
+}
+.frame .center .trigger.trigger-254:hover ~ .mouse {
+  transform: translate(260px, 240px);
+}
+.frame .center .trigger.trigger-255:hover ~ .mouse {
+  transform: translate(280px, 240px);
+}
+.frame .center .trigger.trigger-256:hover ~ .mouse {
+  transform: translate(300px, 240px);
+}
+.frame .center .trigger.trigger-257:hover ~ .mouse {
+  transform: translate(320px, 240px);
+}
+.frame .center .trigger.trigger-258:hover ~ .mouse {
+  transform: translate(340px, 240px);
+}
+.frame .center .trigger.trigger-259:hover ~ .mouse {
+  transform: translate(360px, 240px);
+}
+.frame .center .trigger.trigger-260:hover ~ .mouse {
+  transform: translate(380px, 260px);
+}
+.frame .center .trigger.trigger-261:hover ~ .mouse {
+  transform: translate(0px, 260px);
+}
+.frame .center .trigger.trigger-262:hover ~ .mouse {
+  transform: translate(20px, 260px);
+}
+.frame .center .trigger.trigger-263:hover ~ .mouse {
+  transform: translate(40px, 260px);
+}
+.frame .center .trigger.trigger-264:hover ~ .mouse {
+  transform: translate(60px, 260px);
+}
+.frame .center .trigger.trigger-265:hover ~ .mouse {
+  transform: translate(80px, 260px);
+}
+.frame .center .trigger.trigger-266:hover ~ .mouse {
+  transform: translate(100px, 260px);
+}
+.frame .center .trigger.trigger-267:hover ~ .mouse {
+  transform: translate(120px, 260px);
+}
+.frame .center .trigger.trigger-268:hover ~ .mouse {
+  transform: translate(140px, 260px);
+}
+.frame .center .trigger.trigger-269:hover ~ .mouse {
+  transform: translate(160px, 260px);
+}
+.frame .center .trigger.trigger-270:hover ~ .mouse {
+  transform: translate(180px, 260px);
+}
+.frame .center .trigger.trigger-271:hover ~ .mouse {
+  transform: translate(200px, 260px);
+}
+.frame .center .trigger.trigger-272:hover ~ .mouse {
+  transform: translate(220px, 260px);
+}
+.frame .center .trigger.trigger-273:hover ~ .mouse {
+  transform: translate(240px, 260px);
+}
+.frame .center .trigger.trigger-274:hover ~ .mouse {
+  transform: translate(260px, 260px);
+}
+.frame .center .trigger.trigger-275:hover ~ .mouse {
+  transform: translate(280px, 260px);
+}
+.frame .center .trigger.trigger-276:hover ~ .mouse {
+  transform: translate(300px, 260px);
+}
+.frame .center .trigger.trigger-277:hover ~ .mouse {
+  transform: translate(320px, 260px);
+}
+.frame .center .trigger.trigger-278:hover ~ .mouse {
+  transform: translate(340px, 260px);
+}
+.frame .center .trigger.trigger-279:hover ~ .mouse {
+  transform: translate(360px, 260px);
+}
+.frame .center .trigger.trigger-280:hover ~ .mouse {
+  transform: translate(380px, 280px);
+}
+.frame .center .trigger.trigger-281:hover ~ .mouse {
+  transform: translate(0px, 280px);
+}
+.frame .center .trigger.trigger-282:hover ~ .mouse {
+  transform: translate(20px, 280px);
+}
+.frame .center .trigger.trigger-283:hover ~ .mouse {
+  transform: translate(40px, 280px);
+}
+.frame .center .trigger.trigger-284:hover ~ .mouse {
+  transform: translate(60px, 280px);
+}
+.frame .center .trigger.trigger-285:hover ~ .mouse {
+  transform: translate(80px, 280px);
+}
+.frame .center .trigger.trigger-286:hover ~ .mouse {
+  transform: translate(100px, 280px);
+}
+.frame .center .trigger.trigger-287:hover ~ .mouse {
+  transform: translate(120px, 280px);
+}
+.frame .center .trigger.trigger-288:hover ~ .mouse {
+  transform: translate(140px, 280px);
+}
+.frame .center .trigger.trigger-289:hover ~ .mouse {
+  transform: translate(160px, 280px);
+}
+.frame .center .trigger.trigger-290:hover ~ .mouse {
+  transform: translate(180px, 280px);
+}
+.frame .center .trigger.trigger-291:hover ~ .mouse {
+  transform: translate(200px, 280px);
+}
+.frame .center .trigger.trigger-292:hover ~ .mouse {
+  transform: translate(220px, 280px);
+}
+.frame .center .trigger.trigger-293:hover ~ .mouse {
+  transform: translate(240px, 280px);
+}
+.frame .center .trigger.trigger-294:hover ~ .mouse {
+  transform: translate(260px, 280px);
+}
+.frame .center .trigger.trigger-295:hover ~ .mouse {
+  transform: translate(280px, 280px);
+}
+.frame .center .trigger.trigger-296:hover ~ .mouse {
+  transform: translate(300px, 280px);
+}
+.frame .center .trigger.trigger-297:hover ~ .mouse {
+  transform: translate(320px, 280px);
+}
+.frame .center .trigger.trigger-298:hover ~ .mouse {
+  transform: translate(340px, 280px);
+}
+.frame .center .trigger.trigger-299:hover ~ .mouse {
+  transform: translate(360px, 280px);
+}
+.frame .center .trigger.trigger-300:hover ~ .mouse {
+  transform: translate(380px, 300px);
+}
+.frame .center .trigger.trigger-301:hover ~ .mouse {
+  transform: translate(0px, 300px);
+}
+.frame .center .trigger.trigger-302:hover ~ .mouse {
+  transform: translate(20px, 300px);
+}
+.frame .center .trigger.trigger-303:hover ~ .mouse {
+  transform: translate(40px, 300px);
+}
+.frame .center .trigger.trigger-304:hover ~ .mouse {
+  transform: translate(60px, 300px);
+}
+.frame .center .trigger.trigger-305:hover ~ .mouse {
+  transform: translate(80px, 300px);
+}
+.frame .center .trigger.trigger-306:hover ~ .mouse {
+  transform: translate(100px, 300px);
+}
+.frame .center .trigger.trigger-307:hover ~ .mouse {
+  transform: translate(120px, 300px);
+}
+.frame .center .trigger.trigger-308:hover ~ .mouse {
+  transform: translate(140px, 300px);
+}
+.frame .center .trigger.trigger-309:hover ~ .mouse {
+  transform: translate(160px, 300px);
+}
+.frame .center .trigger.trigger-310:hover ~ .mouse {
+  transform: translate(180px, 300px);
+}
+.frame .center .trigger.trigger-311:hover ~ .mouse {
+  transform: translate(200px, 300px);
+}
+.frame .center .trigger.trigger-312:hover ~ .mouse {
+  transform: translate(220px, 300px);
+}
+.frame .center .trigger.trigger-313:hover ~ .mouse {
+  transform: translate(240px, 300px);
+}
+.frame .center .trigger.trigger-314:hover ~ .mouse {
+  transform: translate(260px, 300px);
+}
+.frame .center .trigger.trigger-315:hover ~ .mouse {
+  transform: translate(280px, 300px);
+}
+.frame .center .trigger.trigger-316:hover ~ .mouse {
+  transform: translate(300px, 300px);
+}
+.frame .center .trigger.trigger-317:hover ~ .mouse {
+  transform: translate(320px, 300px);
+}
+.frame .center .trigger.trigger-318:hover ~ .mouse {
+  transform: translate(340px, 300px);
+}
+.frame .center .trigger.trigger-319:hover ~ .mouse {
+  transform: translate(360px, 300px);
+}
+.frame .center .trigger.trigger-320:hover ~ .mouse {
+  transform: translate(380px, 320px);
+}
+.frame .center .trigger.trigger-321:hover ~ .mouse {
+  transform: translate(0px, 320px);
+}
+.frame .center .trigger.trigger-322:hover ~ .mouse {
+  transform: translate(20px, 320px);
+}
+.frame .center .trigger.trigger-323:hover ~ .mouse {
+  transform: translate(40px, 320px);
+}
+.frame .center .trigger.trigger-324:hover ~ .mouse {
+  transform: translate(60px, 320px);
+}
+.frame .center .trigger.trigger-325:hover ~ .mouse {
+  transform: translate(80px, 320px);
+}
+.frame .center .trigger.trigger-326:hover ~ .mouse {
+  transform: translate(100px, 320px);
+}
+.frame .center .trigger.trigger-327:hover ~ .mouse {
+  transform: translate(120px, 320px);
+}
+.frame .center .trigger.trigger-328:hover ~ .mouse {
+  transform: translate(140px, 320px);
+}
+.frame .center .trigger.trigger-329:hover ~ .mouse {
+  transform: translate(160px, 320px);
+}
+.frame .center .trigger.trigger-330:hover ~ .mouse {
+  transform: translate(180px, 320px);
+}
+.frame .center .trigger.trigger-331:hover ~ .mouse {
+  transform: translate(200px, 320px);
+}
+.frame .center .trigger.trigger-332:hover ~ .mouse {
+  transform: translate(220px, 320px);
+}
+.frame .center .trigger.trigger-333:hover ~ .mouse {
+  transform: translate(240px, 320px);
+}
+.frame .center .trigger.trigger-334:hover ~ .mouse {
+  transform: translate(260px, 320px);
+}
+.frame .center .trigger.trigger-335:hover ~ .mouse {
+  transform: translate(280px, 320px);
+}
+.frame .center .trigger.trigger-336:hover ~ .mouse {
+  transform: translate(300px, 320px);
+}
+.frame .center .trigger.trigger-337:hover ~ .mouse {
+  transform: translate(320px, 320px);
+}
+.frame .center .trigger.trigger-338:hover ~ .mouse {
+  transform: translate(340px, 320px);
+}
+.frame .center .trigger.trigger-339:hover ~ .mouse {
+  transform: translate(360px, 320px);
+}
+.frame .center .trigger.trigger-340:hover ~ .mouse {
+  transform: translate(380px, 340px);
+}
+.frame .center .trigger.trigger-341:hover ~ .mouse {
+  transform: translate(0px, 340px);
+}
+.frame .center .trigger.trigger-342:hover ~ .mouse {
+  transform: translate(20px, 340px);
+}
+.frame .center .trigger.trigger-343:hover ~ .mouse {
+  transform: translate(40px, 340px);
+}
+.frame .center .trigger.trigger-344:hover ~ .mouse {
+  transform: translate(60px, 340px);
+}
+.frame .center .trigger.trigger-345:hover ~ .mouse {
+  transform: translate(80px, 340px);
+}
+.frame .center .trigger.trigger-346:hover ~ .mouse {
+  transform: translate(100px, 340px);
+}
+.frame .center .trigger.trigger-347:hover ~ .mouse {
+  transform: translate(120px, 340px);
+}
+.frame .center .trigger.trigger-348:hover ~ .mouse {
+  transform: translate(140px, 340px);
+}
+.frame .center .trigger.trigger-349:hover ~ .mouse {
+  transform: translate(160px, 340px);
+}
+.frame .center .trigger.trigger-350:hover ~ .mouse {
+  transform: translate(180px, 340px);
+}
+.frame .center .trigger.trigger-351:hover ~ .mouse {
+  transform: translate(200px, 340px);
+}
+.frame .center .trigger.trigger-352:hover ~ .mouse {
+  transform: translate(220px, 340px);
+}
+.frame .center .trigger.trigger-353:hover ~ .mouse {
+  transform: translate(240px, 340px);
+}
+.frame .center .trigger.trigger-354:hover ~ .mouse {
+  transform: translate(260px, 340px);
+}
+.frame .center .trigger.trigger-355:hover ~ .mouse {
+  transform: translate(280px, 340px);
+}
+.frame .center .trigger.trigger-356:hover ~ .mouse {
+  transform: translate(300px, 340px);
+}
+.frame .center .trigger.trigger-357:hover ~ .mouse {
+  transform: translate(320px, 340px);
+}
+.frame .center .trigger.trigger-358:hover ~ .mouse {
+  transform: translate(340px, 340px);
+}
+.frame .center .trigger.trigger-359:hover ~ .mouse {
+  transform: translate(360px, 340px);
+}
+.frame .center .trigger.trigger-360:hover ~ .mouse {
+  transform: translate(380px, 360px);
+}
+.frame .center .trigger.trigger-361:hover ~ .mouse {
+  transform: translate(0px, 360px);
+}
+.frame .center .trigger.trigger-362:hover ~ .mouse {
+  transform: translate(20px, 360px);
+}
+.frame .center .trigger.trigger-363:hover ~ .mouse {
+  transform: translate(40px, 360px);
+}
+.frame .center .trigger.trigger-364:hover ~ .mouse {
+  transform: translate(60px, 360px);
+}
+.frame .center .trigger.trigger-365:hover ~ .mouse {
+  transform: translate(80px, 360px);
+}
+.frame .center .trigger.trigger-366:hover ~ .mouse {
+  transform: translate(100px, 360px);
+}
+.frame .center .trigger.trigger-367:hover ~ .mouse {
+  transform: translate(120px, 360px);
+}
+.frame .center .trigger.trigger-368:hover ~ .mouse {
+  transform: translate(140px, 360px);
+}
+.frame .center .trigger.trigger-369:hover ~ .mouse {
+  transform: translate(160px, 360px);
+}
+.frame .center .trigger.trigger-370:hover ~ .mouse {
+  transform: translate(180px, 360px);
+}
+.frame .center .trigger.trigger-371:hover ~ .mouse {
+  transform: translate(200px, 360px);
+}
+.frame .center .trigger.trigger-372:hover ~ .mouse {
+  transform: translate(220px, 360px);
+}
+.frame .center .trigger.trigger-373:hover ~ .mouse {
+  transform: translate(240px, 360px);
+}
+.frame .center .trigger.trigger-374:hover ~ .mouse {
+  transform: translate(260px, 360px);
+}
+.frame .center .trigger.trigger-375:hover ~ .mouse {
+  transform: translate(280px, 360px);
+}
+.frame .center .trigger.trigger-376:hover ~ .mouse {
+  transform: translate(300px, 360px);
+}
+.frame .center .trigger.trigger-377:hover ~ .mouse {
+  transform: translate(320px, 360px);
+}
+.frame .center .trigger.trigger-378:hover ~ .mouse {
+  transform: translate(340px, 360px);
+}
+.frame .center .trigger.trigger-379:hover ~ .mouse {
+  transform: translate(360px, 360px);
+}
+.frame .center .trigger.trigger-380:hover ~ .mouse {
+  transform: translate(380px, 380px);
+}
+.frame .center .trigger.trigger-381:hover ~ .mouse {
+  transform: translate(0px, 380px);
+}
+.frame .center .trigger.trigger-382:hover ~ .mouse {
+  transform: translate(20px, 380px);
+}
+.frame .center .trigger.trigger-383:hover ~ .mouse {
+  transform: translate(40px, 380px);
+}
+.frame .center .trigger.trigger-384:hover ~ .mouse {
+  transform: translate(60px, 380px);
+}
+.frame .center .trigger.trigger-385:hover ~ .mouse {
+  transform: translate(80px, 380px);
+}
+.frame .center .trigger.trigger-386:hover ~ .mouse {
+  transform: translate(100px, 380px);
+}
+.frame .center .trigger.trigger-387:hover ~ .mouse {
+  transform: translate(120px, 380px);
+}
+.frame .center .trigger.trigger-388:hover ~ .mouse {
+  transform: translate(140px, 380px);
+}
+.frame .center .trigger.trigger-389:hover ~ .mouse {
+  transform: translate(160px, 380px);
+}
+.frame .center .trigger.trigger-390:hover ~ .mouse {
+  transform: translate(180px, 380px);
+}
+.frame .center .trigger.trigger-391:hover ~ .mouse {
+  transform: translate(200px, 380px);
+}
+.frame .center .trigger.trigger-392:hover ~ .mouse {
+  transform: translate(220px, 380px);
+}
+.frame .center .trigger.trigger-393:hover ~ .mouse {
+  transform: translate(240px, 380px);
+}
+.frame .center .trigger.trigger-394:hover ~ .mouse {
+  transform: translate(260px, 380px);
+}
+.frame .center .trigger.trigger-395:hover ~ .mouse {
+  transform: translate(280px, 380px);
+}
+.frame .center .trigger.trigger-396:hover ~ .mouse {
+  transform: translate(300px, 380px);
+}
+.frame .center .trigger.trigger-397:hover ~ .mouse {
+  transform: translate(320px, 380px);
+}
+.frame .center .trigger.trigger-398:hover ~ .mouse {
+  transform: translate(340px, 380px);
+}
+.frame .center .trigger.trigger-399:hover ~ .mouse {
+  transform: translate(360px, 380px);
+}
+.frame .center .trigger.trigger-400:hover ~ .mouse {
+  transform: translate(380px, 400px);
+}
+.frame .center .mouse {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+}

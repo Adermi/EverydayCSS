@@ -1,0 +1,26 @@
+.frame {
+  position: relative;
+  background-color: #111827;
+  transform-style: preserve-3d;
+}
+.frame .center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 1200px;
+}
+.frame .center .card {
+  width: 400px;
+  height: 200px;
+  box-shadow: 2px 2px 8px 4px rgba(0, 255, 0, 0.3);
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: #000;
+  transform-style: preserve-3d;
+  transition: 0.5s ease-in-out;
+}
+.frame .center .card:hover {
+  background-color: red;
+}
