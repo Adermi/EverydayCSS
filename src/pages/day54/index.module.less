@@ -1,0 +1,107 @@
+.frame {
+  position: relative;
+  background-color: #263a4d;
+
+  .center {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #263a4d;
+    overflow: hidden;
+
+    .wave {
+      position: absolute;
+      width: 500px;
+      height: 150px;
+      display: flex;
+      left: -20px;
+
+      .circle {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: -24px;
+
+        &:nth-child(2n + 2) {
+          top: -26px;
+        }
+      }
+
+      &.waveTop {
+        bottom: 80px;
+        background-color: #406384;
+        animation: topMove 2.5s ease-in-out infinite both alternate;
+
+        .circle {
+          background: #406384;
+
+          &:nth-child(2n + 2) {
+            background: #263a4d;
+          }
+        }
+      }
+
+      &.waveMiddle {
+        bottom: 15px;
+        background-color: #5d90bf;
+        animation: midMove 2.5s ease-in-out infinite both alternate;
+
+        .circle {
+          background-color: #5d90bf;
+
+          &:nth-child(2n + 2) {
+            background-color: #406384;
+          }
+        }
+      }
+
+      &.waveBottom {
+        bottom: -50px;
+        background-color: #7eb3e6;
+        animation: bottomMove 2.5s ease-in-out infinite both alternate;
+
+        .circle {
+          background-color: #7eb3e6;
+          &:nth-child(2n + 2) {
+            background-color: #5d90bf;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes topMove {
+  from {
+    transform: translate3d(-40px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(20px, 0, 0);
+  }
+}
+
+@keyframes midMove {
+  from {
+    transform: translate3d(20px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-10px, 0, 0);
+  }
+}
+
+@keyframes bottomMove {
+  from {
+    transform: translate3d(-80px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(20px, 0, 0);
+  }
+}

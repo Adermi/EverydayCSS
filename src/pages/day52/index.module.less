@@ -14,17 +14,21 @@
 
         .point {
           position: absolute;
-          width: 8px;
-          height: 8px;
-          background-color: #fff;
-          border-radius: 50%;
+
+          .fill {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: yellow;
+            animation: showAndDis 2.5s linear (@index / 3s) infinite alternate
+              both;
+          }
 
           .makePoint(@pointLen, @pointIdx:0, @circleIdx)
             when(@pointIdx < @pointLen) {
             &.point-@{pointIdx} {
               @angle: (360deg / @pointLen);
               @move: 40px + 15px * @circleIdx;
-              background-color: #fff;
               transform: translate(0, (-@move)) rotate(@pointIdx * @angle);
               transform-origin: 0 (@move);
             }
@@ -37,13 +41,15 @@
       .makeCircle(@len, @index + 1);
     }
 
-    .makeCircle(10);
+    .makeCircle(12);
   }
 }
 
-@keyframes showAnd {
-  from {
+@keyframes showAndDis {
+  0% {
+    transform: scale(0);
   }
-  to {
+  100% {
+    transform: scale(1);
   }
 }

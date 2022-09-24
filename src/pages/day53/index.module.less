@@ -1,0 +1,45 @@
+.frame {
+  background-color: #506172;
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    padding: 5px 15px;
+    transform: translate(-50%, -50%);
+
+    .thumb {
+      width: 1.25rem;
+      height: 1.25rem;
+      background: #fff url(https://100dayscss.com/codepen/slider-thumb.png)
+        center center no-repeat;
+      background-size: 50% 50%;
+      border-radius: 2rem;
+      border: none;
+      box-shadow: 0 0 0 0.125rem #4ecd5d;
+    }
+
+    input[type='range'] {
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+      border: none;
+      border-radius: 1rem;
+      -webkit-appearance: none;
+      background-image: linear-gradient(90deg, #4ecd5d, #3ecded);
+      cursor: pointer;
+    }
+
+    input[type='range']::-webkit-slider-thumb {
+      .thumb();
+    }
+  }
+}

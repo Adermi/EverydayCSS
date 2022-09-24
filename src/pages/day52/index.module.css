@@ -10,2021 +10,2289 @@
 }
 .frame .center .circle-0 .point {
   position: absolute;
+}
+.frame .center .circle-0 .point .fill {
   width: 8px;
   height: 8px;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 0s infinite alternate both;
 }
 .frame .center .circle-0 .point.point-0 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(0deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-0 .point.point-1 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(30deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-0 .point.point-2 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(60deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-0 .point.point-3 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(90deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-0 .point.point-4 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(120deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-0 .point.point-5 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(150deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-0 .point.point-6 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(180deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-0 .point.point-7 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(210deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-0 .point.point-8 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(240deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-0 .point.point-9 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(270deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-0 .point.point-10 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(300deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-0 .point.point-11 {
-  background-color: #fff;
   transform: translate(0, -40px) rotate(330deg);
   transform-origin: 0 40px;
 }
 .frame .center .circle-1 .point {
   position: absolute;
+}
+.frame .center .circle-1 .point .fill {
   width: 8px;
   height: 8px;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 0.33333333s infinite alternate both;
 }
 .frame .center .circle-1 .point.point-0 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(0deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-1 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(20deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-2 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(40deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-3 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(60deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-4 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(80deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-5 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(100deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-6 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(120deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-7 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(140deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-8 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(160deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-9 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(180deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-10 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(200deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-11 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(220deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-12 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(240deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-13 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(260deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-14 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(280deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-15 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(300deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-16 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(320deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-1 .point.point-17 {
-  background-color: #fff;
   transform: translate(0, -55px) rotate(340deg);
   transform-origin: 0 55px;
 }
 .frame .center .circle-2 .point {
   position: absolute;
+}
+.frame .center .circle-2 .point .fill {
   width: 8px;
   height: 8px;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 0.66666667s infinite alternate both;
 }
 .frame .center .circle-2 .point.point-0 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(0deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-1 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(15deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-2 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(30deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-3 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(45deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-4 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(60deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-5 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(75deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-6 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(90deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-7 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(105deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-8 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(120deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-9 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(135deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-10 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(150deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-11 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(165deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-12 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(180deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-13 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(195deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-14 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(210deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-15 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(225deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-16 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(240deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-17 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(255deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-18 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(270deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-19 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(285deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-20 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(300deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-21 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(315deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-22 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(330deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-2 .point.point-23 {
-  background-color: #fff;
   transform: translate(0, -70px) rotate(345deg);
   transform-origin: 0 70px;
 }
 .frame .center .circle-3 .point {
   position: absolute;
+}
+.frame .center .circle-3 .point .fill {
   width: 8px;
   height: 8px;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 1s infinite alternate both;
 }
 .frame .center .circle-3 .point.point-0 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(0deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-1 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(12deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-2 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(24deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-3 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(36deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-4 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(48deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-5 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(60deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-6 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(72deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-7 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(84deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-8 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(96deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-9 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(108deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-10 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(120deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-11 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(132deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-12 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(144deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-13 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(156deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-14 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(168deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-15 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(180deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-16 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(192deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-17 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(204deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-18 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(216deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-19 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(228deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-20 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(240deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-21 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(252deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-22 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(264deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-23 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(276deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-24 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(288deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-25 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(300deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-26 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(312deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-27 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(324deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-28 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(336deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-3 .point.point-29 {
-  background-color: #fff;
   transform: translate(0, -85px) rotate(348deg);
   transform-origin: 0 85px;
 }
 .frame .center .circle-4 .point {
   position: absolute;
+}
+.frame .center .circle-4 .point .fill {
   width: 8px;
   height: 8px;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 1.33333333s infinite alternate both;
 }
 .frame .center .circle-4 .point.point-0 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(0deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-1 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(10deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-2 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(20deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-3 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(30deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-4 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(40deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-5 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(50deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-6 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(60deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-7 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(70deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-8 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(80deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-9 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(90deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-10 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(100deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-11 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(110deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-12 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(120deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-13 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(130deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-14 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(140deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-15 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(150deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-16 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(160deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-17 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(170deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-18 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(180deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-19 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(190deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-20 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(200deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-21 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(210deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-22 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(220deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-23 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(230deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-24 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(240deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-25 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(250deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-26 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(260deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-27 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(270deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-28 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(280deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-29 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(290deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-30 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(300deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-31 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(310deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-32 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(320deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-33 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(330deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-34 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(340deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-4 .point.point-35 {
-  background-color: #fff;
   transform: translate(0, -100px) rotate(350deg);
   transform-origin: 0 100px;
 }
 .frame .center .circle-5 .point {
   position: absolute;
+}
+.frame .center .circle-5 .point .fill {
   width: 8px;
   height: 8px;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 1.66666667s infinite alternate both;
 }
 .frame .center .circle-5 .point.point-0 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(0deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-1 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(8.57142857deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-2 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(17.14285714deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-3 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(25.71428571deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-4 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(34.28571429deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-5 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(42.85714286deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-6 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(51.42857143deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-7 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(60deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-8 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(68.57142857deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-9 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(77.14285714deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-10 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(85.71428571deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-11 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(94.28571429deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-12 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(102.85714286deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-13 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(111.42857143deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-14 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(120deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-15 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(128.57142857deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-16 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(137.14285714deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-17 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(145.71428571deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-18 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(154.28571429deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-19 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(162.85714286deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-20 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(171.42857143deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-21 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(180deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-22 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(188.57142857deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-23 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(197.14285714deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-24 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(205.71428571deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-25 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(214.28571429deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-26 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(222.85714286deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-27 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(231.42857143deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-28 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(240deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-29 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(248.57142857deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-30 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(257.14285714deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-31 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(265.71428571deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-32 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(274.28571429deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-33 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(282.85714286deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-34 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(291.42857143deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-35 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(300deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-36 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(308.57142857deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-37 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(317.14285714deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-38 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(325.71428571deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-39 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(334.28571429deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-40 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(342.85714286deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-5 .point.point-41 {
-  background-color: #fff;
   transform: translate(0, -115px) rotate(351.42857143deg);
   transform-origin: 0 115px;
 }
 .frame .center .circle-6 .point {
   position: absolute;
+}
+.frame .center .circle-6 .point .fill {
   width: 8px;
   height: 8px;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 2s infinite alternate both;
 }
 .frame .center .circle-6 .point.point-0 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(0deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-1 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(7.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-2 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(15deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-3 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(22.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-4 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(30deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-5 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(37.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-6 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(45deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-7 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(52.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-8 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(60deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-9 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(67.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-10 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(75deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-11 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(82.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-12 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(90deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-13 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(97.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-14 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(105deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-15 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(112.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-16 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(120deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-17 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(127.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-18 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(135deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-19 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(142.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-20 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(150deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-21 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(157.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-22 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(165deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-23 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(172.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-24 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(180deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-25 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(187.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-26 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(195deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-27 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(202.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-28 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(210deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-29 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(217.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-30 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(225deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-31 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(232.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-32 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(240deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-33 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(247.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-34 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(255deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-35 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(262.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-36 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(270deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-37 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(277.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-38 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(285deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-39 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(292.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-40 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(300deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-41 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(307.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-42 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(315deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-43 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(322.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-44 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(330deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-45 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(337.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-46 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(345deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-6 .point.point-47 {
-  background-color: #fff;
   transform: translate(0, -130px) rotate(352.5deg);
   transform-origin: 0 130px;
 }
 .frame .center .circle-7 .point {
   position: absolute;
+}
+.frame .center .circle-7 .point .fill {
   width: 8px;
   height: 8px;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 2.33333333s infinite alternate both;
 }
 .frame .center .circle-7 .point.point-0 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(0deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-1 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(6.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-2 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(13.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-3 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(20deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-4 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(26.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-5 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(33.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-6 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(40deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-7 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(46.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-8 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(53.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-9 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(60deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-10 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(66.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-11 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(73.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-12 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(80deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-13 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(86.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-14 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(93.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-15 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(100deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-16 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(106.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-17 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(113.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-18 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(120deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-19 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(126.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-20 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(133.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-21 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(140deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-22 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(146.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-23 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(153.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-24 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(160deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-25 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(166.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-26 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(173.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-27 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(180deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-28 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(186.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-29 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(193.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-30 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(200deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-31 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(206.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-32 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(213.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-33 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(220deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-34 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(226.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-35 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(233.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-36 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(240deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-37 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(246.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-38 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(253.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-39 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(260deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-40 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(266.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-41 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(273.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-42 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(280deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-43 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(286.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-44 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(293.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-45 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(300deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-46 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(306.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-47 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(313.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-48 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(320deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-49 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(326.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-50 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(333.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-51 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(340deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-52 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(346.66666667deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-7 .point.point-53 {
-  background-color: #fff;
   transform: translate(0, -145px) rotate(353.33333333deg);
   transform-origin: 0 145px;
 }
 .frame .center .circle-8 .point {
   position: absolute;
+}
+.frame .center .circle-8 .point .fill {
   width: 8px;
   height: 8px;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 2.66666667s infinite alternate both;
 }
 .frame .center .circle-8 .point.point-0 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(0deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-1 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(6deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-2 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(12deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-3 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(18deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-4 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(24deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-5 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(30deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-6 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(36deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-7 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(42deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-8 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(48deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-9 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(54deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-10 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(60deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-11 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(66deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-12 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(72deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-13 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(78deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-14 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(84deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-15 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(90deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-16 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(96deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-17 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(102deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-18 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(108deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-19 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(114deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-20 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(120deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-21 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(126deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-22 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(132deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-23 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(138deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-24 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(144deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-25 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(150deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-26 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(156deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-27 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(162deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-28 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(168deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-29 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(174deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-30 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(180deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-31 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(186deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-32 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(192deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-33 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(198deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-34 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(204deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-35 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(210deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-36 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(216deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-37 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(222deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-38 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(228deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-39 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(234deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-40 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(240deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-41 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(246deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-42 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(252deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-43 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(258deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-44 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(264deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-45 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(270deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-46 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(276deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-47 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(282deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-48 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(288deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-49 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(294deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-50 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(300deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-51 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(306deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-52 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(312deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-53 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(318deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-54 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(324deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-55 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(330deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-56 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(336deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-57 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(342deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-58 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(348deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-8 .point.point-59 {
-  background-color: #fff;
   transform: translate(0, -160px) rotate(354deg);
   transform-origin: 0 160px;
 }
 .frame .center .circle-9 .point {
   position: absolute;
+}
+.frame .center .circle-9 .point .fill {
   width: 8px;
   height: 8px;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 3s infinite alternate both;
 }
 .frame .center .circle-9 .point.point-0 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(0deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-1 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(5.45454545deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-2 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(10.90909091deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-3 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(16.36363636deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-4 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(21.81818182deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-5 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(27.27272727deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-6 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(32.72727273deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-7 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(38.18181818deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-8 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(43.63636364deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-9 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(49.09090909deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-10 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(54.54545455deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-11 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(60deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-12 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(65.45454545deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-13 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(70.90909091deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-14 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(76.36363636deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-15 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(81.81818182deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-16 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(87.27272727deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-17 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(92.72727273deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-18 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(98.18181818deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-19 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(103.63636364deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-20 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(109.09090909deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-21 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(114.54545455deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-22 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(120deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-23 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(125.45454545deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-24 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(130.90909091deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-25 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(136.36363636deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-26 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(141.81818182deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-27 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(147.27272727deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-28 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(152.72727273deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-29 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(158.18181818deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-30 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(163.63636364deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-31 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(169.09090909deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-32 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(174.54545455deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-33 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(180deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-34 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(185.45454545deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-35 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(190.90909091deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-36 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(196.36363636deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-37 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(201.81818182deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-38 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(207.27272727deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-39 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(212.72727273deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-40 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(218.18181818deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-41 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(223.63636364deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-42 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(229.09090909deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-43 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(234.54545455deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-44 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(240deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-45 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(245.45454545deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-46 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(250.90909091deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-47 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(256.36363636deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-48 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(261.81818182deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-49 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(267.27272727deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-50 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(272.72727273deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-51 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(278.18181818deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-52 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(283.63636364deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-53 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(289.09090909deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-54 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(294.54545455deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-55 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(300deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-56 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(305.45454545deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-57 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(310.90909091deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-58 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(316.36363636deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-59 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(321.81818182deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-60 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(327.27272727deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-61 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(332.72727273deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-62 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(338.18181818deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-63 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(343.63636364deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-64 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(349.09090909deg);
   transform-origin: 0 175px;
 }
 .frame .center .circle-9 .point.point-65 {
-  background-color: #fff;
   transform: translate(0, -175px) rotate(354.54545455deg);
   transform-origin: 0 175px;
+}
+.frame .center .circle-10 .point {
+  position: absolute;
+}
+.frame .center .circle-10 .point .fill {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 3.33333333s infinite alternate both;
+}
+.frame .center .circle-10 .point.point-0 {
+  transform: translate(0, -190px) rotate(0deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-1 {
+  transform: translate(0, -190px) rotate(5deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-2 {
+  transform: translate(0, -190px) rotate(10deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-3 {
+  transform: translate(0, -190px) rotate(15deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-4 {
+  transform: translate(0, -190px) rotate(20deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-5 {
+  transform: translate(0, -190px) rotate(25deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-6 {
+  transform: translate(0, -190px) rotate(30deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-7 {
+  transform: translate(0, -190px) rotate(35deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-8 {
+  transform: translate(0, -190px) rotate(40deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-9 {
+  transform: translate(0, -190px) rotate(45deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-10 {
+  transform: translate(0, -190px) rotate(50deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-11 {
+  transform: translate(0, -190px) rotate(55deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-12 {
+  transform: translate(0, -190px) rotate(60deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-13 {
+  transform: translate(0, -190px) rotate(65deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-14 {
+  transform: translate(0, -190px) rotate(70deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-15 {
+  transform: translate(0, -190px) rotate(75deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-16 {
+  transform: translate(0, -190px) rotate(80deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-17 {
+  transform: translate(0, -190px) rotate(85deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-18 {
+  transform: translate(0, -190px) rotate(90deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-19 {
+  transform: translate(0, -190px) rotate(95deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-20 {
+  transform: translate(0, -190px) rotate(100deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-21 {
+  transform: translate(0, -190px) rotate(105deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-22 {
+  transform: translate(0, -190px) rotate(110deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-23 {
+  transform: translate(0, -190px) rotate(115deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-24 {
+  transform: translate(0, -190px) rotate(120deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-25 {
+  transform: translate(0, -190px) rotate(125deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-26 {
+  transform: translate(0, -190px) rotate(130deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-27 {
+  transform: translate(0, -190px) rotate(135deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-28 {
+  transform: translate(0, -190px) rotate(140deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-29 {
+  transform: translate(0, -190px) rotate(145deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-30 {
+  transform: translate(0, -190px) rotate(150deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-31 {
+  transform: translate(0, -190px) rotate(155deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-32 {
+  transform: translate(0, -190px) rotate(160deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-33 {
+  transform: translate(0, -190px) rotate(165deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-34 {
+  transform: translate(0, -190px) rotate(170deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-35 {
+  transform: translate(0, -190px) rotate(175deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-36 {
+  transform: translate(0, -190px) rotate(180deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-37 {
+  transform: translate(0, -190px) rotate(185deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-38 {
+  transform: translate(0, -190px) rotate(190deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-39 {
+  transform: translate(0, -190px) rotate(195deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-40 {
+  transform: translate(0, -190px) rotate(200deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-41 {
+  transform: translate(0, -190px) rotate(205deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-42 {
+  transform: translate(0, -190px) rotate(210deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-43 {
+  transform: translate(0, -190px) rotate(215deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-44 {
+  transform: translate(0, -190px) rotate(220deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-45 {
+  transform: translate(0, -190px) rotate(225deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-46 {
+  transform: translate(0, -190px) rotate(230deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-47 {
+  transform: translate(0, -190px) rotate(235deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-48 {
+  transform: translate(0, -190px) rotate(240deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-49 {
+  transform: translate(0, -190px) rotate(245deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-50 {
+  transform: translate(0, -190px) rotate(250deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-51 {
+  transform: translate(0, -190px) rotate(255deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-52 {
+  transform: translate(0, -190px) rotate(260deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-53 {
+  transform: translate(0, -190px) rotate(265deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-54 {
+  transform: translate(0, -190px) rotate(270deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-55 {
+  transform: translate(0, -190px) rotate(275deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-56 {
+  transform: translate(0, -190px) rotate(280deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-57 {
+  transform: translate(0, -190px) rotate(285deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-58 {
+  transform: translate(0, -190px) rotate(290deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-59 {
+  transform: translate(0, -190px) rotate(295deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-60 {
+  transform: translate(0, -190px) rotate(300deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-61 {
+  transform: translate(0, -190px) rotate(305deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-62 {
+  transform: translate(0, -190px) rotate(310deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-63 {
+  transform: translate(0, -190px) rotate(315deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-64 {
+  transform: translate(0, -190px) rotate(320deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-65 {
+  transform: translate(0, -190px) rotate(325deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-66 {
+  transform: translate(0, -190px) rotate(330deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-67 {
+  transform: translate(0, -190px) rotate(335deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-68 {
+  transform: translate(0, -190px) rotate(340deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-69 {
+  transform: translate(0, -190px) rotate(345deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-70 {
+  transform: translate(0, -190px) rotate(350deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-10 .point.point-71 {
+  transform: translate(0, -190px) rotate(355deg);
+  transform-origin: 0 190px;
+}
+.frame .center .circle-11 .point {
+  position: absolute;
+}
+.frame .center .circle-11 .point .fill {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: yellow;
+  animation: showAndDis 2.5s linear 3.66666667s infinite alternate both;
+}
+.frame .center .circle-11 .point.point-0 {
+  transform: translate(0, -205px) rotate(0deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-1 {
+  transform: translate(0, -205px) rotate(4.61538462deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-2 {
+  transform: translate(0, -205px) rotate(9.23076923deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-3 {
+  transform: translate(0, -205px) rotate(13.84615385deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-4 {
+  transform: translate(0, -205px) rotate(18.46153846deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-5 {
+  transform: translate(0, -205px) rotate(23.07692308deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-6 {
+  transform: translate(0, -205px) rotate(27.69230769deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-7 {
+  transform: translate(0, -205px) rotate(32.30769231deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-8 {
+  transform: translate(0, -205px) rotate(36.92307692deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-9 {
+  transform: translate(0, -205px) rotate(41.53846154deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-10 {
+  transform: translate(0, -205px) rotate(46.15384615deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-11 {
+  transform: translate(0, -205px) rotate(50.76923077deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-12 {
+  transform: translate(0, -205px) rotate(55.38461538deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-13 {
+  transform: translate(0, -205px) rotate(60deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-14 {
+  transform: translate(0, -205px) rotate(64.61538462deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-15 {
+  transform: translate(0, -205px) rotate(69.23076923deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-16 {
+  transform: translate(0, -205px) rotate(73.84615385deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-17 {
+  transform: translate(0, -205px) rotate(78.46153846deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-18 {
+  transform: translate(0, -205px) rotate(83.07692308deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-19 {
+  transform: translate(0, -205px) rotate(87.69230769deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-20 {
+  transform: translate(0, -205px) rotate(92.30769231deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-21 {
+  transform: translate(0, -205px) rotate(96.92307692deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-22 {
+  transform: translate(0, -205px) rotate(101.53846154deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-23 {
+  transform: translate(0, -205px) rotate(106.15384615deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-24 {
+  transform: translate(0, -205px) rotate(110.76923077deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-25 {
+  transform: translate(0, -205px) rotate(115.38461538deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-26 {
+  transform: translate(0, -205px) rotate(120deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-27 {
+  transform: translate(0, -205px) rotate(124.61538462deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-28 {
+  transform: translate(0, -205px) rotate(129.23076923deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-29 {
+  transform: translate(0, -205px) rotate(133.84615385deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-30 {
+  transform: translate(0, -205px) rotate(138.46153846deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-31 {
+  transform: translate(0, -205px) rotate(143.07692308deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-32 {
+  transform: translate(0, -205px) rotate(147.69230769deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-33 {
+  transform: translate(0, -205px) rotate(152.30769231deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-34 {
+  transform: translate(0, -205px) rotate(156.92307692deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-35 {
+  transform: translate(0, -205px) rotate(161.53846154deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-36 {
+  transform: translate(0, -205px) rotate(166.15384615deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-37 {
+  transform: translate(0, -205px) rotate(170.76923077deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-38 {
+  transform: translate(0, -205px) rotate(175.38461538deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-39 {
+  transform: translate(0, -205px) rotate(180deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-40 {
+  transform: translate(0, -205px) rotate(184.61538462deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-41 {
+  transform: translate(0, -205px) rotate(189.23076923deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-42 {
+  transform: translate(0, -205px) rotate(193.84615385deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-43 {
+  transform: translate(0, -205px) rotate(198.46153846deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-44 {
+  transform: translate(0, -205px) rotate(203.07692308deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-45 {
+  transform: translate(0, -205px) rotate(207.69230769deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-46 {
+  transform: translate(0, -205px) rotate(212.30769231deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-47 {
+  transform: translate(0, -205px) rotate(216.92307692deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-48 {
+  transform: translate(0, -205px) rotate(221.53846154deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-49 {
+  transform: translate(0, -205px) rotate(226.15384615deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-50 {
+  transform: translate(0, -205px) rotate(230.76923077deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-51 {
+  transform: translate(0, -205px) rotate(235.38461538deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-52 {
+  transform: translate(0, -205px) rotate(240deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-53 {
+  transform: translate(0, -205px) rotate(244.61538462deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-54 {
+  transform: translate(0, -205px) rotate(249.23076923deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-55 {
+  transform: translate(0, -205px) rotate(253.84615385deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-56 {
+  transform: translate(0, -205px) rotate(258.46153846deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-57 {
+  transform: translate(0, -205px) rotate(263.07692308deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-58 {
+  transform: translate(0, -205px) rotate(267.69230769deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-59 {
+  transform: translate(0, -205px) rotate(272.30769231deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-60 {
+  transform: translate(0, -205px) rotate(276.92307692deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-61 {
+  transform: translate(0, -205px) rotate(281.53846154deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-62 {
+  transform: translate(0, -205px) rotate(286.15384615deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-63 {
+  transform: translate(0, -205px) rotate(290.76923077deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-64 {
+  transform: translate(0, -205px) rotate(295.38461538deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-65 {
+  transform: translate(0, -205px) rotate(300deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-66 {
+  transform: translate(0, -205px) rotate(304.61538462deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-67 {
+  transform: translate(0, -205px) rotate(309.23076923deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-68 {
+  transform: translate(0, -205px) rotate(313.84615385deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-69 {
+  transform: translate(0, -205px) rotate(318.46153846deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-70 {
+  transform: translate(0, -205px) rotate(323.07692308deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-71 {
+  transform: translate(0, -205px) rotate(327.69230769deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-72 {
+  transform: translate(0, -205px) rotate(332.30769231deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-73 {
+  transform: translate(0, -205px) rotate(336.92307692deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-74 {
+  transform: translate(0, -205px) rotate(341.53846154deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-75 {
+  transform: translate(0, -205px) rotate(346.15384615deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-76 {
+  transform: translate(0, -205px) rotate(350.76923077deg);
+  transform-origin: 0 205px;
+}
+.frame .center .circle-11 .point.point-77 {
+  transform: translate(0, -205px) rotate(355.38461538deg);
+  transform-origin: 0 205px;
+}
+@keyframes showAndDis {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

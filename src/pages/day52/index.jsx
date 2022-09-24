@@ -18,7 +18,9 @@ const Index = () => {
               <div
                 key={`${circle}-${point}`}
                 className={cn(style.point, style[`point-${point}`])}
-              ></div>
+              >
+                <div className={style.fill}></div>
+              </div>
             ))}
           </div>
         ))}

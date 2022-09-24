@@ -23,6 +23,7 @@
     height: 400px;
     border: 2px solid black;
     transform: translate(-50%, -50%);
+    // overflow: hidden;
 
     // img {
     //   // height: 100%;
@@ -32,13 +33,15 @@
       width: 200px;
       height: 200px;
       background-color: red;
-      text-align: center;
-      line-height: 200px;
-      font-size: 30px;
-      color: #fff;
-      transform: rotate(20deg);
-      transform-origin: 0px 200px;
-      border-radius: 50%;
+      overflow: hidden;
+
+      .rect {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: -10px;
+        background-color: yellow;
+      }
     }
   }
 }

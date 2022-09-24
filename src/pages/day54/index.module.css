@@ -1,0 +1,89 @@
+.frame {
+  position: relative;
+  background-color: #263a4d;
+}
+.frame .center {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #263a4d;
+  overflow: hidden;
+}
+.frame .center .wave {
+  position: absolute;
+  width: 500px;
+  height: 150px;
+  display: flex;
+  left: -20px;
+}
+.frame .center .wave .circle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: -24px;
+}
+.frame .center .wave .circle:nth-child(2n + 2) {
+  top: -26px;
+}
+.frame .center .wave.waveTop {
+  bottom: 80px;
+  background-color: #406384;
+  animation: topMove 2.5s ease-in-out infinite both alternate;
+}
+.frame .center .wave.waveTop .circle {
+  background: #406384;
+}
+.frame .center .wave.waveTop .circle:nth-child(2n + 2) {
+  background: #263a4d;
+}
+.frame .center .wave.waveMiddle {
+  bottom: 15px;
+  background-color: #5d90bf;
+  animation: midMove 2.5s ease-in-out infinite both alternate;
+}
+.frame .center .wave.waveMiddle .circle {
+  background-color: #5d90bf;
+}
+.frame .center .wave.waveMiddle .circle:nth-child(2n + 2) {
+  background-color: #406384;
+}
+.frame .center .wave.waveBottom {
+  bottom: -50px;
+  background-color: #7eb3e6;
+  animation: bottomMove 2.5s ease-in-out infinite both alternate;
+}
+.frame .center .wave.waveBottom .circle {
+  background-color: #7eb3e6;
+}
+.frame .center .wave.waveBottom .circle:nth-child(2n + 2) {
+  background-color: #5d90bf;
+}
+@keyframes topMove {
+  from {
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    transform: translate3d(20px, 0, 0);
+  }
+}
+@keyframes midMove {
+  from {
+    transform: translate3d(20px, 0, 0);
+  }
+  to {
+    transform: translate3d(-10px, 0, 0);
+  }
+}
+@keyframes bottomMove {
+  from {
+    transform: translate3d(-80px, 0, 0);
+  }
+  to {
+    transform: translate3d(20px, 0, 0);
+  }
+}

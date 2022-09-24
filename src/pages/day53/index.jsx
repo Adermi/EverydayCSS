@@ -1,15 +1,16 @@
 import React from 'react';
+import cn from 'classnames';
+
 import style from './index.module.less';
+import Layout from '../../components/Layout';
 
 const Index = () => {
   return (
-    <div className={style.box}>
+    <Layout className={style.frame}>
       <div className={style.center}>
-        <div className={style.red}>
-          <div className={style.rect}></div>
-        </div>
+        <input type="range" name="" id="" />
       </div>
-    </div>
+    </Layout>
   );
 };
 

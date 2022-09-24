@@ -3,12 +3,10 @@ import Link from 'next/link';
 
 let style = {
   display: 'flex',
-  position: 'fixed',
-  top: '20px',
-  left: '30%',
   fontSize: '26px',
   flexDirection: 'column',
   gap: '10px',
+  margin: '50px 0 0 500px',
 };
 
 let days = [
@@ -30,6 +28,10 @@ let days = [
   'Day50',
   'Day51',
   'Day52',
+  'Day53',
+  'Day54',
+  'Day55',
+  'Day56',
   'Day101',
   'Demo',
 ];
