@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import cn from 'classnames';
 
 import style from './index.module.less';
@@ -6,8 +6,10 @@ import Layout from '../../components/Layout';
 import _ from 'lodash';
 
 const Index = () => {
-  useEffect(() => {
-    const swiperItem = Array.from(document.querySelectorAll('.swiper-item'));
+  useLayoutEffect(() => {
+    const swiperItem = Array.from(
+      document.querySelectorAll(`.${style['swiper-item']}`)
+    );
     let idx = 0;
     let timer;
 
@@ -43,14 +45,14 @@ const Index = () => {
           const classList = this.classList;
           e.stopPropagation();
 
-          if (classList.contains('swiper-next')) {
+          if (classList.contains(style['swiper-next'])) {
             if (idx === swiperItem.length - 1) {
               idx = 0;
             } else {
               idx++;
             }
             toggleClass();
-          } else if (classList.contains('swiper-prev')) {
+          } else if (classList.contains(style['swiper-prev'])) {
             if (idx === 0) {
               idx = swiperItem.length - 1;
             } else {
@@ -60,7 +62,6 @@ const Index = () => {
           } else {
             return;
           }
-
           addInterval();
         });
       });
@@ -74,12 +75,12 @@ const Index = () => {
       if (idx === swiperItem.length - 1) n = 0;
 
       swiperItem.forEach((swiperNode, i) => {
-        swiperNode.classList.remove('swiper-prev');
-        swiperNode.classList.remove('swiper-mid');
-        swiperNode.classList.remove('swiper-next');
-        if (i === p) swiperNode.classList.add('swiper-prev');
-        if (i === m) swiperNode.classList.add('swiper-mid');
-        if (i === n) swiperNode.classList.add('swiper-next');
+        swiperNode.classList.remove(style['swiper-prev']);
+        swiperNode.classList.remove(style['swiper-mid']);
+        swiperNode.classList.remove(style['swiper-next']);
+        if (i === p) swiperNode.classList.add(style['swiper-prev']);
+        if (i === m) swiperNode.classList.add(style['swiper-mid']);
+        if (i === n) swiperNode.classList.add(style['swiper-next']);
       });
     }
   }, []);
@@ -87,10 +88,10 @@ const Index = () => {
   return (
     <Layout className={style.frame}>
       <div className={style.center}>
-        <div class={style.banner}>
-          <div class={style['swiper-box']}>
+        <div className={style.banner}>
+          <div className={style['swiper-box']}>
             {_.range(1, 7).map((item) => (
-              <div key={item} class={style['swiper-item']}>
+              <div key={item} className={style['swiper-item']}>
                 <img src={`img/${item}.jpg`} alt="" />
               </div>
             ))}
