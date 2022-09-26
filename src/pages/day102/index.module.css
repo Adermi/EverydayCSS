@@ -1,0 +1,45 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.frame .center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .banner .swiper-item {
+  display: flex;
+  position: absolute;
+  left: -40px;
+  width: 400px;
+  height: 450px;
+  background-color: #fff;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.frame .center .banner .swiper-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.frame .center .banner .swiper-item.swiper-mid {
+  left: 0;
+  z-index: 99;
+  transform: translate(-50%, -50%) scale(1);
+}
+.frame .center .banner .swiper-item.swiper-next {
+  left: 200px;
+  background-color: red;
+  transform: translate(-50%, -50%) scale(0.8);
+  z-index: 9;
+}
+.frame .center .banner .swiper-item.swiper-prev {
+  left: -200px;
+  transform: translate(-50%, -50%) scale(0.8);
+  z-index: 9;
+}

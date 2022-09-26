@@ -1,0 +1,104 @@
+.frame {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #16a078;
+
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    animation: flower 7s ease infinite both;
+    // transform-origin: 0px 0px;
+
+    &:hover {
+      .leaf,
+      .dot {
+        opacity: 0.3 !important;
+      }
+    }
+
+    .leaf {
+      position: absolute;
+      transition: all 0.5s ease-in-out;
+
+      .bigger(@idx:1) when(@idx <= 17) {
+        @angle: (360deg / 17 * @idx);
+        &.leaf-@{idx} {
+          width: 50px;
+          height: 50px;
+          // background-color: rgb(, green, blue);
+          background-color: rgb(@idx * 10, @idx * 10, @idx * 10);
+          border-radius: 2px 50px;
+          opacity: 0.8;
+          transform: translate(-25px, -25px) rotate(@angle) scale(0.6);
+          transform-origin: 50px 50px;
+          animation: e(%('bigger-%d', @idx)) 7s ease infinite both;
+          box-shadow: 2px 2px 0px 4px rgb(@idx * 12, @idx * 12, @idx * 12);
+
+          &:nth-child(2n + 1) {
+            z-index: 9;
+          }
+
+          @keyframes e(%('bigger-%d', @idx)) {
+            @start: @idx * 1%;
+            @{start} {
+              transform: translate(-25px, -25px) rotate(@angle) scale(0.6);
+            }
+
+            60% {
+              transform: translate(-25px, -25px) rotate(@angle) scale(2);
+            }
+
+            100% {
+              transform: translate(-25px, -25px) rotate(@angle) scale(0.6);
+            }
+          }
+        }
+
+        .bigger(@idx + 1);
+      }
+
+      .bigger();
+    }
+
+    .dot {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-color: #f1c40f;
+      border-radius: 50%;
+      transition: all 0.5s ease-in-out;
+      z-index: 99;
+      animation: dot 7s ease infinite both;
+    }
+  }
+}
+
+@keyframes flower {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes dot {
+  0% {
+    transform: scale(0.5);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.5);
+  }
+}

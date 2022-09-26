@@ -1,0 +1,104 @@
+import React, { useEffect } from 'react';
+import cn from 'classnames';
+
+import style from './index.module.less';
+import Layout from '../../components/Layout';
+import _ from 'lodash';
+
+const Index = () => {
+  useEffect(() => {
+    const swiperItem = Array.from(document.querySelectorAll('.swiper-item'));
+    let idx = 0;
+    let timer;
+
+    eventInit();
+    toggleClass();
+    addInterval();
+
+    // 页面切换会有动画累积的效果，页面切换，动画停止，但是定时器还在运转；页面切回来，执行定时器的效果，就会突然页面的动画不规则甚至混乱
+    window.onblur = () => {
+      clearInterval(timer);
+    };
+
+    window.onfocus = () => {
+      addInterval();
+    };
+
+    function addInterval() {
+      clearInterval(timer);
+      timer = setInterval(() => {
+        if (idx === swiperItem.length - 1) {
+          idx = 0;
+        } else {
+          idx++;
+        }
+        toggleClass();
+      }, 3000);
+    }
+
+    function eventInit() {
+      swiperItem.forEach((swiperNode, i) => {
+        swiperNode.addEventListener('click', function (e) {
+          clearInterval(timer);
+          const classList = this.classList;
+          e.stopPropagation();
+
+          if (classList.contains('swiper-next')) {
+            if (idx === swiperItem.length - 1) {
+              idx = 0;
+            } else {
+              idx++;
+            }
+            toggleClass();
+          } else if (classList.contains('swiper-prev')) {
+            if (idx === 0) {
+              idx = swiperItem.length - 1;
+            } else {
+              idx--;
+            }
+            toggleClass();
+          } else {
+            return;
+          }
+
+          addInterval();
+        });
+      });
+    }
+
+    function toggleClass() {
+      let p = idx - 1,
+        m = idx,
+        n = idx + 1;
+      if (idx === 0) p = swiperItem.length - 1;
+      if (idx === swiperItem.length - 1) n = 0;
+
+      swiperItem.forEach((swiperNode, i) => {
+        swiperNode.classList.remove('swiper-prev');
+        swiperNode.classList.remove('swiper-mid');
+        swiperNode.classList.remove('swiper-next');
+        if (i === p) swiperNode.classList.add('swiper-prev');
+        if (i === m) swiperNode.classList.add('swiper-mid');
+        if (i === n) swiperNode.classList.add('swiper-next');
+      });
+    }
+  }, []);
+
+  return (
+    <Layout className={style.frame}>
+      <div className={style.center}>
+        <div class={style.banner}>
+          <div class={style['swiper-box']}>
+            {_.range(1, 7).map((item) => (
+              <div key={item} class={style['swiper-item']}>
+                <img src={`img/${item}.jpg`} alt="" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default Index;
