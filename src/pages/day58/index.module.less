@@ -1,0 +1,72 @@
+@radius: 200px; // 角度
+@speed: 6s; // 动画速度
+@fill: #fff; // 填充色
+@border: #d33526; // 边框色
+
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #d33526;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 450px;
+
+    .form {
+      width: @radius;
+      height: @radius;
+      transform-style: preserve-3d;
+      transform: rotateX(-25deg);
+      transition: all 2s ease-in-out;
+
+      &:hover {
+        transform: rotateX(90deg);
+      }
+
+      .slice {
+        position: absolute;
+        box-sizing: border-box;
+        border-radius: 50%;
+        background: @fill;
+        border: 2px solid @border;
+        opacity: 1;
+        transition: all 1s ease-in-out;
+
+        each(range(1, 9), {
+          @size: @radius - (2 * (@value * @value));
+          @offset: (@value * 15) - ((@value * @value) / 2);
+          &.slice-@{value} {
+            width: @size;
+            height:@size;
+            background-color: #fff;
+            left: ((@radius - @size) / 2);
+            top: ((@radius - @size) / 2);
+            transform: translateY(~'@{offset}px') rotateX(90deg);
+          }
+
+          @id: @value + 9;
+          &.slice-@{id} {
+            width: @size;
+            height: @size;
+            left: ((@radius - @size) / 2);
+            top: ((@radius - @size) / 2);
+            transform: translateY(~'-@{offset}px') rotateX(90deg);
+            // transform: translateY((-1   $offset)+px) rotateX(90deg);
+          }
+        });
+
+        &.slice-19 {
+          width: @radius;
+          height: @radius;
+          left: 0;
+          top: 0;
+          transform: rotateX(90deg);
+        }
+      }
+    }
+  }
+}

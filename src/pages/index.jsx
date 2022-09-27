@@ -32,19 +32,27 @@ let days = [
   'Day54',
   'Day55',
   'Day56',
+  'Day57',
+  'Day58',
   'Day101',
   'Day102',
   'Demo',
 ];
 
+const unDone = ['Day51', 'Day57'];
+
 const Index = () => {
   return (
     <div style={style}>
-      {days.map((day, i) => (
-        <Link href={`/${day.toLocaleLowerCase()}`} key={i}>
-          {day}
-        </Link>
-      ))}
+      {days.map((day, i) => {
+        if (unDone.includes(day)) {
+        }
+        return (
+          <Link href={`/${day.toLocaleLowerCase()}`} key={i}>
+            {unDone.includes(day) ? `未完成:${day}` : day}
+          </Link>
+        );
+      })}
     </div>
   );
 };
