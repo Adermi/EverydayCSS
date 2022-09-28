@@ -1,0 +1,117 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: goldenrod;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .slices {
+      display: flex;
+      width: 400px;
+      height: 400px;
+      background-color: aliceblue;
+      background: url('https://100dayscss.com/codepen/slice-image-1.jpg') center
+        center no-repeat;
+      background-size: 400px 400px;
+      cursor: pointer;
+      overflow: hidden;
+
+      &:hover {
+        .slice {
+          transform: translateY(0px) !important;
+          opacity: 1 !important;
+        }
+
+        .text {
+          h1 {
+            transform: translateX(-30px);
+            opacity: 0;
+          }
+
+          h2 {
+            transform: translateX(30px);
+            opacity: 0;
+          }
+        }
+
+        .text2 {
+          h1,
+          h2 {
+            transform: translateX(0px);
+            opacity: 1;
+          }
+        }
+      }
+
+      .slice {
+        position: relative;
+        width: 50px;
+        height: 400px;
+        box-sizing: border-box;
+        z-index: 2;
+        background: url('https://100dayscss.com/codepen/slice-image-2.jpg') left
+          center no-repeat;
+        background-size: 400px 400px;
+        transition: all 1s ease-in-out;
+
+        each(range(8), {
+          &.slice-@{value} {
+            @idx: @value - 1;
+            background-position: -50px * @idx 0;
+            transform: translateY(-40px);
+            opacity: 0;
+          }
+        });
+
+        each(range(4), {
+          @another: (@value ) * 2;
+          &.slice-@{another} {
+            transform: translateY(40px);
+          }
+        });
+      }
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        transform: translateY(-50%);
+
+        h1,
+        h2 {
+          transition: all 1s ease-in-out;
+        }
+      }
+
+      .text2 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        transform: translateY(-50%);
+        z-index: 3;
+
+        h1 {
+          transform: translateY(-40px);
+          opacity: 0;
+          transition: all 1s ease-in-out;
+        }
+        h2 {
+          transform: translateY(40px);
+          opacity: 0;
+          transition: all 1s ease-in-out;
+        }
+      }
+    }
+  }
+}

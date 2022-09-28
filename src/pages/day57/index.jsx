@@ -7,7 +7,9 @@ import Layout from '../../components/Layout';
 const Index = () => {
   return (
     <Layout className={style.frame}>
-      <div className={style.center}>Day57</div>
+      <div className={style.center}>
+        <div className={style.starBox}></div>
+      </div>
     </Layout>
   );
 };

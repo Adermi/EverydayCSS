@@ -1,13 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-
-let style = {
-  display: 'flex',
-  fontSize: '26px',
-  flexDirection: 'column',
-  gap: '10px',
-  margin: '50px 0 0 500px',
-};
+import style from './index.module.less';
 
 let days = [
   'Day36',
@@ -34,6 +27,7 @@ let days = [
   'Day56',
   'Day57',
   'Day58',
+  'Day59',
   'Day101',
   'Day102',
   'Demo',
@@ -43,7 +37,7 @@ const unDone = ['Day51', 'Day57'];
 
 const Index = () => {
   return (
-    <div style={style}>
+    <div className={style.layout}>
       {days.map((day, i) => {
         if (unDone.includes(day)) {
         }
@@ -53,6 +47,7 @@ const Index = () => {
           </Link>
         );
       })}
+      <div className={style.star}></div>
     </div>
   );
 };

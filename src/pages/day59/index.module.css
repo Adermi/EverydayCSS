@@ -1,0 +1,134 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: goldenrod;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .slices {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: aliceblue;
+  background: url('https://100dayscss.com/codepen/slice-image-1.jpg') center center no-repeat;
+  background-size: 400px 400px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.frame .center .slices:hover .slice {
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+}
+.frame .center .slices:hover .text h1 {
+  transform: translateX(-30px);
+  opacity: 0;
+}
+.frame .center .slices:hover .text h2 {
+  transform: translateX(30px);
+  opacity: 0;
+}
+.frame .center .slices:hover .text2 h1,
+.frame .center .slices:hover .text2 h2 {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.frame .center .slices .slice {
+  position: relative;
+  width: 50px;
+  height: 400px;
+  box-sizing: border-box;
+  z-index: 2;
+  background: url('https://100dayscss.com/codepen/slice-image-2.jpg') left center no-repeat;
+  background-size: 400px 400px;
+  transition: all 1s ease-in-out;
+}
+.frame .center .slices .slice.slice-1 {
+  background-position: 0px 0;
+  transform: translateY(-40px);
+  opacity: 0;
+}
+.frame .center .slices .slice.slice-2 {
+  background-position: -50px 0;
+  transform: translateY(-40px);
+  opacity: 0;
+}
+.frame .center .slices .slice.slice-3 {
+  background-position: -100px 0;
+  transform: translateY(-40px);
+  opacity: 0;
+}
+.frame .center .slices .slice.slice-4 {
+  background-position: -150px 0;
+  transform: translateY(-40px);
+  opacity: 0;
+}
+.frame .center .slices .slice.slice-5 {
+  background-position: -200px 0;
+  transform: translateY(-40px);
+  opacity: 0;
+}
+.frame .center .slices .slice.slice-6 {
+  background-position: -250px 0;
+  transform: translateY(-40px);
+  opacity: 0;
+}
+.frame .center .slices .slice.slice-7 {
+  background-position: -300px 0;
+  transform: translateY(-40px);
+  opacity: 0;
+}
+.frame .center .slices .slice.slice-8 {
+  background-position: -350px 0;
+  transform: translateY(-40px);
+  opacity: 0;
+}
+.frame .center .slices .slice.slice-2 {
+  transform: translateY(40px);
+}
+.frame .center .slices .slice.slice-4 {
+  transform: translateY(40px);
+}
+.frame .center .slices .slice.slice-6 {
+  transform: translateY(40px);
+}
+.frame .center .slices .slice.slice-8 {
+  transform: translateY(40px);
+}
+.frame .center .slices .text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  transform: translateY(-50%);
+}
+.frame .center .slices .text h1,
+.frame .center .slices .text h2 {
+  transition: all 1s ease-in-out;
+}
+.frame .center .slices .text2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+.frame .center .slices .text2 h1 {
+  transform: translateY(-40px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.frame .center .slices .text2 h2 {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
