@@ -1,0 +1,80 @@
+@numberOfTriggers: 200;
+@offset: 400px / @numberOfTriggers;
+
+.frame {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: gray;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    color: #fff;
+    background-color: #34495e;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+    .trigger {
+      position: absolute;
+      box-sizing: border-box;
+      width: 400px;
+      height: 10px;
+      left: 0;
+      cursor: pointer;
+
+      each(range(0, 200), {
+        &.trigger-@{value} {
+          top: ((@value - 1) * @offset);
+
+          &:hover ~ .plane{
+            // background-color: #fff;
+            height: (@value * 2px);
+            transition: initial;
+
+          }
+        }
+      });
+    }
+
+    .text-back {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      font-weight: 700;
+      pointer-events: none;
+    }
+
+    .text-front {
+      width: 400px;
+      height: 400px;
+      text-align: center;
+      line-height: 400px;
+      font-size: 60px;
+      font-weight: 700;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+
+    .plane {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 400px;
+      height: 200px;
+      background: #e67e22;
+      overflow: hidden;
+      pointer-events: none;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}
