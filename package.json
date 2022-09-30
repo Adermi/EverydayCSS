@@ -16,7 +16,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 8081",
+    "start": "next start -p 8082",
     "lint": "next lint"
   }
 }
