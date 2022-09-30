@@ -1,17 +1,51 @@
 .returnBtn {
   position: fixed;
-  top: 20px;
   left: 20px;
-  z-index: 99999;
+  top: 20px;
+  cursor: pointer;
 
   a {
-    font-size: 30px;
-    font-weight: 500;
-    color: #fff;
-    transition: color 0.3s ease-out;
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: 700;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
 
-    &:hover {
-      color: gold;
+  .border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke-width: 2;
+
+    .bgLine {
+      fill: rgba(0, 0, 0, 0.3);
+      transition: all 0.5s ease-in-out;
+    }
+
+    .hlLine {
+      stroke: gold;
+      stroke-dasharray: 50 480;
+      stroke-dashoffset: 50;
+      transition: all 0.8s ease-in-out;
+    }
+  }
+
+  &:hover {
+    .border {
+      .bgLine {
+        fill: rgba(0, 0, 0, 0.8);
+      }
+
+      .hlLine {
+        stroke-dashoffset: -360;
+      }
     }
   }
 }

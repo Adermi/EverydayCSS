@@ -1,29 +1,48 @@
-.box {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: gold;
-  overflow: hidden;
-}
-.box .center {
-  position: fixed;
+.frame {
+  position: absolute;
   top: 50%;
   left: 50%;
-  width: 600px;
+  width: 400px;
   height: 400px;
-  border: 2px solid black;
-  transform: translate(-50%, -50%);
-}
-.box .center .red {
-  width: 200px;
-  height: 200px;
-  background-color: red;
+  margin-top: -200px;
+  margin-left: -200px;
+  text-align: center;
+  border-radius: 2px;
   overflow: hidden;
+  background: #170441;
+  color: white;
 }
-.box .center .red .rect {
+.frame .center {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: -10px;
-  background-color: yellow;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 30px;
+  background: orange;
+  transition: height 2s;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 2;
+}
+.frame .center:hover {
+  height: 400px;
+}
+.frame .center .text-front {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  color: transparent;
+  font-size: 60px;
+  font-weight: 700;
+}
+.frame .text-back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  transform: translate(-50%, -50%);
 }

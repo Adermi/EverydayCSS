@@ -1,0 +1,50 @@
+@c1: red;
+@c2: blue;
+
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #000;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+
+    div[class*='gradient'] {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background-color: red;
+    }
+
+    .color(@c1, @c2) {
+      background: linear-gradient(-45deg, @c1 0%, @c2 100%);
+    }
+
+    .gradient1 {
+      .color(#77c8c0, #267aac);
+    }
+
+    .gradient2 {
+      .color(#4ad7b8, #f39c12);
+      animation: gradient 4s ease-in-out infinite alternate;
+    }
+  }
+}
+
+@keyframes gradient {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

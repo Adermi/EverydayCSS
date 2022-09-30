@@ -3,12 +3,11 @@ import style from './index.module.less';
 
 const Index = () => {
   return (
-    <div className={style.box}>
+    <div className={style.frame}>
       <div className={style.center}>
-        <div className={style.red}>
-          <div className={style.rect}></div>
-        </div>
+        <div className={style[`text-front`]}>Hover</div>
       </div>
+      <div className={style[`text-back`]}>Hover</div>
     </div>
   );
 };

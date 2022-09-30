@@ -29,6 +29,7 @@ let days = [
   'Day58',
   'Day59',
   'Day60',
+  'Day61',
   'Day101',
   'Day102',
   'Demo',
@@ -48,7 +49,7 @@ const Index = () => {
           </Link>
         );
       })}
-      <div className={style.star}></div>
+      {/* <div className={style.star}></div> */}
     </div>
   );
 };
