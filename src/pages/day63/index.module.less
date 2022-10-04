@@ -1,0 +1,45 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #27ae60;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    .circle {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 2px dotted #fff;
+      transform-origin: 50% 50%;
+
+      each(range(50), {
+        &.circle-@{value} {
+          animation: circleK 10s  (@value / -5s) ease-in-out infinite both;
+        }
+      });
+    }
+  }
+}
+
+@keyframes circleK {
+  from {
+    transform: scale(0) translate(-150px, -130px);
+    opacity: 0.4;
+  }
+
+  to {
+    transform: scale(4.5) translate(20px, 20px);
+    opacity: 1;
+  }
+}

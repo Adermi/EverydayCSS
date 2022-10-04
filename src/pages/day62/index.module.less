@@ -1,0 +1,129 @@
+@transition: all 0.3s ease-in-out;
+
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    background: #e9edef;
+    color: #5e5e5e;
+
+    .planBox {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 30px auto;
+
+      .plan {
+        width: 110px;
+        height: 160px;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+        transition: @transition;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+
+          .title {
+            background-color: #27a6d2;
+          }
+
+          .price {
+            color: #7dd0ed;
+          }
+        }
+
+        .title {
+          height: 36px;
+          text-align: center;
+          line-height: 36px;
+          background-color: #7dd0ed;
+          color: #fff;
+          font-weight: 600;
+          font-size: 16px;
+          transition: @transition;
+        }
+
+        .price {
+          text-align: center;
+          font-size: 30px;
+          line-height: 30px;
+          font-weight: 700;
+          padding: 16px 0 17px 0;
+          transition: @transition;
+
+          .dateLoop {
+            font-size: 12px;
+            line-height: 12px;
+            font-weight: 400;
+          }
+        }
+
+        .line {
+          height: 3px;
+          background: #e4e4e4;
+          margin: 0 auto 7px;
+
+          &:nth-child(1) {
+            width: 69px;
+          }
+          &:nth-child(2) {
+            width: 59px;
+          }
+          &:nth-child(3) {
+            width: 66px;
+          }
+          &:nth-child(4) {
+            width: 46px;
+          }
+        }
+      }
+    }
+
+    .datas {
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+      padding: 10px 15px;
+      background-color: #fff;
+      margin: 40px 10px 0px;
+      border-radius: 4px;
+      box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+
+      .text {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 400;
+      }
+
+      .line {
+        position: relative;
+        height: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        background-color: #e9edef;
+        overflow: hidden;
+
+        .fill {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 10px;
+          height: 10px;
+          background-color: #84d2ed;
+          transition: @transition;
+        }
+      }
+    }
+  }
+}

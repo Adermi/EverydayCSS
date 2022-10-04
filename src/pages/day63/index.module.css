@@ -1,0 +1,185 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #27ae60;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.frame .center .circle {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px dotted #fff;
+  transform-origin: 50% 50%;
+}
+.frame .center .circle.circle-1 {
+  animation: circleK 10s -0.2s ease-in-out infinite both;
+}
+.frame .center .circle.circle-2 {
+  animation: circleK 10s -0.4s ease-in-out infinite both;
+}
+.frame .center .circle.circle-3 {
+  animation: circleK 10s -0.6s ease-in-out infinite both;
+}
+.frame .center .circle.circle-4 {
+  animation: circleK 10s -0.8s ease-in-out infinite both;
+}
+.frame .center .circle.circle-5 {
+  animation: circleK 10s -1s ease-in-out infinite both;
+}
+.frame .center .circle.circle-6 {
+  animation: circleK 10s -1.2s ease-in-out infinite both;
+}
+.frame .center .circle.circle-7 {
+  animation: circleK 10s -1.4s ease-in-out infinite both;
+}
+.frame .center .circle.circle-8 {
+  animation: circleK 10s -1.6s ease-in-out infinite both;
+}
+.frame .center .circle.circle-9 {
+  animation: circleK 10s -1.8s ease-in-out infinite both;
+}
+.frame .center .circle.circle-10 {
+  animation: circleK 10s -2s ease-in-out infinite both;
+}
+.frame .center .circle.circle-11 {
+  animation: circleK 10s -2.2s ease-in-out infinite both;
+}
+.frame .center .circle.circle-12 {
+  animation: circleK 10s -2.4s ease-in-out infinite both;
+}
+.frame .center .circle.circle-13 {
+  animation: circleK 10s -2.6s ease-in-out infinite both;
+}
+.frame .center .circle.circle-14 {
+  animation: circleK 10s -2.8s ease-in-out infinite both;
+}
+.frame .center .circle.circle-15 {
+  animation: circleK 10s -3s ease-in-out infinite both;
+}
+.frame .center .circle.circle-16 {
+  animation: circleK 10s -3.2s ease-in-out infinite both;
+}
+.frame .center .circle.circle-17 {
+  animation: circleK 10s -3.4s ease-in-out infinite both;
+}
+.frame .center .circle.circle-18 {
+  animation: circleK 10s -3.6s ease-in-out infinite both;
+}
+.frame .center .circle.circle-19 {
+  animation: circleK 10s -3.8s ease-in-out infinite both;
+}
+.frame .center .circle.circle-20 {
+  animation: circleK 10s -4s ease-in-out infinite both;
+}
+.frame .center .circle.circle-21 {
+  animation: circleK 10s -4.2s ease-in-out infinite both;
+}
+.frame .center .circle.circle-22 {
+  animation: circleK 10s -4.4s ease-in-out infinite both;
+}
+.frame .center .circle.circle-23 {
+  animation: circleK 10s -4.6s ease-in-out infinite both;
+}
+.frame .center .circle.circle-24 {
+  animation: circleK 10s -4.8s ease-in-out infinite both;
+}
+.frame .center .circle.circle-25 {
+  animation: circleK 10s -5s ease-in-out infinite both;
+}
+.frame .center .circle.circle-26 {
+  animation: circleK 10s -5.2s ease-in-out infinite both;
+}
+.frame .center .circle.circle-27 {
+  animation: circleK 10s -5.4s ease-in-out infinite both;
+}
+.frame .center .circle.circle-28 {
+  animation: circleK 10s -5.6s ease-in-out infinite both;
+}
+.frame .center .circle.circle-29 {
+  animation: circleK 10s -5.8s ease-in-out infinite both;
+}
+.frame .center .circle.circle-30 {
+  animation: circleK 10s -6s ease-in-out infinite both;
+}
+.frame .center .circle.circle-31 {
+  animation: circleK 10s -6.2s ease-in-out infinite both;
+}
+.frame .center .circle.circle-32 {
+  animation: circleK 10s -6.4s ease-in-out infinite both;
+}
+.frame .center .circle.circle-33 {
+  animation: circleK 10s -6.6s ease-in-out infinite both;
+}
+.frame .center .circle.circle-34 {
+  animation: circleK 10s -6.8s ease-in-out infinite both;
+}
+.frame .center .circle.circle-35 {
+  animation: circleK 10s -7s ease-in-out infinite both;
+}
+.frame .center .circle.circle-36 {
+  animation: circleK 10s -7.2s ease-in-out infinite both;
+}
+.frame .center .circle.circle-37 {
+  animation: circleK 10s -7.4s ease-in-out infinite both;
+}
+.frame .center .circle.circle-38 {
+  animation: circleK 10s -7.6s ease-in-out infinite both;
+}
+.frame .center .circle.circle-39 {
+  animation: circleK 10s -7.8s ease-in-out infinite both;
+}
+.frame .center .circle.circle-40 {
+  animation: circleK 10s -8s ease-in-out infinite both;
+}
+.frame .center .circle.circle-41 {
+  animation: circleK 10s -8.2s ease-in-out infinite both;
+}
+.frame .center .circle.circle-42 {
+  animation: circleK 10s -8.4s ease-in-out infinite both;
+}
+.frame .center .circle.circle-43 {
+  animation: circleK 10s -8.6s ease-in-out infinite both;
+}
+.frame .center .circle.circle-44 {
+  animation: circleK 10s -8.8s ease-in-out infinite both;
+}
+.frame .center .circle.circle-45 {
+  animation: circleK 10s -9s ease-in-out infinite both;
+}
+.frame .center .circle.circle-46 {
+  animation: circleK 10s -9.2s ease-in-out infinite both;
+}
+.frame .center .circle.circle-47 {
+  animation: circleK 10s -9.4s ease-in-out infinite both;
+}
+.frame .center .circle.circle-48 {
+  animation: circleK 10s -9.6s ease-in-out infinite both;
+}
+.frame .center .circle.circle-49 {
+  animation: circleK 10s -9.8s ease-in-out infinite both;
+}
+.frame .center .circle.circle-50 {
+  animation: circleK 10s -10s ease-in-out infinite both;
+}
+@keyframes circleK {
+  from {
+    transform: scale(0) translate(-150px, -130px);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(4.5) translate(20px, 20px);
+    opacity: 1;
+  }
+}

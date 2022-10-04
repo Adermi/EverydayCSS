@@ -1,0 +1,80 @@
+@colorA: #2c3e50;
+@colorB: #fff;
+@colorC: #8e44ad;
+@transition: all 0.3s ease-in-out;
+
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  background-color: #2c3e50;
+
+  .center {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .btn {
+      position: absolute;
+      width: 200px;
+      height: 70px;
+      top: 160px;
+      left: 100px;
+      color: @colorA;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 70px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: @transition;
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 70px;
+        background-color: @colorB;
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+        transition: @transition;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 70px;
+        background-color: @colorC;
+        transform: translate(16px, 15px);
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+        transition: @transition;
+      }
+
+      &:hover {
+        transform: translate(16px, 15px);
+        color: @colorB;
+
+        &::before {
+          background-color: @colorC;
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        &::after {
+          transform: translate(-16px, -15px);
+          background-color: @colorB;
+        }
+      }
+    }
+  }
+}

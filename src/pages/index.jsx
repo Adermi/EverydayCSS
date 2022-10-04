@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import style from './index.module.less';
+import Button from './../components/Button/index';
 
 let days = [
   'Day36',
@@ -30,6 +31,9 @@ let days = [
   'Day59',
   'Day60',
   'Day61',
+  'Day62',
+  'Day63',
+  'Day64',
   'Day101',
   'Day102',
   'Demo',
@@ -40,16 +44,15 @@ const unDone = ['Day51', 'Day57'];
 const Index = () => {
   return (
     <div className={style.layout}>
-      {days.map((day, i) => {
+      {days.map((day) => {
         if (unDone.includes(day)) {
         }
         return (
-          <Link href={`/${day.toLocaleLowerCase()}`} key={i}>
-            {unDone.includes(day) ? `未完成:${day}` : day}
-          </Link>
+          <Button href={`/${day.toLocaleLowerCase()}`}>
+            {unDone.includes(day) ? `未完成` : day}
+          </Button>
         );
       })}
-      {/* <div className={style.star}></div> */}
     </div>
   );
 };
