@@ -1,10 +1,11 @@
 import React from 'react';
 import style from './index.module.less';
 import Link from 'next/link';
+import cn from 'classnames';
 
-export default function Button({ href = '/', children, size }) {
+export default function Button({ href = '/', children, size, className }) {
   return (
-    <div className={style.returnBtn}>
+    <div className={cn(style.returnBtn, className)}>
       <Link href={href} className={style.return}>
         {children || '返回'}
       </Link>

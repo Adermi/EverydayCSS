@@ -13,6 +13,8 @@
   font-weight: 700;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   z-index: 2;
+  color: #1f91dd;
+  transition: all 0.5s ease-in-out;
 }
 .returnBtn .border {
   position: absolute;
@@ -22,7 +24,7 @@
   stroke-width: 2;
 }
 .returnBtn .border .bgLine {
-  fill: rgba(0, 0, 0, 0.3);
+  fill: #070809;
   transition: all 0.5s ease-in-out;
 }
 .returnBtn .border .hlLine {
@@ -31,8 +33,11 @@
   stroke-dashoffset: 50;
   transition: all 0.8s ease-in-out;
 }
+.returnBtn:hover a {
+  color: #f8be95;
+}
 .returnBtn:hover .border .bgLine {
-  fill: rgba(0, 0, 0, 0.8);
+  fill: #8400ff;
 }
 .returnBtn:hover .border .hlLine {
   stroke-dashoffset: -360;

@@ -5,7 +5,10 @@
   gap: 10px;
   text-align: center;
   padding: 10px;
-  background: linear-gradient(90deg, #e91e63 0%, #2196f3 100%);
+  background: radial-gradient(circle, red 13%, orange 26%, #d1d11e 39%, #1ac71a 52%, #1f91dd 65%, #1515c7 78%, #8e29ec 83%);
+  height: 100vh;
+  background-attachment: fixed;
+  overflow-y: auto;
 }
 .layout .star {
   position: relative;

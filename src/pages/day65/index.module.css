@@ -1,0 +1,375 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #1f91dd;
+  background: radial-gradient(circle, gold 44%, red 95%);
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .from {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .from .ellipse {
+  box-sizing: border-box;
+  position: absolute;
+  width: 90px;
+  height: 300px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: 0;
+  left: 105px;
+}
+.frame .center .from .ellipse.ellipse-0 {
+  animation: ellipse-0 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-0 {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-1 {
+  animation: ellipse-1 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-1 {
+  0% {
+    transform: rotate(10deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(350deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-2 {
+  animation: ellipse-2 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-2 {
+  0% {
+    transform: rotate(20deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(340deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-3 {
+  animation: ellipse-3 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-3 {
+  0% {
+    transform: rotate(30deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(330deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-4 {
+  animation: ellipse-4 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-4 {
+  0% {
+    transform: rotate(40deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(320deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-5 {
+  animation: ellipse-5 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-5 {
+  0% {
+    transform: rotate(50deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(310deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-6 {
+  animation: ellipse-6 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-6 {
+  0% {
+    transform: rotate(60deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(300deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-7 {
+  animation: ellipse-7 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-7 {
+  0% {
+    transform: rotate(70deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(290deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-8 {
+  animation: ellipse-8 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-8 {
+  0% {
+    transform: rotate(80deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(280deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-9 {
+  animation: ellipse-9 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-9 {
+  0% {
+    transform: rotate(90deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(270deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-10 {
+  animation: ellipse-10 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-10 {
+  0% {
+    transform: rotate(100deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(260deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-11 {
+  animation: ellipse-11 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-11 {
+  0% {
+    transform: rotate(110deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(250deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-12 {
+  animation: ellipse-12 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-12 {
+  0% {
+    transform: rotate(120deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(240deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-13 {
+  animation: ellipse-13 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-13 {
+  0% {
+    transform: rotate(130deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(230deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-14 {
+  animation: ellipse-14 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-14 {
+  0% {
+    transform: rotate(140deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(220deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-15 {
+  animation: ellipse-15 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-15 {
+  0% {
+    transform: rotate(150deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(210deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-16 {
+  animation: ellipse-16 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-16 {
+  0% {
+    transform: rotate(160deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(200deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}
+.frame .center .from .ellipse.ellipse-17 {
+  animation: ellipse-17 5s ease-in-out infinite alternate both;
+}
+@keyframes ellipse-17 {
+  0% {
+    transform: rotate(170deg);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px purple;
+  }
+  50% {
+    transform: rotate(0deg) scaleX(3.33333333);
+    border-radius: 0;
+    box-shadow: 0 0 1px 2px rgba(0, 100, 0, 0.3);
+  }
+  100% {
+    transform: rotate(190deg);
+    box-shadow: 0 0 1px 2px blue;
+  }
+}

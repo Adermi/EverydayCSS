@@ -1,0 +1,82 @@
+@lines: 12;
+
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #5a717b;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .point {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: -20px;
+      margin-top: -20px;
+
+      #cb {
+        display: none;
+      }
+
+      input:checked {
+        ~ .circle {
+          border-width: 15px;
+          background-color: #5fd17a;
+        }
+
+        ~ .lines {
+          each(range(@lines), {
+            .line-@{value} {
+              opacity: 0;
+              @degree: (360deg / @lines) * @value;  
+              transform:rotate(@degree) translateY(-50px) scaleY(1);
+              transition: all 0.5s ease-in-out;
+            }
+          });
+        }
+      }
+
+      .circle {
+        box-sizing: border-box;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2),
+          inset 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .lines {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        pointer-events: none;
+
+        .line {
+          position: absolute;
+          width: 2px;
+          top: 12px;
+          height: 16px;
+          left: 19px;
+          background-color: #fff;
+
+          each(range(@lines), {
+            &.line-@{value} {
+              @degree: (360deg / @lines) * @value;  
+              transform:rotate(@degree) translateY(-12px) scaleY(0); // TODO 先旋转再平移，就不需要transform-origin
+            }
+          });
+        }
+      }
+    }
+  }
+}
