@@ -1,0 +1,157 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #684595;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center #cb-1 {
+  display: none;
+}
+.frame .center #cb-1:checked ~ .microphone .dots .dot-1 {
+  animation: dot 1s -0.2s ease-in-out infinite both alternate;
+}
+.frame .center #cb-1:checked ~ .microphone .dots .dot-2 {
+  animation: dot 1s -0.4s ease-in-out infinite both alternate;
+}
+.frame .center #cb-1:checked ~ .microphone .dots .dot-3 {
+  animation: dot 1s -0.6s ease-in-out infinite both alternate;
+}
+.frame .center #cb-1:checked ~ .microphone .icon {
+  animation: icon 0.7s ease-in-out both;
+}
+.frame .center #cb-1:checked ~ .microphone .dots {
+  animation: dots 1s both;
+}
+.frame .center #cb-1:checked ~ .microphone .circle {
+  animation: circle 5s linear infinite;
+}
+.frame .center .label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+  margin-top: -200px;
+  margin-left: -200px;
+}
+.frame .center .microphone {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  background-color: #684595;
+  pointer-events: none;
+}
+.frame .center .microphone .circle {
+  stroke: #fff;
+  stroke-width: 3px;
+  fill: none;
+  transform-origin: 50% 50%;
+}
+.frame .center .microphone .icon {
+  position: absolute;
+  width: 24px;
+  height: 66px;
+  left: 38px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.frame .center .microphone .icon .body {
+  position: relative;
+  width: 24px;
+  height: 52px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.frame .center .microphone .icon .body .fill {
+  position: absolute;
+  width: 6px;
+  height: 16px;
+  top: 5px;
+  left: 9px;
+  background-color: #684595;
+  border-radius: 12px;
+}
+.frame .center .microphone .icon .footer-v {
+  position: absolute;
+  width: 4px;
+  height: 15px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.frame .center .microphone .icon .footer-h {
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.frame .center .microphone .dots {
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  left: 50%;
+  top: 50%;
+  justify-content: space-between;
+  display: flex;
+  transform: translate(-50%, -50%) scale(0);
+}
+.frame .center .microphone .dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+@keyframes dot {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@keyframes dots {
+  0%,
+  60% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes icon {
+  30% {
+    transform: translateY(-50%) scale(1.1);
+  }
+  100% {
+    transform: translateY(-50%) scale(0);
+  }
+}
+@keyframes circle {
+  0% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 296 296;
+    transform: rotate(0deg);
+  }
+  100% {
+    stroke-dashoffset: -592;
+    stroke-dasharray: 296 296;
+    transform: rotate(360deg);
+  }
+}
