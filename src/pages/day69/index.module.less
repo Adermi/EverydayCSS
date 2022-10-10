@@ -1,0 +1,147 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #363847;
+
+  .center {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+
+    .eye {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      top: 50%;
+      left: 50%;
+      background-color: #fff;
+      box-shadow: inset 0px 0px 40px #000;
+      transform: translate(-50%, -50%) rotate(45deg);
+      border-radius: 160px 0;
+      overflow: hidden;
+
+      .ball {
+        position: absolute;
+        box-sizing: border-box;
+        top: 25px;
+        left: 25px;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        // background-color: #4f3030;
+        background: radial-gradient(#cd1900 10%, #5d0400 70%);
+        border: 2px solid #000;
+        box-shadow: 0 0 10px #000, inset 0 0 10px #000;
+        animation: ball 5s 0.3s ease-in-out infinite;
+
+        .iris {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background-color: #000;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    .lid-top {
+      fill: #363847;
+      position: absolute;
+      top: 17%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      animation: lid-top 5s ease-in-out infinite;
+    }
+
+    .lid-bottom {
+      fill: #363847;
+      position: absolute;
+      bottom: 17%;
+      left: 50%;
+      transform: translate(-50%, 0) rotate(180deg);
+      animation: lid-bottom 5s ease-in-out infinite;
+    }
+  }
+
+  .eye2 {
+    top: 30%;
+    left: 70%;
+  }
+
+  .mouse {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    // border-radius: 500px 0;
+    // background-color: red;
+    fill: #5d0400;
+  }
+}
+
+@keyframes lid-top {
+  0%,
+  26%,
+  52%,
+  78% {
+    transform: translate(-50%, 0px);
+  }
+  3%,
+  29%,
+  55%,
+  81% {
+    transform: translate(-50%, 60px);
+  }
+  6%,
+  32%,
+  58%,
+  84% {
+    transform: translate(-50%, 0px);
+  }
+}
+
+@keyframes lid-bottom {
+  0%,
+  26%,
+  52%,
+  78% {
+    transform: translate(-50%, 0) rotate(180deg);
+  }
+  3%,
+  29%,
+  55%,
+  81% {
+    transform: translate(-50%, -60px) rotate(180deg);
+  }
+  6%,
+  32%,
+  58%,
+  84% {
+    transform: translate(-50%, 0) rotate(180deg);
+  }
+}
+
+@keyframes ball {
+  6%,
+  26% {
+    transform: translate(-14px, 26px) scale(0.9);
+  }
+
+  32%,
+  51% {
+    transform: translate(34px, -11px) scale(0.9);
+  }
+
+  56% {
+    transform: translate(0px, 0px) scale(0.9);
+  }
+}

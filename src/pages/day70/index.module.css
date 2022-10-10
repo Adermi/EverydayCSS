@@ -1,0 +1,40 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.frame .center {
+  display: grid;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #e4d063;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  cursor: pointer;
+}
+.frame .center .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #e4d063;
+  transition: all 0.2s ease-in-out;
+  font-size: 25px;
+}
+.frame .center .box .month {
+  font-size: 18px;
+}
+.frame .center .box .day {
+  font-size: 60px;
+  font-weight: 700;
+}
+.frame .center .box:hover {
+  box-shadow: inset 0px 0px 10px #e4d063;
+  transform: scale(0.97);
+}

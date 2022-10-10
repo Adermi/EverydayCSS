@@ -1,0 +1,48 @@
+@color: rgb(228, 208, 99);
+@backgroundColor: #000;
+
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .center {
+    display: grid;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: @color;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    cursor: pointer;
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: @backgroundColor;
+      color: @color;
+      transition: all 0.2s ease-in-out;
+      font-size: 25px;
+
+      .month {
+        font-size: 18px;
+      }
+
+      .day {
+        font-size: 60px;
+        font-weight: 700;
+      }
+
+      &:hover {
+        box-shadow: inset 0px 0px 10px @color;
+        transform: scale(0.97);
+      }
+    }
+  }
+}
