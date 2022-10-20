@@ -1,5 +1,6 @@
-# 100dayCSS
+# CSS 每日一练
 
-每日一练 CSS
+1. 每天写一个 css 小 demo，用来给自己创造学习和赋能的一个过程。
+2. 所有代码均在上方，可以自行下载改动。
 
-- 体验网站：[gkx.xyb.cool](http://gkx.xyb.cool)
+- 体验网站：[点击此处](http://100daycss.xyb.cool)
