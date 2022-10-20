@@ -1,0 +1,81 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #34495e;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    perspective: 200px;
+
+    .hiddenKey {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: #fff;
+      font-size: 20px;
+      transform: translate(-50%, -50%);
+      box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.3);
+
+      .rotateBox {
+        transform-origin: 50% 0;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease-in-out;
+        &:valid {
+          transform: rotateX(180deg);
+
+          ~ .backKey {
+            box-shadow: 2px -50px 8px 0 rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+
+      .ipt {
+        padding: 15px 15px;
+        border: none;
+        outline: none;
+        appearance: none;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 20px;
+        backface-visibility: hidden; // 3D时元素背面朝向用户时是否可见
+      }
+
+      .key {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        line-height: 50px;
+        transform: rotateX(-180deg);
+        backface-visibility: hidden;
+        background-color: red;
+      }
+
+      .backKey {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        line-height: 50px;
+        background-color: #64c760;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+        box-shadow: 2px 0px 8px 0 rgba(0, 0, 0, 0);
+      }
+    }
+  }
+}

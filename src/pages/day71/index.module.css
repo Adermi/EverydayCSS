@@ -1,0 +1,57 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  background-color: #333333;
+  border-radius: 5px;
+  overflow: hidden;
+  color: #fff;
+}
+.frame .center .triggers {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #666;
+  border-top: 2px solid #888;
+}
+.frame .center .triggers .radio {
+  display: none;
+}
+.frame .center .triggers .trigger {
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 50%;
+  cursor: pointer;
+  float: left;
+  margin: 3px;
+}
+.frame .center .triggers .trigger:hover {
+  background-color: #888;
+}
+.frame .center .triggers .trigger.trigger-0 {
+  clear: both;
+}
+.frame .center .triggers .light {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 0px #fff;
+}

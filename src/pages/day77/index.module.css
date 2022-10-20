@@ -1,0 +1,94 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #9b59b6;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .ball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  animation: ball 2s ease-in-out infinite both;
+}
+.frame .center .ball .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.frame .center .ball .blur.blur-1 {
+  opacity: 0.9;
+  animation: blur-1 2s infinite both;
+}
+@keyframes blur-1 {
+  0%,
+  50%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-9px);
+  }
+  75% {
+    transform: translateX(9px);
+  }
+}
+.frame .center .ball .blur.blur-2 {
+  opacity: 0.8;
+  animation: blur-2 2s infinite both;
+}
+@keyframes blur-2 {
+  0%,
+  50%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-18px);
+  }
+  75% {
+    transform: translateX(18px);
+  }
+}
+.frame .center .ball .blur.blur-3 {
+  opacity: 0.7;
+  animation: blur-3 2s infinite both;
+}
+@keyframes blur-3 {
+  0%,
+  50%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-27px);
+  }
+  75% {
+    transform: translateX(27px);
+  }
+}
+@keyframes ball {
+  0%,
+  100% {
+    transform: translateX(-150px);
+  }
+  50% {
+    transform: translateX(150px);
+  }
+}

@@ -9,8 +9,15 @@ const Index = () => {
   return (
     <Layout className={style.frame}>
       <div className={style.center}>
-        {_.range(20).map((item) => {
-          return <div className={style.div}>666</div>;
+        {_.range(1, 4).map((item) => {
+          return (
+            <div
+              key={item}
+              className={cn(style.button, style[`button-${item}`])}
+            >
+              Hover Me
+            </div>
+          );
         })}
       </div>
     </Layout>

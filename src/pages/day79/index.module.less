@@ -1,0 +1,117 @@
+@number: 10;
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #607d8b;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      // background-color: #fff;
+
+      .line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+        background: linear-gradient(
+          45deg,
+          rgb(248, 59, 59) 0%,
+          rgb(63, 63, 245) 100%
+        );
+
+        each(range(@number), {
+          @degree: (@value / @number) * 360deg;
+
+          &.line-@{value} {
+            animation: e('line-@{value}') 10s ease-in-out infinite;
+          }
+          // TODO 有两种方法可以让n个元素围成一个圈
+          // 1. 改变元素的transform-origin,再使用transform:rotate进行旋转
+          // 2. 直接使用transform,但是元素变换的顺序是先旋转rotate,再平移translate
+          @keyframes e('line-@{value}') {
+            0% {
+              transform: rotate(0) translate(0,0) scale(0.01);
+            }
+            5% {
+              transform: rotate(0) translate(0,0) scale(1);
+            }
+            15% {
+              transform: rotate(@degree) translate(0,0) scale(1);
+            }
+            20% {
+              transform: rotate(@degree) translate(0,-100px) scale(.25,1);
+            }
+            25% {
+              transform: rotate(@degree) translate(0,-100px) scale(.25,.25) rotate(179deg);
+            }
+            // 30% {
+            //   transform: rotate(@degree) translate(0,-100px) scale(1,.25) rotate(179deg);
+            // }
+            // 35% {
+            //   transform: rotate(@degree) translate(0,-60px) scale(1,.1);
+            // }
+            // 40% {
+            //   transform: rotate(@degree) translate(0,-60px) scale(1,.1) translate(-30px, 0);
+            // }
+            // 45% {
+            //   transform: rotate(@degree) translate(0,-60px) scale(1,.1) translate(30px, 0);
+            // }
+            // 50% {
+            //   transform: rotate(@degree) translate(0,-60px) scale(.1,1);
+            // }
+            // 55% {
+            //   transform: rotate(@degree) translate(0,-60px) scale(.5,.1);
+            //   border-radius: 0;
+            // }
+            // 60% {
+            //   transform: rotate(@degree) translate(0,-80px) scale(.5,.5) rotate(179deg);
+            //   border-radius: 50%;
+            // }
+            // 65% {
+            //   transform: rotate(@degree) translate(0,0) scale(.2,.2);
+            //   border-radius: 50%;
+            // }
+            // 70% {
+            //   transform: rotate(@degree) translate(0,-100px) scale(.25,1);
+            //   border-radius: 0;
+            // }
+            // 75% {
+            //   transform: rotate(@degree) translate(0,-100px) scale(.25,.25);
+            // }
+            // 80% {
+            //   transform: rotate(@degree) translate(0,-50px) scale(.5,.5);
+            // }
+            // 85% {
+            //   transform: rotate(@degree) translate(0,-50px) scale(.5,.5) rotate(179deg) translate(-50px,50px);
+            // }
+            // 90% {
+            //   transform: rotate(@degree) translate(0,-30px) scale(.5,.1);
+            // }
+            // 95% {
+            //   transform: rotate(@degree) translate(0,-10px) scale(.1,.5);
+            // }
+            // 100% {
+            //   transform: rotate(@degree) translate(0,-300px) scale(.1,.5);
+            // }
+          }
+        });
+      }
+    }
+  }
+}

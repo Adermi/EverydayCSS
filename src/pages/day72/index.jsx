@@ -9,9 +9,9 @@ const Index = () => {
   return (
     <Layout className={style.frame}>
       <div className={style.center}>
-        {_.range(20).map((item) => {
-          return <div className={style.div}>666</div>;
-        })}
+        {_.range(1, 11).map((item) => (
+          <div className={cn(style.ring, style[`ring-${item}`])}></div>
+        ))}
       </div>
     </Layout>
   );

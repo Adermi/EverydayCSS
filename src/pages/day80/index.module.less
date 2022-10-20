@@ -1,0 +1,55 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  // background-color: gray;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+
+    .box {
+      position: relative;
+      flex-grow: 1;
+      flex-basis: 20%;
+      // min-width: 15%;
+      transition: all 0.3s ease-in-out;
+      color: transparent;
+      cursor: pointer;
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 25px;
+        font-weight: 700;
+        transform: translate(-50%, -50%) scale(0.5);
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        flex-basis: 100%;
+
+        .text {
+          color: #000;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    }
+
+    .box:nth-child(2n) {
+      background-color: red;
+    }
+
+    .box:nth-child(2n + 1) {
+      background-color: yellow;
+    }
+  }
+}

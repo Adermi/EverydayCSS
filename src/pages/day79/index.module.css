@@ -1,0 +1,231 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #607d8b;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+.frame .center .circle .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f83b3b 0%, #3f3ff5 100%);
+}
+.frame .center .circle .line.line-1 {
+  animation: line-1 10s ease-in-out infinite;
+}
+@keyframes line-1 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(0.01);
+  }
+  5% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  15% {
+    transform: rotate(36deg) translate(0, 0) scale(1);
+  }
+  20% {
+    transform: rotate(36deg) translate(0, -100px) scale(0.25, 1);
+  }
+  25% {
+    transform: rotate(36deg) translate(0, -100px) scale(0.25, 0.25) rotate(179deg);
+  }
+}
+.frame .center .circle .line.line-2 {
+  animation: line-2 10s ease-in-out infinite;
+}
+@keyframes line-2 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(0.01);
+  }
+  5% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  15% {
+    transform: rotate(72deg) translate(0, 0) scale(1);
+  }
+  20% {
+    transform: rotate(72deg) translate(0, -100px) scale(0.25, 1);
+  }
+  25% {
+    transform: rotate(72deg) translate(0, -100px) scale(0.25, 0.25) rotate(179deg);
+  }
+}
+.frame .center .circle .line.line-3 {
+  animation: line-3 10s ease-in-out infinite;
+}
+@keyframes line-3 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(0.01);
+  }
+  5% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  15% {
+    transform: rotate(108deg) translate(0, 0) scale(1);
+  }
+  20% {
+    transform: rotate(108deg) translate(0, -100px) scale(0.25, 1);
+  }
+  25% {
+    transform: rotate(108deg) translate(0, -100px) scale(0.25, 0.25) rotate(179deg);
+  }
+}
+.frame .center .circle .line.line-4 {
+  animation: line-4 10s ease-in-out infinite;
+}
+@keyframes line-4 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(0.01);
+  }
+  5% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  15% {
+    transform: rotate(144deg) translate(0, 0) scale(1);
+  }
+  20% {
+    transform: rotate(144deg) translate(0, -100px) scale(0.25, 1);
+  }
+  25% {
+    transform: rotate(144deg) translate(0, -100px) scale(0.25, 0.25) rotate(179deg);
+  }
+}
+.frame .center .circle .line.line-5 {
+  animation: line-5 10s ease-in-out infinite;
+}
+@keyframes line-5 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(0.01);
+  }
+  5% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  15% {
+    transform: rotate(180deg) translate(0, 0) scale(1);
+  }
+  20% {
+    transform: rotate(180deg) translate(0, -100px) scale(0.25, 1);
+  }
+  25% {
+    transform: rotate(180deg) translate(0, -100px) scale(0.25, 0.25) rotate(179deg);
+  }
+}
+.frame .center .circle .line.line-6 {
+  animation: line-6 10s ease-in-out infinite;
+}
+@keyframes line-6 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(0.01);
+  }
+  5% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  15% {
+    transform: rotate(216deg) translate(0, 0) scale(1);
+  }
+  20% {
+    transform: rotate(216deg) translate(0, -100px) scale(0.25, 1);
+  }
+  25% {
+    transform: rotate(216deg) translate(0, -100px) scale(0.25, 0.25) rotate(179deg);
+  }
+}
+.frame .center .circle .line.line-7 {
+  animation: line-7 10s ease-in-out infinite;
+}
+@keyframes line-7 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(0.01);
+  }
+  5% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  15% {
+    transform: rotate(252deg) translate(0, 0) scale(1);
+  }
+  20% {
+    transform: rotate(252deg) translate(0, -100px) scale(0.25, 1);
+  }
+  25% {
+    transform: rotate(252deg) translate(0, -100px) scale(0.25, 0.25) rotate(179deg);
+  }
+}
+.frame .center .circle .line.line-8 {
+  animation: line-8 10s ease-in-out infinite;
+}
+@keyframes line-8 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(0.01);
+  }
+  5% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  15% {
+    transform: rotate(288deg) translate(0, 0) scale(1);
+  }
+  20% {
+    transform: rotate(288deg) translate(0, -100px) scale(0.25, 1);
+  }
+  25% {
+    transform: rotate(288deg) translate(0, -100px) scale(0.25, 0.25) rotate(179deg);
+  }
+}
+.frame .center .circle .line.line-9 {
+  animation: line-9 10s ease-in-out infinite;
+}
+@keyframes line-9 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(0.01);
+  }
+  5% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  15% {
+    transform: rotate(324deg) translate(0, 0) scale(1);
+  }
+  20% {
+    transform: rotate(324deg) translate(0, -100px) scale(0.25, 1);
+  }
+  25% {
+    transform: rotate(324deg) translate(0, -100px) scale(0.25, 0.25) rotate(179deg);
+  }
+}
+.frame .center .circle .line.line-10 {
+  animation: line-10 10s ease-in-out infinite;
+}
+@keyframes line-10 {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(0.01);
+  }
+  5% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  15% {
+    transform: rotate(360deg) translate(0, 0) scale(1);
+  }
+  20% {
+    transform: rotate(360deg) translate(0, -100px) scale(0.25, 1);
+  }
+  25% {
+    transform: rotate(360deg) translate(0, -100px) scale(0.25, 0.25) rotate(179deg);
+  }
+}
