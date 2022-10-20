@@ -60,15 +60,15 @@ const unDone = ['Day51', 'Day57'];
 const Index = () => {
   return (
     <div className={style.layout}>
-      {days.map((day) => {
-        if (unDone.includes(day)) {
-        }
-        return (
-          <Button href={`/${day.toLocaleLowerCase()}`}>
-            {unDone.includes(day) ? `未完成` : day}
-          </Button>
-        );
-      })}
+      <div className={style.container}>
+        {days.map((day) => {
+          return (
+            <Button href={`/${day.toLocaleLowerCase()}`}>
+              {unDone.includes(day) ? `未完成` : day}
+            </Button>
+          );
+        })}
+      </div>
     </div>
   );
 };
