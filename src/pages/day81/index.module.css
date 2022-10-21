@@ -1,0 +1,111 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #733c3c;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: #9b59b6;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.frame .center .floor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 130px;
+  background-color: #fff;
+}
+.frame .center .ballMove {
+  position: absolute;
+  bottom: 130px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: ballMove 3s ease-out infinite;
+}
+.frame .center .ballMove .ballUp {
+  animation: ballUp 3s cubic-bezier(0, 0, 0.38, 1) infinite;
+}
+.frame .center .ballMove .ballDown {
+  animation: ballDown 3s cubic-bezier(0.38, 0, 1, 1) infinite;
+}
+.frame .center .ballMove .ball {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: gold;
+  border-radius: 50%;
+}
+@keyframes ballMove {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-450px);
+  }
+}
+@keyframes ballUp {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  35%,
+  50% {
+    transform: translateY(-105px);
+  }
+  65%,
+  80% {
+    transform: translateY(-168px);
+  }
+  90%,
+  100% {
+    transform: translateY(-190px);
+  }
+}
+@keyframes ballDown {
+  0% {
+    transform: translateY(-200px);
+  }
+  20%,
+  35% {
+    transform: translateY(0);
+  }
+  50%,
+  65% {
+    transform: translateY(105px);
+  }
+  80%,
+  95% {
+    transform: translateY(168px);
+  }
+  100% {
+    transform: translateY(190px);
+  }
+}
+@keyframes ball {
+  0%,
+  19%,
+  25%,
+  49%,
+  55%,
+  79%,
+  85%,
+  100% {
+    transform: scale(1);
+  }
+  20%,
+  80%,
+  50%,
+  80% {
+    transform: scale(1.1, 0.9);
+  }
+}
