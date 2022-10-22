@@ -1,0 +1,67 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #bdcedb;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    perspective: 350px;
+
+    #checkBox {
+      display: none;
+
+      &:checked ~ .button {
+        transform: rotateX(180deg);
+      }
+    }
+
+    .button {
+      position: absolute;
+      left: ((400px - 100px) / 2);
+      top: ((400px - 50px) / 2);
+      width: 100px;
+      height: 50px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+      border-radius: 25px;
+      transform-style: preserve-3d;
+      transition: all 0.3s ease-in-out;
+
+      .btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #000;
+        border-radius: 25px;
+        pointer-events: none;
+
+        &.btnFront {
+          color: rgb(59, 186, 190);
+          border-color: rgb(59, 186, 190);
+          background-color: #fff;
+          backface-visibility: hidden;
+        }
+
+        &.btnBack {
+          color: #fff;
+          border-color: #fff;
+          z-index: -1;
+          background-color: rgb(59, 186, 190);
+          transform: rotateX(-180deg);
+          backface-visibility: hidden;
+        }
+      }
+    }
+  }
+}

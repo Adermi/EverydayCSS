@@ -1,4 +1,5 @@
 import React from 'react';
+import cn from 'classnames';
 import _ from 'lodash';
 
 import style from './index.module.less';
@@ -8,11 +9,11 @@ const Index = () => {
   return (
     <Layout className={style.frame}>
       <div className={style.center}>
-        <div className={style.a}>a</div>
-        <div className={style.box}></div>
-        <div className={style.a}>a</div>
-        <div className={style.b}>b</div>
-        <div className={style.a}>b</div>
+        <input type="checkbox" value="btn" id={style.checkBox} />
+        <label for={style.checkBox} className={style.button}>
+          <div className={cn(style.btn, style.btnFront)}>SEND</div>
+          <div className={cn(style.btn, style.btnBack)}>OK</div>
+        </label>
       </div>
     </Layout>
   );
