@@ -1,0 +1,79 @@
+@ringNumber: 30;
+@stripeNumber: 25;
+@durTime: 4s;
+
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #1e3242;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    // background-color: #fff;
+    overflow: hidden;
+
+    .warp {
+      position: absolute;
+      left: 100px;
+      top: 100px;
+      width: 200px;
+      height: 200px;
+      // background-color: red;
+
+      .ring {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+
+        .stripe {
+          position: absolute;
+          width: 2px;
+          height: 20px;
+          left: ((200px - 2px) / 2);
+          top: ((200px - 20px) / 2);
+          background: #c3dcec;
+        }
+
+        each(range(@ringNumber), {
+          @timeOffset: (@value / @ringNumber) * @durTime * -1;
+
+          &.ring-@{value} {
+            animation: ring @durTime @timeOffset cubic-bezier(.98,.02,.97,.12) infinite both;
+
+
+            each(range(@stripeNumber), {
+             & .stripe-@{value} {
+                @degree: (@value / @stripeNumber * 360deg); // - (random()   10deg);
+                // @offset: 100px - (random()   40);
+                // transform: rotate(($degree)+deg) translate3d(0, ($offset)+px, 0) scaleY(($offset / 100));
+                transform: rotate(@degree) translateY(120px) scaleY(1);
+              } 
+            })
+          }
+        });
+      }
+    }
+  }
+}
+
+@keyframes ring {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(4);
+    opacity: 1;
+  }
+}
