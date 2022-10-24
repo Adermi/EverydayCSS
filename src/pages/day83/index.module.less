@@ -45,16 +45,6 @@
 
           &.ring-@{value} {
             animation: ring @durTime @timeOffset cubic-bezier(.98,.02,.97,.12) infinite both;
-
-
-            each(range(@stripeNumber), {
-             & .stripe-@{value} {
-                @degree: (@value / @stripeNumber * 360deg); // - (random()   10deg);
-                // @offset: 100px - (random()   40);
-                // transform: rotate(($degree)+deg) translate3d(0, ($offset)+px, 0) scaleY(($offset / 100));
-                transform: rotate(@degree) translateY(120px) scaleY(1);
-              } 
-            })
           }
         });
       }

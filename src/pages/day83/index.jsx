@@ -12,11 +12,22 @@ const Index = () => {
         <div className={style.warp}>
           {_.range(1, 31).map((item) => (
             <div className={cn(style.ring, style[`ring-${item}`])}>
-              {_.range(1, 26).map((item) => (
-                <div
-                  className={cn(style.stripe, style[`stripe-${item}`])}
-                ></div>
-              ))}
+              {_.range(1, 26).map((item, idx) => {
+                const degree = `${(idx / 25) * 360 - Math.random() * 10}`;
+                const offset = `${100 - Math.random() * 40}`;
+                const transform = {
+                  transform: `rotate(${degree}deg) translateY(${offset}px) scaleY(${
+                    offset / 100
+                  })`,
+                };
+
+                return (
+                  <div
+                    className={cn(style.stripe, style[`stripe-${item}`])}
+                    style={transform}
+                  ></div>
+                );
+              })}
             </div>
           ))}
         </div>
