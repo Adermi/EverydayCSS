@@ -1,0 +1,63 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #9b59b6;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+
+    .wave {
+      display: flex;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 2px;
+      transform: translateY(-50%);
+
+      .dot {
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: rgb(163, 163, 163);
+
+        each(range(200), {
+          &.dot-@{value} {
+            .mixin(@v) {
+              background-color: rgb(@v, 35, 163);
+            }
+            animation: e('dot-@{value}') 3s ease-in-out infinite both;
+            .mixin(@value)
+          }
+
+          @keyframes e('dot-@{value}') {
+            .mixin(@v) when(@v < 100) {
+              @offset: 0px + (@v * @v/ 70);
+            };
+
+            .mixin(@v) when(@v > 99) {
+              @offset: 0px + ((200 - @v) * (200 - @v) / 70);
+            };
+
+            .mixin(@value);
+
+            0%, 100% {
+              transform: translateY(@offset * -1);
+            }
+
+            50% {
+              transform: translateY(@offset);
+            }
+
+          }
+        });
+      }
+    }
+  }
+}

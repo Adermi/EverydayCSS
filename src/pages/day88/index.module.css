@@ -1,0 +1,100 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #2c3e50;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .candle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.frame .center .candle .base {
+  width: 60px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: inset -10px 0 0 0 #e0e5ff;
+}
+.frame .center .candle .candlestick {
+  width: 100px;
+  height: 5px;
+  background-color: #006eff;
+  border-radius: 3px;
+}
+.frame .center .candle .flame {
+  width: 4px;
+  height: 15px;
+  background-color: #ba928f;
+}
+.frame .center .candle .fire {
+  width: 16px;
+  height: 24px;
+  background-color: #ffad00;
+  border-radius: 8px 8px 8px 8px / 20px 20px 8px 8px;
+  animation: wind 15s ease-in-out infinite, size 20s ease-in-out infinite, flickr 5s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+@keyframes wind {
+  0%,
+  22%,
+  49%,
+  62%,
+  81%,
+  100% {
+    border-radius: 2px 14px 8px 8px / 20px 20px 8px 8px;
+  }
+  14%,
+  32%,
+  56%,
+  70%,
+  89% {
+    border-radius: 14px 2px 8px 8px / 20px 20px 8px 8px;
+  }
+}
+@keyframes size {
+  0%,
+  22%,
+  49%,
+  62%,
+  81%,
+  100% {
+    transform: scale(1, 1);
+  }
+  14%,
+  32%,
+  56%,
+  70%,
+  89% {
+    transform: scale(0.9, 1.2);
+  }
+}
+@keyframes flickr {
+  0%,
+  22%,
+  49%,
+  62%,
+  81%,
+  100% {
+    box-shadow: 0 0 20px 0 rgba(255, 202, 0, 0.7);
+  }
+  14%,
+  32%,
+  56%,
+  70%,
+  89% {
+    box-shadow: 0 0 20px 0 rgba(255, 202, 0, 0.8);
+  }
+}

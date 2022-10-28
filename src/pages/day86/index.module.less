@@ -1,0 +1,98 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #34495e;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+
+    .warp {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 200px;
+      height: 140px;
+      padding-top: 100px;
+      transform: translate(-50%, -50%);
+
+      &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        height: 10px;
+        background-color: #fff;
+        top: 0;
+        border-radius: 5px;
+      }
+
+      .ball {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        transform-origin: 50% -100px;
+
+        &::before {
+          position: absolute;
+          left: 50%;
+          bottom: 100%;
+          content: '';
+          width: 1px;
+          height: 100px;
+          background-color: #fff;
+          transform: translate(-50%, 0);
+        }
+
+        each(range(5), {
+          &.ball-@{value} {
+            left: (40px * (@value - 1));
+          }
+        });
+
+        &.ball-1 {
+          animation: ball-1 0.8s ease-out infinite alternate;
+        }
+
+        &.ball-2 {
+          animation: ball-1 0.8s ease-out infinite alternate;
+        }
+
+        &.ball-4 {
+          animation: ball-5 0.8s 0.8s ease-out infinite alternate;
+        }
+
+        &.ball-5 {
+          animation: ball-5 0.8s 0.8s ease-out infinite alternate;
+        }
+      }
+    }
+  }
+}
+
+@keyframes ball-1 {
+  0%,
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes ball-5 {
+  0%,
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
