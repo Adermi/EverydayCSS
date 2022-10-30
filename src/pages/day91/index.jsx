@@ -5,7 +5,7 @@ import _ from 'lodash';
 import style from './index.module.less';
 import Layout from '../../components/Layout';
 
-const arr = ['bottom', 'left', 'right', 'back', 'front', 'top', 'fill-top'];
+const arrV = ['bottom', 'left', 'right', 'back', 'front', 'top', 'fill-top'];
 
 const Index = () => {
   return (
@@ -13,7 +13,7 @@ const Index = () => {
       <div className={style.center}>
         <div className={style.container}>
           <div className={style.loader}>
-            {arr.map((item) => {
+            {arrV.map((item) => {
               return <div className={cn(style.plane, style[item])}></div>;
             })}
           </div>
