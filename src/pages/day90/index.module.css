@@ -1,0 +1,72 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: red;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .space {
+  height: 10px;
+}
+.frame .center .trigger {
+  position: relative;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  float: left;
+  z-index: 10;
+}
+.frame .center .lines {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.frame .center .lines .line {
+  margin: 19px 0;
+  height: 1px;
+  width: 400px;
+}
+.frame .center .lines .line .left,
+.frame .center .lines .line .right {
+  float: left;
+  height: 1px;
+  width: 200px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+  transition: all 0.3s linear;
+  transform: scale(0);
+}
+.frame .center .lines .line .right {
+  transform-origin: 100% 50%;
+}
+.frame .center .trigger-1:hover ~ .lines .line-1 .left {
+  transform: scaleX(-2 / 10);
+}
+.frame .center .trigger-1:hover ~ .lines .line-1 .right {
+  transform: scaleX(-2 / 10);
+}
+.frame .center .trigger-1:hover ~ .lines .line-0 .left,
+.frame .center .trigger-1:hover ~ .lines .line-2 .left {
+  transform: scaleX(-1 / 10);
+}
+.frame .center .trigger-1:hover ~ .lines .line-0 .right,
+.frame .center .trigger-1:hover ~ .lines .line-2 .right {
+  transform: scaleX(-1 / 10);
+}
+.frame .center .trigger-1:hover ~ .lines .line--1 .left,
+.frame .center .trigger-1:hover ~ .lines .line-3 .left {
+  transform: scaleX(0 / 10);
+}
+.frame .center .trigger-1:hover ~ .lines .line--1 .right,
+.frame .center .trigger-1:hover ~ .lines .line-3 .right {
+  transform: scaleX(0 / 10);
+}

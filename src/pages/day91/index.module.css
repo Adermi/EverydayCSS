@@ -1,0 +1,111 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #34495e;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 500px;
+}
+.frame .center .container .loader {
+  width: 120px;
+  height: 120px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  transform: rotateX(-25deg) rotateY(45deg);
+  transition: all 0.5s ease-in-out;
+}
+.frame .center .container .loader:hover {
+  transform: rotateX(-25deg) rotateY(45deg) translateY(-20px);
+}
+.frame .center .container .loader:hover .bottom {
+  box-shadow: -22px -22px 30px 0 rgba(0, 0, 0, 0.4) !important;
+}
+.frame .center .container .loader .plane {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.frame .center .container .loader .plane.bottom {
+  transform: rotateX(-90deg) translateZ(120px / 2);
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: -8px -8px 10px 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease-in-out;
+}
+.frame .center .container .loader .plane.left {
+  transform: rotateY(-90deg) translateZ(120px / 2);
+}
+.frame .center .container .loader .plane.left::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(46, 204, 113, 0.8);
+  animation: fill 4s ease-in-out infinite both alternate;
+  transform-origin: 50% 100%;
+}
+.frame .center .container .loader .plane.right {
+  transform: rotateY(90deg) translateZ(120px / 2);
+}
+.frame .center .container .loader .plane.back {
+  transform: rotateY(180deg) translateZ(120px / 2);
+}
+.frame .center .container .loader .plane.front {
+  transform: rotateY(0deg) translateZ(120px / 2);
+}
+.frame .center .container .loader .plane.front::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(46, 204, 113, 0.8);
+  animation: fill 4s ease-in-out infinite both alternate;
+  transform-origin: 50% 100%;
+}
+.frame .center .container .loader .plane.top {
+  transform: rotateX(90deg) translateZ(120px / 2);
+  opacity: 0.5;
+}
+.frame .center .container .loader .plane.fill-top {
+  background-color: rgba(46, 204, 113, 0.8);
+  animation: fill-top 4s ease-in-out infinite both alternate;
+}
+@keyframes fill {
+  0%,
+  25% {
+    transform: scaleY(0);
+  }
+  75%,
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes fill-top {
+  0%,
+  25% {
+    transform: rotateX(90deg) translateZ(120px / -2);
+  }
+  75%,
+  100% {
+    transform: rotateX(90deg) translateZ(59px);
+  }
+}

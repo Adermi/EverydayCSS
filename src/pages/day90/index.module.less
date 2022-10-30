@@ -1,0 +1,113 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: red;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+
+    .space {
+      height: 10px;
+    }
+
+    .trigger {
+      position: relative;
+      box-sizing: border-box;
+      width: 20px;
+      height: 20px;
+      float: left;
+      z-index: 10;
+    }
+
+    .lines {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      .line {
+        margin: 19px 0;
+        height: 1px;
+        width: 400px;
+
+        .left,
+        .right {
+          float: left;
+          height: 1px;
+          width: 200px;
+          background-color: #fff;
+          transform-origin: 0 50%;
+          transition: all 0.3s linear;
+          transform: scale(0);
+        }
+
+        .right {
+          transform-origin: 100% 50%;
+        }
+      }
+    }
+
+    .go(@i, @r, @c) when(@i <= (@r * @c)) {
+      @row: if(((@r * @c) < @i), @r + 1, @r);
+      @column: @i - ((@r - 1) * @c);
+      .trigger-@{i}:hover {
+
+        & ~ .lines .line-@{row} {
+          @scale: (@column - 3) / 10;
+          .left {
+            transform: scaleX(@scale);
+          }
+          @scale: (@column - (@column + 2 ) ) / 10;
+          .right {
+            transform: scaleX(@scale);
+          }
+
+        }
+
+        @row1T: @row + 1;
+        @row1F: @row - 1;
+
+        & ~ .lines .line-@{row1F},
+        & ~ .lines .line-@{row1T}{
+          @scale: (@column - 2) / 10;
+          .left {
+            transform: scaleX(@scale);
+          }
+          @scale: (@column - (@column + 1 ) ) / 10;
+          .right {
+            transform: scaleX(@scale);
+          }
+
+        }
+
+        @row2T: @row + 2;
+        @row2F: @row - 2;
+
+        & ~ .lines .line-@{row2F},
+        & ~ .lines .line-@{row2T}{
+          @scale: (@column - 1) / 10;
+          .left {
+            transform: scaleX(@scale);
+          }
+          @scale: (@column - @column ) / 10;
+          .right {
+            transform: scaleX(@scale);
+          }
+
+        }
+
+      }
+
+      .go((@i + 1), @row, @column)
+    }
+
+    .go(1, 1, 1);
+  }
+}
