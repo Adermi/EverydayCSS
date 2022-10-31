@@ -1,0 +1,200 @@
+@size: 10px;
+@max: 200 - (@size / 2);
+
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(138, 132, 132);
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+
+    .ball {
+      position: absolute;
+      top: @max;
+      left: @max;
+      width: @size;
+      height: @size;
+      border-radius: 50%;
+      background-color: #fff;
+
+      each(range(8), {
+        &.ball-@{value} {
+          animation: ~'ball-@{value}' 6s linear infinite;
+        }
+      });
+
+      each(range(9,16), {
+        &.ball-@{value} {
+          animation: ~'ball-@{value}' 6s linear infinite;
+        }
+      });
+    }
+  }
+}
+
+@keyframes ball-1 {
+  0%,
+  100% {
+    transform: translate(-195px, -195px);
+  }
+  50% {
+    transform: translate(0, 195px);
+  }
+}
+
+@keyframes ball-2 {
+  0%,
+  100% {
+    transform: translate(195px, -195px);
+  }
+  50% {
+    transform: translate(0, 195px);
+  }
+}
+
+@keyframes ball-3 {
+  0%,
+  100% {
+    transform: translate(195px, 195px);
+  }
+  50% {
+    transform: translate(0, -195px);
+  }
+}
+
+@keyframes ball-4 {
+  0%,
+  100% {
+    transform: translate(-195px, 195px);
+  }
+  50% {
+    transform: translate(0, -195px);
+  }
+}
+
+@keyframes ball-5 {
+  0%,
+  100% {
+    transform: translate(-195px, -195px);
+  }
+  50% {
+    transform: translate(195px, 0);
+  }
+}
+
+@keyframes ball-6 {
+  0%,
+  100% {
+    transform: translate(195px, -195px);
+  }
+  50% {
+    transform: translate(-195px, 0);
+  }
+}
+
+@keyframes ball-7 {
+  0%,
+  100% {
+    transform: translate(195px, 195px);
+  }
+  50% {
+    transform: translate(-195px, 0);
+  }
+}
+
+@keyframes ball-8 {
+  0%,
+  100% {
+    transform: translate(-195px, 195px);
+  }
+  50% {
+    transform: translate(195px, 0);
+  }
+}
+
+@keyframes ball-9 {
+  0%,
+  100% {
+    transform: translate(0, -195px);
+  }
+  50% {
+    transform: translate(195px, 0);
+  }
+}
+
+@keyframes ball-10 {
+  0%,
+  100% {
+    transform: translate(0, 195px);
+  }
+  50% {
+    transform: translate(195px, 0);
+  }
+}
+
+@keyframes ball-11 {
+  0%,
+  100% {
+    transform: translate(0, -195px);
+  }
+  50% {
+    transform: translate(-195px, 0);
+  }
+}
+
+@keyframes ball-12 {
+  0%,
+  100% {
+    transform: translate(0, 195px);
+  }
+  50% {
+    transform: translate(-195px, 0);
+  }
+}
+
+@keyframes ball-13 {
+  0%,
+  100% {
+    transform: translate(195px, 0);
+  }
+  50% {
+    transform: translate(0, 195px);
+  }
+}
+
+@keyframes ball-14 {
+  0%,
+  100% {
+    transform: translate(-195px, 0);
+  }
+  50% {
+    transform: translate(0, 195px);
+  }
+}
+
+@keyframes ball-15 {
+  0%,
+  100% {
+    transform: translate(195px, 0);
+  }
+  50% {
+    transform: translate(0, -195px);
+  }
+}
+
+@keyframes ball-16 {
+  0%,
+  100% {
+    transform: translate(-195px, 0);
+  }
+  50% {
+    transform: translate(0, -195px);
+  }
+}
