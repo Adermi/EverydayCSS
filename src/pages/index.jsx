@@ -65,6 +65,7 @@ let days = [
   'Day93',
   'Day101',
   'Day102',
+  'Day103',
   'Demo',
 ];
 
