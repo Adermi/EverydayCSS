@@ -1,0 +1,144 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(65, 78, 136);
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+
+    .lock {
+      box-sizing: content-box;
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      padding-top: 80px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      // background-color: red;
+
+      .hand {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 120px;
+        height: 130px;
+        background-color: #fff;
+        transform: translateX(-50%);
+        border-radius: 60px 60px 0 0;
+        box-shadow: inset 4px 4px 1px 0 rgba(255, 255, 255, 0.8),
+          inset -3px -2px 1px 0 rgba(0, 0, 0, 0.3),
+          4px 8px 12px 0 rgba(0, 0, 0, 0.2);
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 10px;
+          width: 100px;
+          height: 130px;
+          border-radius: 50px 50px 0 0;
+          background-color: rgb(65, 78, 136);
+          transform: translateX(-50%);
+          box-shadow: 4px 4px 1px 0 rgba(255, 255, 255, 0.8),
+            -3px -2px 1px 0 rgba(0, 0, 0, 0.3),
+            inset 4px 8px 12px 0 rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      .panel {
+        position: relative;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background-color: #fff;
+        z-index: 10;
+        box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.2),
+          inset 2px 4px 1px 0 rgba(255, 255, 255, 0.8),
+          inset -1px -2px 1px 0 rgba(0, 0, 0, 0.3);
+
+        cursor: pointer;
+
+        &:hover {
+          .dial {
+            transform: translate(-50%, -50%) rotate(360deg);
+          }
+        }
+
+        .dial {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 150px;
+          height: 150px;
+          background-color: #333;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+          transition: all 1.5s ease-in-out;
+
+          .needle {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 10px;
+            background-color: #ccc;
+            transform: translate(-50%, 0);
+            transform-origin: 50% 75px;
+
+            each(range(40), {
+              @idx: @value - 1;
+              @degree: (@idx / 40) * 360deg;
+              &.needle-@{idx} {
+                transform: translate(-50%, 0) rotate(@degree);
+              }
+            });
+          }
+
+          .needle:nth-child(5n + 1) {
+            height: 18px;
+            background-color: #fff;
+          }
+
+          .font {
+            position: absolute;
+            top: 17px;
+            left: 50%;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            transform-origin: 50% 58px;
+
+            each(range(8), {
+              @idx: @value - 1;
+              @degree: 360deg * (@idx / 8);
+
+              &.font-@{idx} {
+                transform: translateX(-50%) rotate(@degree);
+              }
+            });
+          }
+
+          .circle {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            box-shadow: inset 2px 4px 1px 0 rgb(255, 255, 255, 0.8),
+              inset -1px -2px 1px 0 rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
