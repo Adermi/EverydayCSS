@@ -32,6 +32,7 @@ const Index = () => {
       });
     },
     1000,
+    true,
     degrees
   );
 
@@ -40,29 +41,39 @@ const Index = () => {
       <div className={style.center}>
         <div className={style.dial}>
           <div className={style.lines}>
-            {_.range(60).map((item) => (
-              <div className={cn(style.line, style[`line-${item}`])}></div>
+            {_.range(60).map((item, idx) => (
+              <div
+                key={idx}
+                className={cn(style.line, style[`line-${item}`])}
+              ></div>
             ))}
-            <div className={style.needle}>
-              <div
-                className={cn(style.hour)}
-                style={{
-                  transform: `translate(-50%, -100%) rotate(${degrees.hourDegree}deg)`,
-                }}
-              ></div>
-              <div
-                className={cn(style.minute)}
-                style={{
-                  transform: `translate(-50%, -100%) rotate(${degrees.minuteDegree}deg)`,
-                }}
-              ></div>
-              <div
-                className={cn(style.second)}
-                style={{
-                  transform: `translate(-50%, -220px) rotate(${degrees.secondDegree}deg)`,
-                }}
-              ></div>
-            </div>
+          </div>
+          <div className={style.needle}>
+            <div
+              className={cn(style.hour)}
+              style={{
+                transform: `translate(-50%, -100%) rotate(${degrees.hourDegree}deg)`,
+              }}
+            ></div>
+            <div
+              className={cn(style.minute)}
+              style={{
+                transform: `translate(-50%, -100%) rotate(${degrees.minuteDegree}deg)`,
+              }}
+            ></div>
+            <div
+              className={cn(style.second)}
+              style={{
+                transform: `translate(-50%, -220px) rotate(${degrees.secondDegree}deg)`,
+              }}
+            ></div>
+          </div>
+          <div className={style.numbers}>
+            {[12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((item, index) => (
+              <div className={cn(style.number, style[`number-${index}`])}>
+                <div className={style.rotate}>{String(item)}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -351,3 +351,92 @@
   border-radius: 50%;
   transform: translate(-50%, -5px);
 }
+.frame .center .numbers {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .numbers .number {
+  position: absolute;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  bottom: 210px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transform-origin: 50% 240px;
+}
+.frame .center .numbers .number.number-0 {
+  transform: translate(-50%, 0) rotate(0deg);
+}
+.frame .center .numbers .number.number-0 .rotate {
+  transform: rotate(0deg);
+}
+.frame .center .numbers .number.number-1 {
+  transform: translate(-50%, 0) rotate(30deg);
+}
+.frame .center .numbers .number.number-1 .rotate {
+  transform: rotate(-30deg);
+}
+.frame .center .numbers .number.number-2 {
+  transform: translate(-50%, 0) rotate(60deg);
+}
+.frame .center .numbers .number.number-2 .rotate {
+  transform: rotate(-60deg);
+}
+.frame .center .numbers .number.number-3 {
+  transform: translate(-50%, 0) rotate(90deg);
+}
+.frame .center .numbers .number.number-3 .rotate {
+  transform: rotate(-90deg);
+}
+.frame .center .numbers .number.number-4 {
+  transform: translate(-50%, 0) rotate(120deg);
+}
+.frame .center .numbers .number.number-4 .rotate {
+  transform: rotate(-120deg);
+}
+.frame .center .numbers .number.number-5 {
+  transform: translate(-50%, 0) rotate(150deg);
+}
+.frame .center .numbers .number.number-5 .rotate {
+  transform: rotate(-150deg);
+}
+.frame .center .numbers .number.number-6 {
+  transform: translate(-50%, 0) rotate(180deg);
+}
+.frame .center .numbers .number.number-6 .rotate {
+  transform: rotate(-180deg);
+}
+.frame .center .numbers .number.number-7 {
+  transform: translate(-50%, 0) rotate(210deg);
+}
+.frame .center .numbers .number.number-7 .rotate {
+  transform: rotate(-210deg);
+}
+.frame .center .numbers .number.number-8 {
+  transform: translate(-50%, 0) rotate(240deg);
+}
+.frame .center .numbers .number.number-8 .rotate {
+  transform: rotate(-240deg);
+}
+.frame .center .numbers .number.number-9 {
+  transform: translate(-50%, 0) rotate(270deg);
+}
+.frame .center .numbers .number.number-9 .rotate {
+  transform: rotate(-270deg);
+}
+.frame .center .numbers .number.number-10 {
+  transform: translate(-50%, 0) rotate(300deg);
+}
+.frame .center .numbers .number.number-10 .rotate {
+  transform: rotate(-300deg);
+}
+.frame .center .numbers .number.number-11 {
+  transform: translate(-50%, 0) rotate(330deg);
+}
+.frame .center .numbers .number.number-11 .rotate {
+  transform: rotate(-330deg);
+}

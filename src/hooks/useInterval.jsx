@@ -1,26 +1,26 @@
 import React, { useEffect, useRef } from 'react';
 
-function useInterval(f, delay, deps) {
-  const fn = useRef(f);
+function useInterval(fn, delay, immediate, deps) {
+  const fnRef = useRef(fn);
   const timeRef = useRef(null);
-  const timeSliceRef = useRef(null);
+  const countRef = useRef(0);
+  const startTimeRef = useRef(null);
+  const diffRef = useRef(0);
+  let stopRef = useRef(false);
 
   useEffect(() => {
-    if (stop.current) return;
+    if (stopRef.current) return;
 
-    let diff = 0;
-
-    if (timeSliceRef.current == null) {
-      timeSliceRef.current = new Date().getTime();
-    } else {
-      const timeSlice = new Date().getTime();
-      const d = timeSlice - timeSliceRef.current - delay;
-      diff = d > 0 ? d : 0;
+    if (startTimeRef.current == null) {
+      startTimeRef.current = new Date().getTime();
     }
 
     timeRef.current = setTimeout(() => {
-      fn.current();
-    }, delay - diff);
+      countRef.current++;
+      diffRef.current =
+        new Date().getTime() - startTimeRef.current - countRef.current * delay;
+      fnRef.current();
+    }, delay - diffRef.current);
 
     return () => {
       if (timeRef.current) {
@@ -30,6 +30,7 @@ function useInterval(f, delay, deps) {
   }, [deps]);
 
   const clear = () => {
+    stopRef.current = true;
     if (timeRef.current) {
       clearTimeout(timeRef.current);
     }

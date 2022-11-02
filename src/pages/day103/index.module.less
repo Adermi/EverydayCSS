@@ -203,5 +203,37 @@
         }
       }
     }
+
+    .numbers {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      .number {
+        position: absolute;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #fff;
+        bottom: 210px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        transform-origin: 50% 240px;
+
+        each(range(12), {
+          @idx: @value - 1;
+          @degree: (@idx / 12) * 360deg;
+
+          &.number-@{idx} {
+            transform: translate(-50%, 0) rotate(@degree);
+
+            .rotate {
+            transform:  rotate(-@degree);
+            }
+          }
+        });
+      }
+    }
   }
 }
