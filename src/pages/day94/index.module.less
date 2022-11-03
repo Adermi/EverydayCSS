@@ -1,0 +1,131 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #e0f0e5;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+
+    .tree {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 130px;
+      height: 300px;
+      transform: translate(-50%, -50%);
+    }
+
+    .roots {
+      position: absolute;
+      left: ((130px - 4px) / 2);
+      top: 60px;
+      width: 4px;
+      height: 200px;
+      background-color: #e8c87e;
+      border-radius: 3px;
+      z-index: 2;
+      animation: scaleY 0.7s ease-in-out both;
+      transform-origin: 50% 100%;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 60px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #000;
+        transform: translateX(-50%);
+      }
+
+      .root {
+        position: absolute;
+        left: 4px;
+        width: 20px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #e8c87e;
+        transform-origin: -2px 50%;
+
+        each(range(5), {
+          @idx: @value - 1;
+          &.root-@{value} {
+            top: 28px  * @value;
+            width: 20px + (7 * @idx);
+          }
+        });
+      }
+
+      .root:nth-child(n + 1) {
+        transform: rotate(-40deg);
+      }
+
+      .root:nth-child(2n) {
+        transform: rotate(-140deg);
+      }
+    }
+
+    .leaf {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-style: solid;
+      border-width: 0 65px 200px 65px;
+      border-color: transparent transparent #e84624 transparent;
+      animation: scaleX 1s 0.8s ease-in-out both;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -65px;
+        border-style: solid;
+        border-width: 0 0 200px 65px;
+        border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent;
+      }
+    }
+  }
+}
+
+@keyframes scaleX {
+  0% {
+    transform: scaleX(0);
+  }
+
+  50% {
+    transform: scaleX(1.1);
+  }
+
+  80% {
+    transform: scaleX(0.9);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes scaleY {
+  0% {
+    transform: scaleY(0);
+  }
+
+  50% {
+    transform: scaleY(1.1);
+  }
+
+  80% {
+    transform: scaleY(0.9);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}

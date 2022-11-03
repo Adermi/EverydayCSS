@@ -1,4 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, {
+  useCallback,
+  useLayoutEffect,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import cn from 'classnames';
 import _ from 'lodash';
 import { useInterval } from '../../hooks/useInterval';
@@ -13,28 +19,26 @@ const Index = () => {
     secondDegree: 0,
   });
 
-  const clear = useInterval(
-    () => {
-      const time = new Date();
-      const hour = time.getHours();
-      const minute = time.getMinutes();
-      const second = time.getSeconds();
+  const updateTime = useCallback(function () {
+    const time = new Date();
+    const hour = time.getHours();
+    const minute = time.getMinutes();
+    const second = time.getSeconds();
 
-      // 时 1-24
-      const hourDegree = (hour / 12) * 360;
-      const minuteDegree = (minute / 60) * 360;
-      const secondDegree = (second / 60) * 360;
+    // 时 1-24
+    const hourDegree = (hour / 12) * 360;
+    const minuteDegree = (minute / 60) * 360;
+    const secondDegree = (second / 60) * 360;
 
-      setDegrees({
-        hourDegree,
-        minuteDegree,
-        secondDegree,
-      });
-    },
-    1000,
-    true,
-    degrees
-  );
+    setDegrees({
+      hourDegree,
+      minuteDegree,
+      secondDegree,
+    });
+  });
+
+  useEffect(updateTime, []);
+  const clear = useInterval(updateTime, 1000, true, degrees);
 
   return (
     <Layout className={style.frame}>
@@ -54,13 +58,17 @@ const Index = () => {
               style={{
                 transform: `translate(-50%, -100%) rotate(${degrees.hourDegree}deg)`,
               }}
-            ></div>
+            >
+              <div className={style.circle}></div>
+            </div>
             <div
               className={cn(style.minute)}
               style={{
                 transform: `translate(-50%, -100%) rotate(${degrees.minuteDegree}deg)`,
               }}
-            ></div>
+            >
+              <div className={style.circle}></div>
+            </div>
             <div
               className={cn(style.second)}
               style={{
