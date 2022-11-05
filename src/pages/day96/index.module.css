@@ -1,0 +1,112 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: red;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .down {
+  position: relative;
+  animation: down 1.6s ease-in infinite both;
+}
+.frame .center .down .square {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+}
+.frame .center .down .up {
+  animation: up 1.6s ease-in-out infinite both;
+}
+.frame .center .down .up .squeeze {
+  transform-origin: 50% 100%;
+  animation: squeeze 1.6s cubic-bezier(0.72, 0.03, 0.28, 0.97) infinite both;
+}
+.frame .center .down .up .squeeze .rotate-in {
+  animation: rotate-in 1.6s ease-out infinite both;
+}
+.frame .center .down .up .squeeze .rotate-in .rotate-out {
+  animation: rotate-out 1.6s ease-in infinite both;
+}
+.frame .center .shadow {
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.2);
+  animation: shadow 1.6s ease-in-out infinite both;
+  z-index: -1;
+}
+@keyframes down {
+  0% {
+    transform: translateY(-100px);
+  }
+  20%,
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes up {
+  0%,
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+@keyframes squeeze {
+  0%,
+  4% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.8, 0.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rotate-in {
+  0% {
+    transform: rotate(-135deg);
+  }
+  20%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-out {
+  0%,
+  80% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+@keyframes shadow {
+  0%,
+  100% {
+    transform: scaleX(0.5);
+  }
+  45%,
+  50% {
+    transform: scaleX(1.8);
+  }
+}
