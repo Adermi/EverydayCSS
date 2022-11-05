@@ -1,0 +1,129 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(181, 232, 236);
+
+  .pig {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .head {
+      width: 160px;
+      height: 160px;
+      background-color: #f7949a;
+      border-radius: 50%;
+
+      .ear {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: -5px;
+        background-color: #ffb7bc;
+        border: 7px solid #f7949a;
+        z-index: -1;
+        &-l {
+          left: 10px;
+          border-radius: 15px 0 0 0;
+          transform: rotate(-12deg) skewY(27deg);
+        }
+
+        &-r {
+          right: 10px;
+          border-radius: 0 15px 0 0;
+          transform: rotate(12deg) skewY(-27deg);
+        }
+      }
+
+      .eye {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        bottom: 75px;
+        animation: eyes 10s linear infinite;
+        transform-origin: 50%, 50%;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 5px;
+          height: 5px;
+          background-color: #000;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+        }
+
+        &-l {
+          left: 35px;
+        }
+
+        &-r {
+          right: 35px;
+        }
+      }
+
+      .noses {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        width: 60px;
+        height: 50px;
+        background-color: #ffb7bc;
+        transform: translateX(-50%);
+        border-radius: e('100px / 80px');
+
+        .nose {
+          position: absolute;
+          top: 10px;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #ce666d;
+
+          &-l {
+            left: 10px;
+          }
+
+          &-r {
+            right: 10px;
+          }
+        }
+      }
+
+      .piao {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: -80px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #a51385;
+      }
+    }
+  }
+}
+
+@keyframes eyes {
+  0%,
+  23%,
+  25%,
+  65%,
+  67%,
+  89%,
+  91%,
+  100% {
+    transform: scaleY(1);
+  }
+  24%,
+  66%,
+  90% {
+    transform: scaleY(0);
+  }
+}

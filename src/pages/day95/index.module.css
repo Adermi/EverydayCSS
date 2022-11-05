@@ -1,0 +1,115 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #b5e8ec;
+}
+.frame .pig {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .pig .head {
+  width: 160px;
+  height: 160px;
+  background-color: #f7949a;
+  border-radius: 50%;
+}
+.frame .pig .head .ear {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -5px;
+  background-color: #ffb7bc;
+  border: 7px solid #f7949a;
+  z-index: -1;
+}
+.frame .pig .head .ear-l {
+  left: 10px;
+  border-radius: 15px 0 0 0;
+  transform: rotate(-12deg) skewY(27deg);
+}
+.frame .pig .head .ear-r {
+  right: 10px;
+  border-radius: 0 15px 0 0;
+  transform: rotate(12deg) skewY(-27deg);
+}
+.frame .pig .head .eye {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  bottom: 75px;
+  animation: eyes 10s linear infinite;
+  transform-origin: 50%, 50%;
+}
+.frame .pig .head .eye::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.frame .pig .head .eye-l {
+  left: 35px;
+}
+.frame .pig .head .eye-r {
+  right: 35px;
+}
+.frame .pig .head .noses {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  width: 60px;
+  height: 50px;
+  background-color: #ffb7bc;
+  transform: translateX(-50%);
+  border-radius: 100px / 80px;
+}
+.frame .pig .head .noses .nose {
+  position: absolute;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ce666d;
+}
+.frame .pig .head .noses .nose-l {
+  left: 10px;
+}
+.frame .pig .head .noses .nose-r {
+  right: 10px;
+}
+.frame .pig .head .piao {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: -80px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #a51385;
+}
+@keyframes eyes {
+  0%,
+  23%,
+  25%,
+  65%,
+  67%,
+  89%,
+  91%,
+  100% {
+    transform: scaleY(1);
+  }
+  24%,
+  66%,
+  90% {
+    transform: scaleY(0);
+  }
+}
