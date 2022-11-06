@@ -1,0 +1,176 @@
+@personalColor: gold;
+
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+
+    .personal {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      .head {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: @personalColor;
+      }
+
+      .body {
+        position: relative;
+        .arms {
+          .arm {
+            position: absolute;
+            top: -100px;
+            width: 30px;
+            height: 20px;
+            background-color: @personalColor;
+
+            &::before {
+              content: '';
+              position: absolute;
+              left: -10px;
+              top: 0;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: @personalColor;
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              right: -10px;
+              top: 0;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: @personalColor;
+            }
+          }
+
+          .arm-r {
+            right: -30px;
+            top: 0px;
+            transform-origin: 0% 10px;
+            transform: rotate(5deg);
+            animation: arm 5s ease-in-out infinite both alternate;
+          }
+
+          .arm-l {
+            left: -30px;
+            top: 0px;
+            transform-origin: 100% 10px;
+            transform: rotate(-65deg);
+          }
+
+          .hand {
+            position: absolute;
+            width: 30px;
+            height: 20px;
+            background-color: @personalColor;
+
+            &::before {
+              content: '';
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              left: calc(100% - 10px);
+              background-color: @personalColor;
+            }
+
+            &.hand-r {
+              left: 100%;
+              transform-origin: 0% 50%;
+              transform: rotate(25deg);
+              animation: hand 5s ease-in-out infinite both alternate;
+            }
+
+            &.hand-l {
+              transform-origin: 0% 50%;
+              transform: rotate(160deg);
+            }
+          }
+        }
+
+        .legs {
+          position: relative;
+          display: flex;
+          gap: 2px;
+
+          .leg {
+            position: relative;
+            width: 30px;
+            height: 200px;
+            background-color: @personalColor;
+
+            &::before {
+              content: '';
+              position: absolute;
+              bottom: -15px;
+              left: 0;
+              width: 30px;
+              height: 30px;
+              background-color: @personalColor;
+              border-radius: 50%;
+            }
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 10px;
+            height: 120px;
+            transform: translateX(-50%);
+            background-color: @personalColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes hand {
+  0%,
+  50%,
+  100% {
+    transform: rotate(-120deg);
+  }
+
+  25%,
+  75% {
+    transform: rotate(-70deg);
+  }
+}
+
+@keyframes arm {
+  0%,
+  50%,
+  100% {
+    transform: rotate(10deg);
+  }
+
+  25%,
+  75% {
+    transform: rotate(25deg);
+  }
+}
