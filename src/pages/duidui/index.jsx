@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import _ from 'lodash';
 
-import style from './index.module.less';
-import Layout from '../../components/Layout';
+// import style from './index.module.less';
+// import Layout from '../../components/Layout';
 
 const Index = () => {
   useEffect(() => {
