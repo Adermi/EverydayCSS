@@ -1,5 +1,6 @@
 .layout {
   position: relative;
+  padding-right: calc(100vw - 100%);
   width: 100vw;
   height: 100vh;
   background: linear-gradient(90deg, #e91e63 0%, #2196f3 100%);

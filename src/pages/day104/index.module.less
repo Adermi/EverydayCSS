@@ -1,0 +1,60 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(219, 126, 126);
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 800px;
+
+    .track-btn {
+      position: relative;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 50px;
+      padding: 10px 20px;
+      background-color: #000;
+      overflow: hidden;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        --size: 0;
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        width: var(--size);
+        height: var(--size);
+        transform: translate(-50%, -50%);
+        transition: width 0.2s ease, height 0.2s ease;
+
+        background-image: radial-gradient(
+          circle closest-side,
+          #09f,
+          transparent
+        );
+      }
+
+      &:hover::before {
+        --size: 400px;
+      }
+    }
+
+    .card {
+      position: absolute;
+      top: 100px;
+      left: -80px;
+      width: 400px;
+      height: 100px;
+      background-color: #000;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      transform-style: preserve-3d;
+    }
+  }
+}

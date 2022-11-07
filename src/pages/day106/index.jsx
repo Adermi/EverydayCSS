@@ -417,12 +417,7 @@ const Index = () => {
     })(window, document);
   }, []);
 
-  return (
-    // <Layout className={style.frame}>
-
-    // </Layout>
-    <div></div>
-  );
+  return <div></div>;
 };
 
 export default Index;

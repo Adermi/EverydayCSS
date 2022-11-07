@@ -1,0 +1,59 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(223, 126, 126);
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+
+    .bruce {
+      transform: perspective(800px);
+      transform-style: preserve-3d;
+    }
+    .parallax-btn {
+      position: relative;
+      width: 400px;
+      height: 100px;
+      cursor: pointer;
+      user-select: none;
+      line-height: 50px;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 4px;
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        box-shadow: 0 2px 5px rgba(#000, 0.2);
+        will-change: transform;
+        transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0))
+          rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
+        transition: box-shadow 500ms ease, transform 200ms ease;
+      }
+      &::after {
+        display: inline-block;
+        position: relative;
+        font-weight: bold;
+        content: attr(data-name);
+        will-change: transform;
+        transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0))
+          rotateY(var(--ry, 0));
+        transition: transform 200ms ease;
+      }
+      &:hover::before {
+        box-shadow: 0 5px 15px rgba(#000, 0.3);
+      }
+    }
+  }
+}
