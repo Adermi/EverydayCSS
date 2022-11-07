@@ -1,14 +1,9 @@
 import React, { useEffect } from 'react';
-import _ from 'lodash';
-
-// import style from './index.module.less';
-// import Layout from '../../components/Layout';
 
 const Index = () => {
   useEffect(() => {
     (function (window, document, undefined) {
       'use strict';
-      console.log(66);
 
       // simple requestAnimationFrame polyfill.
       window.requestAnimFrame = (function () {
@@ -279,143 +274,148 @@ const Index = () => {
         ctx.restore();
       };
 
-      loadAllImages(function (loadedAssets, errorMessage) {
-        if (typeof errorMessage !== 'string') {
-          var c = new Canvas(),
-            ctx = c.context,
-            cx = c.width / 2,
-            cy = c.height / 2,
-            i,
-            p = [],
-            cds = scale(
-              loadedAssets.doge.width,
-              loadedAssets.doge.height,
-              160,
-              160
-            ); // center doge size scaled down
-
-          // dogeSmallWidth and dogeSmallHeight
-          var dsw = loadedAssets.dogeSmall.width,
-            dsh = loadedAssets.dogeSmall.height;
-
-          // generate all the doge particles
-          for (i = 0; i < 230; i++) {
-            var randomSize = rand(10, 70),
-              size = scale(dsw, dsh, randomSize, randomSize);
-
-            p.push(new HeartParticle(i, size, cx, cy, loadedAssets.dogeSmall));
-          }
-
-          // a bunch of text that periodically appears, at random.
-          p.push(new DogeText(cx, cy, 'wow'));
-          p.push(
-            new DogeText(
-              cx,
-              cy,
-              'many love',
-              45,
-              50,
-              -100,
-              new RGB(255, 0, 255)
-            )
-          );
-          p.push(
-            new DogeText(
-              cx,
-              cy,
-              'such faces',
-              -55,
-              -220,
-              -110,
-              new RGB(255, 255, 0)
-            )
-          );
-          p.push(
-            new DogeText(
-              cx,
-              cy,
-              'many trippy',
-              55,
-              160,
-              -160,
-              new RGB(0, 255, 0)
-            )
-          );
-          p.push(
-            new DogeText(
-              cx,
-              cy,
-              'such dark',
-              -12,
-              260,
-              -20,
-              new RGB(0, 100, 255)
-            )
-          );
-          p.push(
-            new DogeText(
-              cx,
-              cy,
-              'many heart',
-              50,
-              -180,
-              110,
-              new RGB(255, 100, 0)
-            )
-          );
-          p.push(
-            new DogeText(
-              cx,
-              cy,
-              'much doge',
-              -50,
-              140,
-              140,
-              new RGB(0, 255, 100)
-            )
-          );
-
-          window.addEventListener('resize', function () {
-            // make sure the canvas fits snuggly into the window.
-            c.fit();
-
-            var i,
+      window.addEventListener('load', function () {
+        // loadAllImages and only if it succeeds, proceed.
+        loadAllImages(function (loadedAssets, errorMessage) {
+          if (typeof errorMessage !== 'string') {
+            var c = new Canvas(),
+              ctx = c.context,
               cx = c.width / 2,
-              cy = c.height / 2;
+              cy = c.height / 2,
+              i,
+              p = [],
+              cds = scale(
+                loadedAssets.doge.width,
+                loadedAssets.doge.height,
+                160,
+                160
+              ); // center doge size scaled down
 
-            // make sure all objects know about the new center.
-            for (i in p) p[i].position(cx, cy);
-          });
+            // dogeSmallWidth and dogeSmallHeight
+            var dsw = loadedAssets.dogeSmall.width,
+              dsh = loadedAssets.dogeSmall.height;
 
-          (function anim() {
-            requestAnimFrame(anim);
+            // generate all the doge particles
+            for (i = 0; i < 230; i++) {
+              var randomSize = rand(10, 70),
+                size = scale(dsw, dsh, randomSize, randomSize);
 
-            var i,
-              cx = c.width / 2,
-              cy = c.height / 2;
+              p.push(
+                new HeartParticle(i, size, cx, cy, loadedAssets.dogeSmall)
+              );
+            }
 
-            // clear the canvas
-            c.clear(0.7);
-
-            // step and render all HeartParticles and texts
-            for (i in p) p[i].step();
-            for (i in p) p[i].render(ctx);
-
-            // render the main doge, the doge that is tripping.
-            ctx.drawImage(
-              loadedAssets.doge,
-              cx - cds.w / 2 - 10,
-              cy - cds.h / 2,
-              cds.w,
-              cds.h
+            // a bunch of text that periodically appears, at random.
+            p.push(new DogeText(cx, cy, 'wow'));
+            p.push(
+              new DogeText(
+                cx,
+                cy,
+                'many love',
+                45,
+                50,
+                -100,
+                new RGB(255, 0, 255)
+              )
             );
-          })();
-        } else {
-          alert(errorMessage);
-        }
+            p.push(
+              new DogeText(
+                cx,
+                cy,
+                'such faces',
+                -55,
+                -220,
+                -110,
+                new RGB(255, 255, 0)
+              )
+            );
+            p.push(
+              new DogeText(
+                cx,
+                cy,
+                'many trippy',
+                55,
+                160,
+                -160,
+                new RGB(0, 255, 0)
+              )
+            );
+            p.push(
+              new DogeText(
+                cx,
+                cy,
+                'such dark',
+                -12,
+                260,
+                -20,
+                new RGB(0, 100, 255)
+              )
+            );
+            p.push(
+              new DogeText(
+                cx,
+                cy,
+                'many heart',
+                50,
+                -180,
+                110,
+                new RGB(255, 100, 0)
+              )
+            );
+            p.push(
+              new DogeText(
+                cx,
+                cy,
+                'much doge',
+                -50,
+                140,
+                140,
+                new RGB(0, 255, 100)
+              )
+            );
+
+            window.addEventListener('resize', function () {
+              // make sure the canvas fits snuggly into the window.
+              c.fit();
+
+              var i,
+                cx = c.width / 2,
+                cy = c.height / 2;
+
+              // make sure all objects know about the new center.
+              for (i in p) p[i].position(cx, cy);
+            });
+
+            (function anim() {
+              requestAnimFrame(anim);
+
+              var i,
+                cx = c.width / 2,
+                cy = c.height / 2;
+
+              // clear the canvas
+              c.clear(0.7);
+
+              // step and render all HeartParticles and texts
+              for (i in p) p[i].step();
+              for (i in p) p[i].render(ctx);
+
+              // render the main doge, the doge that is tripping.
+              ctx.drawImage(
+                loadedAssets.doge,
+                cx - cds.w / 2 - 10,
+                cy - cds.h / 2,
+                cds.w,
+                cds.h
+              );
+            })();
+          } else {
+            alert(errorMessage);
+          }
+        });
       });
     })(window, document);
-  }, []);
+  });
 
   return <div></div>;
 };
