@@ -111,6 +111,22 @@ const Index = () => {
                   transform={item.gTranslate}
                   className={cn(style.group, style[`group-${i}`])}
                 >
+                  <defs>
+                    <filter id="glow" x="0" y="0" width="200%" height="200%">
+                      <feOffset
+                        result="offOut"
+                        in="SourceAlpha"
+                        dx="20"
+                        dy="20"
+                      />
+                      <feGaussianBlur
+                        result="blurOut"
+                        in="offOut"
+                        stdDeviation="10"
+                      />
+                      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                    </filter>
+                  </defs>
                   <path d={item.path} transform={item.pathTranslate}></path>
                 </g>
               );
