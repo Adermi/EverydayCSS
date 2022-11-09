@@ -1,0 +1,42 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #000;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .groups {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  filter: drop-shadow(0px 0px 5px #f1f4f5);
+}
+@keyframes fontChange {
+  0%,
+  30%,
+  32%,
+  34%,
+  36%,
+  38%,
+  40% {
+    stroke: #1a1e24;
+    filter: drop-shadow(0px 0px 5px #1a1e24);
+  }
+  31%,
+  33%,
+  35%,
+  37%,
+  39%,
+  41%,
+  100% {
+    stroke: #f1f4f5;
+    filter: drop-shadow(0px 0px 5px #f1f4f5);
+  }
+}

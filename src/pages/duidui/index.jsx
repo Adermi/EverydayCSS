@@ -1,423 +1,125 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import cn from 'classnames';
+import _, { transform } from 'lodash';
+
+import style from './index.module.less';
+import Layout from '../../components/Layout';
+
+const groups = [
+  {
+    gTranslate: 'translate(77.15 118.01)',
+    pathTranslate: 'translate(-69.77 -87.81)',
+    path: 'M57.016 79.757H64.4q2.013 0 4.027.67 2.013.672 3.355 1.343 1.343.671 2.35.671 1.006 0 1.677.336.671.335 1.007.671.336.336 1.007.671.67.336.67.671v.671q0 .336.672.672.671.335 1.007.67.335.336.335 1.007v2.349q0 .336.336.672.335.335.335.67 0 .336.336.672l.671.671q.336.336.336.671v2.35',
+  },
+  {
+    gTranslate: 'translate(29.16 150.56)',
+    pathTranslate: 'translate(-21.78 -120.36)',
+    path: 'M25.474 104.588V117.005q0 .336-.336.671-.335.336-.335 1.007 0 .671-.336 1.007-.336.335-.336 1.006t-.335 1.007q-.336.336-.336 1.007v2.013q0 .671-.335 1.007-.336.335-.671.335-.336 0-.336.336t-.336.671q-.335.336-.335 1.007 0 .671-.336 1.007-.335.335-.67.335-.336 0-.336.671t-.336.671q-.336 0-.336.672 0 .67-.335 1.006-.336.336-.336.671v1.342q0 .336-.335 1.007l-.337.673',
+  },
+  {
+    gTranslate: 'translate(88.56 157.27)',
+    pathTranslate: 'translate(-81.18 -127.07)',
+    path: 'M32.855 120.025H46.28q2.013 0 4.362-.335 2.35-.336 4.363-.672 2.013-.335 4.362-.335H85.205q.671 0 1.342-.336.672-.335 1.678-.335 1.007 0 1.678-.336.671-.335 1.342-.335h3.356q.671 0 1.342-.336.672-.336 1.343-.336h1.342q.671 0 1.007-.335.335-.336.67-.336h1.008q.67 0 1.342-.335.671-.336 1.342-.336t1.342-.335q.672-.336 1.343-.336h1.342q.671 0 1.342-.336.671-.335 1.343-.335h3.691q1.007 0 2.013-.336 1.007-.335 1.678-.335h4.027q.671 0 1.678-.336 1.007-.335 1.678-.335.67 0 1.006-.336.336-.336.672-.336h2.012q.337 0 .337.672v1.677q0 .336-.336 1.007-.336.671-.336 1.007 0 .335-.335.671-.336.336-.671.336-.336 0-.336.335 0 .336-.335.671-.336.336-.336.671v1.342q0 .336-.336.672-.335.335-.335.671v1.342q0 .336-.336.671-.335.336-.335.672v1.342q0 .335-.336.335-.335 0-.335.672v1.006q0 .336-.336.336t-.336.671q0 .671-.335 1.342-.336.671-.336 1.007v1.342q0 .336-.335.671-.336.336-.336.672v2.013q0 .336-.335.671-.336.336-.336.671v1.343q0 .335-.336.335-.335 0-.335.336v.67q0 .336-.336.672-.335.336-.67 1.007l-.337.672',
+  },
+  {
+    gTranslate: 'translate(76.82 185.8)',
+    pathTranslate: 'translate(-69.43 -155.6)',
+    path: 'M29.5 156.267H80.172q1.006 0 1.678-.336.67-.335 1.006-.67.336-.336.671-.336H106.682q.67 0 .67.335 0 .336.336.336H109.367',
+  },
+  {
+    gTranslate: 'translate(79.5 217.68)',
+    pathTranslate: 'translate(-72.12 -187.47)',
+    path: 'M70.44 130.762V132.106q0 .67.336 1.006.335.336.335.672v25.838q0 1.343.336 3.02.335 1.678.335 3.692v5.369q0 1.342.336 2.013.336.672.336 1.678 0 1.007.335 1.343.336.335.671 1.342.336 1.007.336 1.342v25.839q0 .671-.336 1.342-.335.672-.335 1.343V212.978q0 .336-.336 1.007-.335.671-.335 1.342v3.02q0 .336-.336 1.007-.336.671-.336 1.678v7.718q0 .671-.335 1.007-.336.335-.671 1.342-.336 1.007-.336 1.342V244.187',
+  },
+  {
+    gTranslate: 'translate(47.96 224.72)',
+    pathTranslate: 'translate(-40.57 -194.52)',
+    path: 'M57.018 172.373v.337q0 .335-.672 1.006-.671.672-1.007 1.343-.335.67-1.006 1.006-.671.336-1.343 1.007l-1.006 1.007-1.007 1.007-1.342 1.342q-.671.671-1.343 1.678-.67 1.006-1.342 1.678-.671.67-.671 1.006 0 .336-.671.671-.671.336-1.007.672l-.671.67q-.336.336-.671 1.007-.336.672-1.007 1.343-.671.67-1.007 1.678-.335 1.006-1.342 2.013-1.007 1.007-1.007 1.678t-.67 1.007q-.672.335-1.007 1.006l-.672 1.343q-.335.67-.67 1.006-.336.336-.672 1.007-.335.671-.335 1.342t-.336 1.007l-.671.671-.671.671-.671.671q-.336.336-.336.672 0 .335-.335.67l-.672.672q-.335.335-.335.67 0 .337-.336.672-.335.336-.335 1.007 0 .67-.671 1.006-.672.336-.672 1.007 0 .671-.335.671-.336 0-.671.671-.336.672-.336 1.007 0 .336-.335.336-.336 0-.336.67 0 .672-.336.672-.335 0-.67.336-.336.335-.336.67 0 .336-.671.672l-.673.336',
+  },
+  {
+    gTranslate: 'translate(105.68 226.4)',
+    pathTranslate: 'translate(-98.29 -196.2)',
+    path: 'M86.547 174.387V176.065q0 1.007.336 1.343.336.335.671 1.342.336 1.007.671 1.678.336.671 1.007 1.678.671 1.006 1.007 2.013.335 1.007 1.006 1.678.672.671 1.007 1.342.336.671.336 1.343 0 .67.335 1.677.336 1.007.671 1.678.336.671 1.007 1.343l1.007 1.006.671.671q.336.336.336.672 0 .335.67.67.672.336.672 1.007 0 .672.335 1.007.336.336.672 1.342.335 1.007.335 1.343 0 .335.671 1.006l1.007 1.007q.336.336.336.671 0 .336.335.336.336 0 .336.67v1.008q0 .335.335.335.336 0 .336.336 0 .335.335.67.336.337.336.672v.671q0 .336.336.671.335.336.67 1.007.336.671.672 1.007l.671.67q.336.336.336.672v.671q0 .336.335.671.336.336.336.671 0 .336.335.336.336 0 .336.336 0 .335.335.67.336.336.672.336.335 0 .335.336v.671q0 .336.671.671l.672.337',
+  },
+  {
+    gTranslate: 'translate(198.63 174.39)',
+    pathTranslate: 'translate(-197.25 -144.19)',
+    path: 'M146.278 144.857h84.229q.336 0 .671-.335.336-.336.672-.336h2.012q.336 0 .336-.335 0-.336.336-.336H236.213',
+  },
+  {
+    gTranslate: 'translate(176.48 189.49)',
+    pathTranslate: 'translate(-169.1 -159.29)',
+    path: 'M191.245 82.44V83.784q0 .67.336 2.013.336 1.342.336 4.027V110.294q0 1.006-.336 1.677-.336.672-.671 1.678-.336 1.007-.336 2.35 0 1.342-.67 3.355l-1.343 4.027q-.671 2.013-1.342 5.033-.672 3.02-1.007 4.698-.336 1.678-1.007 3.02-.67 1.343-1.007 2.685-.335 1.342-.335 2.685 0 1.342-.671 2.684-.671 1.343-1.007 2.685l-.671 2.684-.671 2.685q-.336 1.342-1.342 3.356-1.007 2.013-1.343 3.02-.335 1.006-.67 2.349-.336 1.342-.672 2.013-.336.671-.671 2.35-.336 1.677-.336 2.348 0 .671-.67 1.678-.672 1.007-1.008 2.013-.335 1.007-.335 1.678t-.336 1.678q-.335 1.007-.67 1.342-.336.336-.672 1.007-.336.671-.336 1.007 0 .335-.335.671-.336.336-.671 1.007-.336.67-.671 1.006l-.672.672q-.335.335-.67 1.342-.336 1.007-.336 1.342 0 .336-.671 1.342-.672 1.007-1.678 2.35-1.007 1.342-1.007 1.677 0 .336-.671 1.007l-1.007 1.007q-.335.335-.335 1.006 0 .672-.336 1.343l-.671 1.342-.671 1.342q-.336.671-.671 1.678-.336 1.007-.336 1.678t-.336 1.007q-.335.335-.67 1.006-.336.672-.336 1.007v1.342q0 .336-.336 1.007-.335.671-.671 1.007-.336.335-.336 1.007 0 .67-.335 1.006-.336.336-.336.671v1.007q0 .671-.335 1.342l-.671 1.343q-.336.67-.672 1.006-.335.336-.335.671 0 .336-.336 1.007-.335.671-.335 1.007 0 .335-.336 1.342-.335 1.007-.335 1.342v1.007q0 .671-.672 1.007-.67.335-1.006 1.007-.336.67-.336 1.677 0 1.007-.335 1.343l-.672.67q-.335.336-.67 1.008-.336.67-.336 1.006 0 .336-.336 1.007l-.671 1.342q-.336.671-.336 1.007 0 .336-.335 1.007-.336.67-.336 1.342 0 .671-.335 1.007-.336.335-.671 1.006l-.337.673',
+  },
+  {
+    gTranslate: 'translate(212.72 224.05)',
+    pathTranslate: 'translate(-205.34 -193.85)',
+    path: 'M187.219 154.252V157.945q0 .335.335 1.006l.671 1.343q.336.67.336 1.006v.671q0 .336.335.672.336.335.336.67v11.41q0 .336.336 1.007.335.671.67 1.007.336.335.336.67V180.093q0 .336.336.671.335.336.335 1.007 0 .671.336 1.007.336.335.671 1.007.336.67.336 1.342v1.007q0 .335.335 1.342.336 1.007.671 1.678l.672 1.342q.335.671.335 1.342t.336 1.343q.335.67.67 1.006.336.336.672 1.007.336.671.671 1.007.336.335.671 1.006.336.672.671 1.007.336.336.336.671 0 .336.336 1.007.335.671 1.006 1.342t.671 1.343q0 .67.336 1.006l.671.671q.336.336.336 1.007 0 .671.67 1.342l1.008 1.007q.335.336.335.671 0 .336.336.671.335.336.335.671 0 .336.336.672.335.335.671 1.006t.336 1.007v.671q0 .336.335.671.336.336.671 1.007.336.671 1.007 1.342.671.671 1.007 1.343.335.67.67 1.006l1.008 1.007q.67.671.67 1.007 0 .335.336 1.006.336.672 1.007 1.678.671 1.007 1.007 1.343.335.335 1.006.67.672.336.672 1.007 0 .672.67 1.007.672.336 1.007.671.336.336.672 1.007.335.671 1.006 1.007.671.335 1.007.67.336.336.671.336.336 0 .671.336.336.336.336.671 0 .336.335.336h.672q.335 0 .67.67l.337.673',
+  },
+  {
+    gTranslate: 'translate(281.18 132.11)',
+    pathTranslate: 'translate(-273.8 -101.9)',
+    path: 'M287.89 93.179l-.671.672q-.672.67-1.343 1.678-.67 1.006-1.678 1.677-1.006.672-1.342 1.343-.335.67-1.342 1.006-1.007.336-1.342.672-.336.335-.671.335-.336 0-.672.336l-.67.67-.672.672q-.335.336-1.007.671-.67.336-1.006.671l-.671.671q-.336.336-.672.336-.335 0-.67.336-.336.335-.672.335-.335 0-.335.336 0 .335-.336.335h-.671q-.336 0-.671.671-.336.672-.671.672-.336 0-.672.335-.335.336-.67.336-.336 0-1.007.335-.672.336-1.007.671-.336.336-.671.336-.336 0-.671.335-.336.336-.672.336h-.67q-.336 0-.672.336-.335.335-.671.335h-3.021',
+  },
+  {
+    gTranslate: 'translate(286.21 161.3)',
+    pathTranslate: 'translate(-278.83 -131.1)',
+    path: 'M251.647 131.434h.337q.335 0 1.342.336 1.007.336 2.013.336h21.477q1.007 0 2.013-.336 1.007-.335 2.014-.335h2.013q1.007 0 1.678-.336t1.007-.336h8.053q.336 0 .672-.335.335-.336.67-.336h11.076',
+  },
+  {
+    gTranslate: 'translate(283.53 202.91)',
+    pathTranslate: 'translate(-276.14 -172.71)',
+    path: 'M279.165 118.682v18.122q0 .67-.336 1.342-.335.671-.335 1.678v5.705q0 .67-.336 1.006-.335.336-.335 1.007 0 .671-.336 1.342-.335.671-.335 1.678t-.336 1.678q-.336.671-.336 1.342t-.335 1.678l-.671 2.014q-.336 1.006-.336 2.013v3.691q0 .671-.335 1.678-.336 1.007-.336 1.678t-.671 1.678-.671 1.678V199.22q0 .671.335 1.007.336.335.336 1.006v1.007q0 .336.335 1.007.336.67.336 1.006v3.356q0 .336.336.671.335.336.335 1.007v17.451',
+  },
+  {
+    gTranslate: 'translate(262.05 208.28)',
+    pathTranslate: 'translate(-254.67 -178.08)',
+    path: 'M265.742 144.856l-.335.673q-.336.67-.336 1.006v1.678q0 .671-.336 1.678-.335 1.007-.67 1.678-.336.67-.672 1.678-.335 1.006-.335 1.678 0 .67-.336 1.677-.336 1.007-.671 1.343-.336.335-.336 1.006t-.335 1.343q-.336.67-.336 1.342v3.356q0 .67-.335 1.342-.336.671-.336 1.342t-.671 1.342q-.671.672-.671 1.343v2.684q0 .671-.336 1.007-.335.336-.335.671 0 .336-.336 1.007-.336.671-.336 1.007 0 .335-.335 1.342-.336 1.007-.336 1.342v1.678q0 .671-.335 1.007-.336.335-.671 1.006-.336.672-.336 1.007v1.007q0 .671-.336 1.007-.335.335-.335 1.006t-.336 1.343q-.335.67-.335 1.342 0 .671-.336 1.342-.335.671-.335 1.342 0 .672-.336 1.007-.336.336-.336 1.007 0 .671-.335 1.007l-.671.67q-.336.336-.336.672 0 .335-.335 1.007-.336.67-.336 1.006 0 .336-.671.671-.671.336-.671.672v.67q0 .336-.336.672-.335.335-.335.67v.672q0 .336-.672.671-.67.336-.67.671 0 .336-.336.672-.336.335-.336.67 0 .336-.335.672-.336.335-.336.67 0 .337-.336.672-.335.336-.67 1.007-.336.67-.672 1.006-.335.336-.671 1.007l-.337.672',
+  },
+  {
+    gTranslate: 'translate(301.31 207.61)',
+    pathTranslate: 'translate(-293.93 -177.41)',
+    path: 'M289.903 144.185V148.213q0 .671.336 1.007.335.335.335 1.007V166.669q0 .336.336 1.343.335 1.006.335 1.678v9.396q0 .67.336 1.677.336 1.007.336 1.678v1.678q0 .336.335.671.336.336.336.671 0 .336.335 1.007.336.671.336 1.342v2.014q0 .671.335 1.007.336.335.336 1.006v2.014q0 .67.336 1.342.335.671.67 1.007.336.335.336.67V200.228q0 .335.336.67.335.336.335.672v2.013q0 1.007.336 1.343l.671.67q.336.336.336 1.007v1.678q0 .336.335.671.336.336.336 1.007v.672',
+  },
+  {
+    gTranslate: 'translate(322.45 200.56)',
+    pathTranslate: 'translate(-315.07 -170.36)',
+    path: 'M317.42 146.199v3.021q0 1.007-.671 1.342-.671.336-.671 1.007v1.342q0 .671-.336 1.678-.335 1.007-.671 1.342-.336.336-.336 1.007v1.342q0 .671-.335 1.342-.336.672-.336 1.007 0 .336-.335 1.007-.336.671-.336 1.007 0 .335-.335 1.006-.336.671-.336 1.343V194.523',
+  },
+  {
+    gTranslate: 'translate(336.21 198.55)',
+    pathTranslate: 'translate(-328.83 -168.35)',
+    path: 'M336.212 97.877V153.247q0 .335-.336.67-.335.336-.335 1.008v7.046q0 .336-.336 1.007-.335.671-.335 1.342V178.414q0 .672-.672 1.343-.67.67-.67 1.006V195.53q0 .335.335 1.006t.335 1.007V204.925q0 1.006.336 1.677.336.672.336 1.343v1.006q0 .336.335 1.007.336.671.671 1.007.336.335.336 1.006v13.759q0 .335-.336.335-.335 0-.335.672v4.026q0 .672-.336.672-.335 0-.335.335v6.376q0 .671-.336.671h-.671q-.336 0-.336-.335v-.672q0-.335-.335-.67l-.671-.672-.671-.671q-.336-.336-.336-.671 0-.336-.336-.336-.335 0-.335-.335 0-.336-.336-.671-.335-.336-.67-1.007-.336-.671-.336-1.007 0-.335-.336-.335t-.671-.336l-.671-.671q-.336-.336-.336-.671 0-.336-.335-.336-.336 0-.336-.335 0-.336-.336-.336-.335 0-.335-.336 0-.335-.336-1.006-.335-.671-.67-.671-.336 0-.336-.336t-.336-.336q-.336 0-.336-.335 0-.336-.335-.671-.336-.336-.336-.671 0-.336-.335-.336-.336 0-.336-.336 0-.335-.335-.335-.336 0-.336-.336 0-.335-.336-1.006l-.336-.673',
+  },
+];
 
 const Index = () => {
-  useEffect(() => {
-    (function (window, document, undefined) {
-      'use strict';
-
-      // simple requestAnimationFrame polyfill.
-      window.requestAnimFrame = (function () {
-        return (
-          window.requestAnimationFrame ||
-          window.webkitRequestAnimationFrame ||
-          window.mozRequestAnimationFrame ||
-          function (callback) {
-            window.setTimeout(callback, 1000 / 60);
-          }
-        );
-      })();
-
-      // images that will be used
-      var imageAssets = {
-          doge: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/188512/doge.png',
-          dogeSmall:
-            'https://s3-us-west-2.amazonaws.com/s.cdpn.io/188512/doge-small.png',
-        },
-        imageAssetsArray = [],
-        i;
-
-      // keep track of the assets in a queue array, which will be used to load them all in order.
-      for (i in imageAssets) {
-        imageAssetsArray.push({
-          index: i,
-          value: imageAssets[i],
-        });
-      }
-
-      /**
-       * Load all the imageAssets before doing anything else.
-       * A callback function will be called when all images have
-       * loaded or when something goes wrong.
-       * @param {Function} cb a callback function
-       */
-      function loadAllImages(cb) {
-        var index = 0,
-          loaded = {},
-          loader = function () {
-            var imageObject = new Image();
-
-            /**
-             * onload put the loaded image in an object and continue if necessary.
-             * calls {@link cb the callback function} when it is done.
-             */
-            imageObject.onload = function () {
-              loaded[imageAssetsArray[index].index] = imageObject;
-
-              index++;
-              if (index >= imageAssetsArray.length) {
-                cb.call(null, loaded);
-              } else {
-                loader();
-              }
-            };
-
-            /**
-             * onerror call the {@link cb callback function} when anything fails.
-             */
-            imageObject.onerror = function () {
-              cb.call(null, null, 'such problems, much error');
-            };
-
-            // set the source and start loading
-            imageObject.src = imageAssetsArray[index].value;
-          };
-
-        // initiate the loader.
-        loader();
-      }
-
-      /**
-       * generate a random number between a range
-       * @param   {Number} min minimum
-       * @param   {Number} max maximum
-       * @returns {Number} random number between min and max.
-       */
-      var rand = function rand(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      };
-
-      /**
-       * scale a 2d size down according to a max width and height.
-       * @param   {Number} w  width of current size
-       * @param   {Number} h  height of current size
-       * @param   {Number} mw maximum width
-       * @param   {Number} mh maximum height
-       * @returns {Object} object containing scaled (and floored) width and height as `w' field and `h' field.
-       */
-      var scale = function scale(w, h, mw, mh) {
-        var r, nw, nh;
-        if (w > mw) {
-          r = mw / w;
-          nw = mw;
-          nh = r * h;
-        }
-
-        if (h > mh) {
-          r = mh / h;
-          nw = r * w;
-          nh = mh;
-        }
-
-        return {
-          w: Math.floor(nw),
-          h: Math.floor(nh),
-        };
-      };
-
-      // RGB color object
-      var RGB = function (r, g, b) {
-        this.r = r;
-        this.g = g;
-        this.b = b;
-      };
-
-      RGB.prototype.toString = function () {
-        return 'rgb(' + this.r + ', ' + this.g + ', ' + this.b + ')';
-      };
-
-      /**
-       * calculate random RGB color
-       * @param   {Number} min minimum value for r, g and b
-       * @param   {Number} max maximum value for r, g and b
-       * @returns {RGB}    an RGB color instance
-       */
-      RGB.random = function (min, max) {
-        return new RGB(rand(min, max), rand(min, max), rand(min, max));
-      };
-
-      /**
-       * calculate and advanced random color
-       * @param   {Object} rmm random min/max description object
-       * @returns {RGB}    an RGB color instance
-       */
-      RGB.randomEx = function (rmm) {
-        return new RGB(
-          rand(rmm.rmin, rmm.rmax),
-          rand(rmm.gmin, rmm.gmax),
-          rand(rmm.bmin, rmm.bmax)
-        );
-      };
-
-      var Canvas = function Canvas() {
-        this.canvas = document.createElement('canvas');
-        this.context = this.canvas.getContext('2d');
-        this.fit();
-        document.body.appendChild(this.canvas);
-      };
-
-      Canvas.prototype.fit = function () {
-        this.resize(window.innerWidth, window.innerHeight);
-      };
-
-      Canvas.prototype.resize = function (width, height) {
-        this.canvas.width = this.width = width;
-        this.canvas.height = this.height = height;
-      };
-
-      Canvas.prototype.clear = function (opacity) {
-        if (typeof opacity === 'number') {
-          this.context.fillStyle = 'rgba(0, 0, 0, ' + opacity + ')';
-          this.context.fillRect(0, 0, this.width, this.height);
-        } else {
-          this.context.clearRect(0, 0, this.width, this.height);
-        }
-      };
-
-      var DogeText = function DogeText(
-        cx,
-        cy,
-        text,
-        angle,
-        offset,
-        shift,
-        color
-      ) {
-        this.font = '20px "Comic Sans MS"';
-        this.text = text;
-        this.color = color || new RGB(255, 0, 0);
-        this.angle = angle || -45;
-        this.offset = offset || -110;
-        this.shift = shift || -60;
-        this.cx = this.cy = 0;
-
-        this.life = 0;
-        this.spawn = 0;
-        this.next = +new Date() + rand(0, 2000);
-
-        this.position(cx, cy);
-      };
-
-      DogeText.prototype.position = function (cx, cy) {
-        this.cx = cx;
-        this.cy = cy + this.shift;
-      };
-
-      DogeText.prototype.step = function () {
-        var now = +new Date();
-        if (now >= this.next) {
-          this.life = rand(50, 250);
-          this.spawn = now;
-          this.next = +new Date() + rand(1000, 2500);
-        }
-      };
-
-      DogeText.prototype.render = function (ctx) {
-        // if the text age exceeds its life, do not render and wait for step to revive it.
-        if (+new Date() - this.spawn >= this.life) return;
-
-        ctx.save();
-        ctx.translate(this.cx + this.offset, this.cy);
-        ctx.rotate(this.angle * (Math.PI / 180));
-        ctx.fillStyle = this.color.toString();
-        ctx.font = this.font;
-        ctx.fillText(this.text, 0, 0);
-        ctx.restore();
-      };
-
-      var HeartParticle = function HeartParticle(i, s, cx, cy, image) {
-        this.i = i;
-        this.s = s;
-        this.x = this.y = 0;
-        this.ox = this.oy = 0;
-        this.img = image;
-        this.fac = Math.random();
-
-        this.position(cx, cy);
-      };
-
-      HeartParticle.prototype.position = function (cx, cy) {
-        // the heart curve
-        this.ox = this.x = cx + 160 * Math.pow(Math.sin(this.i), 3);
-        this.oy = this.y =
-          cy +
-          11 *
-            -(
-              15 * Math.cos(this.i) -
-              5 * Math.cos(2 * this.i) -
-              2 * Math.cos(3 * this.i) -
-              Math.cos(4 * this.i)
-            );
-      };
-
-      HeartParticle.prototype.step = function () {
-        // just increase the factor until it reaches 1, then start over
-        this.fac += 0.01;
-        if (this.fac >= 1) {
-          this.fac = 0;
-        }
-      };
-
-      HeartParticle.prototype.render = function (ctx) {
-        /**
-                this.fac is responsible as size factor and as opacity factor.
-                this way, when (1 - this.fac) === 0, the size has reached its max too.
-            */
-
-        var rw = this.s.w * this.fac,
-          rh = this.s.h * this.fac,
-          rx = this.x - this.s.w / 2,
-          ry = this.y - this.s.h / 2;
-
-        ctx.save();
-        ctx.globalAlpha = 1 - this.fac;
-        ctx.drawImage(this.img, rx, ry, rw, rh);
-        ctx.restore();
-      };
-
-      window.addEventListener('load', function () {
-        // loadAllImages and only if it succeeds, proceed.
-        loadAllImages(function (loadedAssets, errorMessage) {
-          if (typeof errorMessage !== 'string') {
-            var c = new Canvas(),
-              ctx = c.context,
-              cx = c.width / 2,
-              cy = c.height / 2,
-              i,
-              p = [],
-              cds = scale(
-                loadedAssets.doge.width,
-                loadedAssets.doge.height,
-                160,
-                160
-              ); // center doge size scaled down
-
-            // dogeSmallWidth and dogeSmallHeight
-            var dsw = loadedAssets.dogeSmall.width,
-              dsh = loadedAssets.dogeSmall.height;
-
-            // generate all the doge particles
-            for (i = 0; i < 230; i++) {
-              var randomSize = rand(10, 70),
-                size = scale(dsw, dsh, randomSize, randomSize);
-
-              p.push(
-                new HeartParticle(i, size, cx, cy, loadedAssets.dogeSmall)
+  return (
+    <Layout className={style.frame}>
+      <div className={style.center}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="375"
+          height="375"
+          viewBox="0 0 375 375"
+        >
+          <g className={style.groups}>
+            {groups.map((item, i) => {
+              return (
+                <g
+                  key={item.gTranslate}
+                  transform={item.gTranslate}
+                  className={cn(style.group, style[`group-${i}`])}
+                >
+                  <path d={item.path} transform={item.pathTranslate}></path>
+                </g>
               );
-            }
-
-            // a bunch of text that periodically appears, at random.
-            p.push(new DogeText(cx, cy, 'wow'));
-            p.push(
-              new DogeText(
-                cx,
-                cy,
-                'many love',
-                45,
-                50,
-                -100,
-                new RGB(255, 0, 255)
-              )
-            );
-            p.push(
-              new DogeText(
-                cx,
-                cy,
-                'such faces',
-                -55,
-                -220,
-                -110,
-                new RGB(255, 255, 0)
-              )
-            );
-            p.push(
-              new DogeText(
-                cx,
-                cy,
-                'many trippy',
-                55,
-                160,
-                -160,
-                new RGB(0, 255, 0)
-              )
-            );
-            p.push(
-              new DogeText(
-                cx,
-                cy,
-                'such dark',
-                -12,
-                260,
-                -20,
-                new RGB(0, 100, 255)
-              )
-            );
-            p.push(
-              new DogeText(
-                cx,
-                cy,
-                'many heart',
-                50,
-                -180,
-                110,
-                new RGB(255, 100, 0)
-              )
-            );
-            p.push(
-              new DogeText(
-                cx,
-                cy,
-                'much doge',
-                -50,
-                140,
-                140,
-                new RGB(0, 255, 100)
-              )
-            );
-
-            window.addEventListener('resize', function () {
-              // make sure the canvas fits snuggly into the window.
-              c.fit();
-
-              var i,
-                cx = c.width / 2,
-                cy = c.height / 2;
-
-              // make sure all objects know about the new center.
-              for (i in p) p[i].position(cx, cy);
-            });
-
-            (function anim() {
-              requestAnimFrame(anim);
-
-              var i,
-                cx = c.width / 2,
-                cy = c.height / 2;
-
-              // clear the canvas
-              c.clear(0.7);
-
-              // step and render all HeartParticles and texts
-              for (i in p) p[i].step();
-              for (i in p) p[i].render(ctx);
-
-              // render the main doge, the doge that is tripping.
-              ctx.drawImage(
-                loadedAssets.doge,
-                cx - cds.w / 2 - 10,
-                cy - cds.h / 2,
-                cds.w,
-                cds.h
-              );
-            })();
-          } else {
-            alert(errorMessage);
-          }
-        });
-      });
-    })(window, document);
-  });
-
-  return <div></div>;
+            })}
+          </g>
+        </svg>
+      </div>
+    </Layout>
+  );
 };
 
 export default Index;
