@@ -11,17 +11,18 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
+  z-index: -1;
 }
 .logo.small {
-  transform: scale(0);
+  transform: translate(-50%, -50%) scale(0);
   transition: all 0.5s ease-in;
 }
 .logo.normal {
-  transform: scale(1);
+  transform: translate(-50%, -50%) scale(1);
   transition: all 0.5s ease-out 0.3s;
 }
 .logo.big {
-  transform: scale(30);
+  transform: translate(-50%, -50%) scale(30);
   transition: all 0.5s ease-in;
 }

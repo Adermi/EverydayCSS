@@ -1,0 +1,126 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #12ec6d;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .button {
+  position: absolute;
+  width: 80px;
+  height: 70px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-30%, -50%);
+  cursor: pointer;
+}
+.frame .center .button .line {
+  position: absolute;
+  width: 80px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.frame .center .button .line-top {
+  top: 0;
+  left: 0;
+}
+.frame .center .button .line-mid {
+  top: 30px;
+  left: 0;
+}
+.frame .center .button .line-bottom {
+  bottom: 0;
+  left: 0;
+}
+.frame .center .button.open .line-top {
+  animation: line-top-open 0.7s forwards;
+}
+.frame .center .button.open .line-mid {
+  animation: line-mid-open 0.7s forwards;
+}
+.frame .center .button.open .line-bottom {
+  animation: line-bottom-open 0.7s forwards;
+}
+.frame .center .button.close .line-top {
+  animation: line-top-close 0.7s forwards;
+}
+.frame .center .button.close .line-mid {
+  animation: line-mid-close 0.7s forwards;
+}
+.frame .center .button.close .line-bottom {
+  animation: line-bottom-close 0.7s forwards;
+}
+@keyframes line-top-open {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(0, 30px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 30px) rotate(45deg);
+  }
+}
+@keyframes line-mid-open {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+}
+@keyframes line-bottom-open {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(0, -30px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, -30px) rotate(-45deg);
+  }
+}
+@keyframes line-top-close {
+  0% {
+    transform: translate(0, 30px) rotate(45deg);
+  }
+  50% {
+    transform: translate(0, 30px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes line-mid-close {
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes line-bottom-close {
+  0% {
+    transform: translate(0, -30px) rotate(-45deg);
+  }
+  50% {
+    transform: translate(0, -30px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}

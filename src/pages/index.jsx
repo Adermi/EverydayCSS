@@ -4,6 +4,8 @@ import style from './index.module.less';
 import Button from './../components/Button/index';
 
 let days = [
+  'Day01',
+  'Day02',
   'Day36',
   'Day37',
   'Day38',

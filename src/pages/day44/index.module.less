@@ -19,18 +19,18 @@
       position: absolute;
       left: 50%;
       right: 50%;
-      width: 400px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
       border: 1px solid #fff;
       background: #222;
 
       each(range(20), {
         &.rect-@{value} {
           @color: 250 - (@value * 8);
-          width: (@value * 20px);
-          height: (@value * 20px);
-          margin-top: (@value * -10px);
-          margin-left: (@value * -10px);
+          width: (@value * 12px);
+          height: (@value * 12px);
+          margin-top: (@value * -6px);
+          margin-left: (@value * -6px);
           z-index: 20 - @value;
           border-color: rgb(@color, @color, @color);
           animation: rotate 2s ease-in-out infinite alternate  (@value / 35s)

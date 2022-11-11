@@ -16,187 +16,187 @@
   position: absolute;
   left: 50%;
   right: 50%;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border: 1px solid #fff;
   background: #222;
 }
 .frame .center .rect.rect-1 {
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: -10px;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  margin-left: -6px;
   z-index: 19;
   border-color: #f2f2f2;
   animation: rotate 2s ease-in-out infinite alternate 0.02857143s;
 }
 .frame .center .rect.rect-2 {
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
-  margin-left: -20px;
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  margin-left: -12px;
   z-index: 18;
   border-color: #eaeaea;
   animation: rotate 2s ease-in-out infinite alternate 0.05714286s;
 }
 .frame .center .rect.rect-3 {
-  width: 60px;
-  height: 60px;
-  margin-top: -30px;
-  margin-left: -30px;
+  width: 36px;
+  height: 36px;
+  margin-top: -18px;
+  margin-left: -18px;
   z-index: 17;
   border-color: #e2e2e2;
   animation: rotate 2s ease-in-out infinite alternate 0.08571429s;
 }
 .frame .center .rect.rect-4 {
-  width: 80px;
-  height: 80px;
-  margin-top: -40px;
-  margin-left: -40px;
+  width: 48px;
+  height: 48px;
+  margin-top: -24px;
+  margin-left: -24px;
   z-index: 16;
   border-color: #dadada;
   animation: rotate 2s ease-in-out infinite alternate 0.11428571s;
 }
 .frame .center .rect.rect-5 {
-  width: 100px;
-  height: 100px;
-  margin-top: -50px;
-  margin-left: -50px;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
   z-index: 15;
   border-color: #d2d2d2;
   animation: rotate 2s ease-in-out infinite alternate 0.14285714s;
 }
 .frame .center .rect.rect-6 {
-  width: 120px;
-  height: 120px;
-  margin-top: -60px;
-  margin-left: -60px;
+  width: 72px;
+  height: 72px;
+  margin-top: -36px;
+  margin-left: -36px;
   z-index: 14;
   border-color: #cacaca;
   animation: rotate 2s ease-in-out infinite alternate 0.17142857s;
 }
 .frame .center .rect.rect-7 {
-  width: 140px;
-  height: 140px;
-  margin-top: -70px;
-  margin-left: -70px;
+  width: 84px;
+  height: 84px;
+  margin-top: -42px;
+  margin-left: -42px;
   z-index: 13;
   border-color: #c2c2c2;
   animation: rotate 2s ease-in-out infinite alternate 0.2s;
 }
 .frame .center .rect.rect-8 {
-  width: 160px;
-  height: 160px;
-  margin-top: -80px;
-  margin-left: -80px;
+  width: 96px;
+  height: 96px;
+  margin-top: -48px;
+  margin-left: -48px;
   z-index: 12;
   border-color: #bababa;
   animation: rotate 2s ease-in-out infinite alternate 0.22857143s;
 }
 .frame .center .rect.rect-9 {
-  width: 180px;
-  height: 180px;
-  margin-top: -90px;
-  margin-left: -90px;
+  width: 108px;
+  height: 108px;
+  margin-top: -54px;
+  margin-left: -54px;
   z-index: 11;
   border-color: #b2b2b2;
   animation: rotate 2s ease-in-out infinite alternate 0.25714286s;
 }
 .frame .center .rect.rect-10 {
-  width: 200px;
-  height: 200px;
-  margin-top: -100px;
-  margin-left: -100px;
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-left: -60px;
   z-index: 10;
   border-color: #aaaaaa;
   animation: rotate 2s ease-in-out infinite alternate 0.28571429s;
 }
 .frame .center .rect.rect-11 {
-  width: 220px;
-  height: 220px;
-  margin-top: -110px;
-  margin-left: -110px;
+  width: 132px;
+  height: 132px;
+  margin-top: -66px;
+  margin-left: -66px;
   z-index: 9;
   border-color: #a2a2a2;
   animation: rotate 2s ease-in-out infinite alternate 0.31428571s;
 }
 .frame .center .rect.rect-12 {
-  width: 240px;
-  height: 240px;
-  margin-top: -120px;
-  margin-left: -120px;
+  width: 144px;
+  height: 144px;
+  margin-top: -72px;
+  margin-left: -72px;
   z-index: 8;
   border-color: #9a9a9a;
   animation: rotate 2s ease-in-out infinite alternate 0.34285714s;
 }
 .frame .center .rect.rect-13 {
-  width: 260px;
-  height: 260px;
-  margin-top: -130px;
-  margin-left: -130px;
+  width: 156px;
+  height: 156px;
+  margin-top: -78px;
+  margin-left: -78px;
   z-index: 7;
   border-color: #929292;
   animation: rotate 2s ease-in-out infinite alternate 0.37142857s;
 }
 .frame .center .rect.rect-14 {
-  width: 280px;
-  height: 280px;
-  margin-top: -140px;
-  margin-left: -140px;
+  width: 168px;
+  height: 168px;
+  margin-top: -84px;
+  margin-left: -84px;
   z-index: 6;
   border-color: #8a8a8a;
   animation: rotate 2s ease-in-out infinite alternate 0.4s;
 }
 .frame .center .rect.rect-15 {
-  width: 300px;
-  height: 300px;
-  margin-top: -150px;
-  margin-left: -150px;
+  width: 180px;
+  height: 180px;
+  margin-top: -90px;
+  margin-left: -90px;
   z-index: 5;
   border-color: #828282;
   animation: rotate 2s ease-in-out infinite alternate 0.42857143s;
 }
 .frame .center .rect.rect-16 {
-  width: 320px;
-  height: 320px;
-  margin-top: -160px;
-  margin-left: -160px;
+  width: 192px;
+  height: 192px;
+  margin-top: -96px;
+  margin-left: -96px;
   z-index: 4;
   border-color: #7a7a7a;
   animation: rotate 2s ease-in-out infinite alternate 0.45714286s;
 }
 .frame .center .rect.rect-17 {
-  width: 340px;
-  height: 340px;
-  margin-top: -170px;
-  margin-left: -170px;
+  width: 204px;
+  height: 204px;
+  margin-top: -102px;
+  margin-left: -102px;
   z-index: 3;
   border-color: #727272;
   animation: rotate 2s ease-in-out infinite alternate 0.48571429s;
 }
 .frame .center .rect.rect-18 {
-  width: 360px;
-  height: 360px;
-  margin-top: -180px;
-  margin-left: -180px;
+  width: 216px;
+  height: 216px;
+  margin-top: -108px;
+  margin-left: -108px;
   z-index: 2;
   border-color: #6a6a6a;
   animation: rotate 2s ease-in-out infinite alternate 0.51428571s;
 }
 .frame .center .rect.rect-19 {
-  width: 380px;
-  height: 380px;
-  margin-top: -190px;
-  margin-left: -190px;
+  width: 228px;
+  height: 228px;
+  margin-top: -114px;
+  margin-left: -114px;
   z-index: 1;
   border-color: #626262;
   animation: rotate 2s ease-in-out infinite alternate 0.54285714s;
 }
 .frame .center .rect.rect-20 {
-  width: 400px;
-  height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
+  width: 240px;
+  height: 240px;
+  margin-top: -120px;
+  margin-left: -120px;
   z-index: 0;
   border-color: #5a5a5a;
   animation: rotate 2s ease-in-out infinite alternate 0.57142857s;

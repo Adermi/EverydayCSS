@@ -1,57 +1,109 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import cn from 'classnames';
+import _ from 'lodash';
 
 import style from './index.module.less';
 import Layout from '../../components/Layout';
-import { useMouse, useSetState } from 'ahooks';
 
 const Index = () => {
-  const ref = useRef(null);
-  const mouse = useMouse(ref.current);
-  const [pos, setPos] = useSetState({
-    x: mouse.elementX,
-    y: mouse.elementY,
-    z: 0,
+  const elRef = useRef(null);
+  const scaleRef = useRef(null);
+  const rotateRef = useRef(null);
+  const firstRef = useRef(true);
+  const clientXYStart = useRef({
+    clientXStart: 0,
+    clientYStart: 0,
   });
+  const rotateMax = useRef({
+    rotateMaxX: 25,
+    rotateMaxY: 25,
+  });
+
   useEffect(() => {
-    const x = mouse.elementX;
-    const y = mouse.elementY;
-    // console.log(x, y);
-    if (x >= 400 || x <= 0 || y >= 200 || y <= 0) {
-      setPos({ x: 0, y: 0, z: 0 });
+    if (firstRef.current) {
+      firstRef.current = false;
+    } else {
       return;
     }
 
-    console.log(x, y);
+    const el = elRef.current;
+    console.log(el);
+  }, []);
 
-    if (x < 200 && y < 100) {
-      setPos({ x: 10, y: -10, z: 100 });
-    } else if (x > 200 && y < 100) {
-      setPos({ x: 10, y: 10, z: 100 });
-    } else if (x < 200 && y > 100) {
-      setPos({ x: -10, y: -10, z: 100 });
-    } else if (x > 200 && y > 100) {
-      setPos({ x: -10, y: 10, z: 100 });
-    } else {
-      setPos({ x: 0, y: 0, z: 0 });
-    }
-  }, [mouse]);
+  // 鼠标进入
+  function handlePointEnter(e) {
+    clientXYStart.current.clientXStart = e.clientX;
+    clientXYStart.current.clientXStart = e.clientY;
+
+    window.requestAnimationFrame(() => {
+      // 方法元素
+      scaleRef.current.style.transitionDuration = '300ms';
+      scaleRef.current.style.transitionTimingFunction = 'ease-out';
+      scaleRef.current.style.transform = 'translate3d(0, 0, 50px)';
+      // 旋转元素
+      rotateRef.current.style.transitionDuration = '300ms';
+      rotateRef.current.style.transitionTimingFunction = 'ease-out';
+    });
+  }
+
+  // 鼠标移动
+  function handlePointerMove(e) {
+    // console.log('移动');
+    const { clientX, clientY } = e;
+    let elBoundingClientRect = e.target.getBoundingClientRect();
+    const { top, left, width, height } = elBoundingClientRect;
+    const { rotateMaxX, rotateMaxY } = rotateMax.current;
+
+    const centerX = width / 2;
+    const centerY = height / 2;
+    const coordX = clientX - left;
+    const coordY = clientY - top;
+
+    let rotateX = (rotateMaxX * (coordY - centerY)) / (height / 2);
+    let rotateY = (-1 * rotateMaxY * (coordX - centerX)) / (width / 2);
+
+    rotateX = Math.min(Math.max(-rotateX, -rotateMaxX), rotateMaxX);
+    rotateY = Math.min(Math.max(-rotateY, -rotateMaxY), rotateMaxY);
+
+    window.requestAnimationFrame(() => {
+      rotateRef.current.style.transform = `translate3d(0, 0, 0) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+  }
+
+  // 鼠标离开
+  function handlePointerLeave(e) {
+    window.requestAnimationFrame(() => {
+      // 方法元素
+      scaleRef.current.style.transitionDuration = '300ms';
+      scaleRef.current.style.transitionTimingFunction = '';
+      scaleRef.current.style.transform = 'translate3d(0, 0, 0)';
+      // 旋转元素
+      rotateRef.current.style.transitionDuration = '300ms';
+      rotateRef.current.style.transitionTimingFunction = '';
+      rotateRef.current.style.transform = `translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg)`;
+    });
+  }
+
+  const events = {
+    onMouseEnter: handlePointEnter,
+    onMouseMove: handlePointerMove,
+    onMouseLeave: handlePointerLeave,
+  };
 
   return (
     <Layout className={style.frame}>
       <div
-        className={style.center}
-        onMouseLeave={(e) => {
-          setPos({ x: 0, y: 0, z: 0 });
-        }}
+        className={cn(style.atropos, style.cusStyle)}
+        ref={elRef}
+        {...events}
       >
-        <div
-          className={style.card}
-          ref={ref}
-          style={{
-            transform: `translateZ(${pos.z}px) rotateX(${pos.x}deg) rotateY(${pos.y}deg)`,
-          }}
-        ></div>
+        <div className={style[`atropos-scale`]} ref={scaleRef}>
+          <div className={style[`atropos-rotate`]} ref={rotateRef}>
+            <div className={style[`atropos-inner`]}>
+              <div className={style.box}></div>
+            </div>
+          </div>
+        </div>
       </div>
     </Layout>
   );

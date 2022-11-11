@@ -7,7 +7,7 @@ const Day036 = () => {
   const [selectIdx, setSelectIdx] = useState(0);
   const arr = [0, 1, 2, 3];
   const arr2 = ['Dashboard', 'WDashboard', 'SDashboard', 'TDashboard'];
-  const arr3 = [250, 270, 235, 260, 53];
+  const arr3 = [190, 240, 205, 230, 83];
 
   return (
     <Layout className={style.frame}>
