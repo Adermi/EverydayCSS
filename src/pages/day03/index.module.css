@@ -1,0 +1,48 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #333;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #7ddffc;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.frame .center .ground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  background-color: #e9d873;
+}
+.frame .center .side-left {
+  position: absolute;
+  bottom: 60px;
+  border-width: 0px 30px 50px 50px;
+  border-style: solid;
+  border-color: transparent transparent #155894 transparent;
+}
+.frame .center .side-right {
+  position: absolute;
+  left: 80px;
+  bottom: 60px;
+  border-width: 50px 50px 20px 20px;
+  border-style: solid;
+  border-color: transparent transparent #4d92ce transparent;
+}

@@ -1,0 +1,244 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #665;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+}
+.frame .center .card .header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px 20px;
+  background-color: #f1ba64;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.frame .center .card .header .weekly {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+.frame .center .card .header .weekly .title {
+  font-size: 16px;
+}
+.frame .center .card .header .weekly .date {
+  font-size: 12px;
+  font-weight: 400;
+}
+.frame .center .card .header .revenue {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  text-align: right;
+}
+.frame .center .card .header .revenue .title {
+  font-size: 12px;
+}
+.frame .center .card .header .revenue .money {
+  font-size: 14px;
+}
+.frame .center .card .body {
+  flex-grow: 1;
+  padding: 10px 10px;
+}
+.frame .center .card .body .parameter {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+.frame .center .card .body .parameter .param {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.frame .center .card .body .parameter .param .line {
+  width: 8px;
+  height: 3px;
+}
+.frame .center .card .body .parameter .param .line.red {
+  background-color: #fa7373;
+}
+.frame .center .card .body .parameter .param .line.blue {
+  background-color: #7ba2ff;
+}
+.frame .center .card .body .parameter .param .name {
+  font-size: 12px;
+  color: #333;
+}
+.frame .center .card .body .lines {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+}
+.frame .center .card .body .lines .line {
+  width: 100%;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+.frame .center .card .body .lines .data {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  fill: none;
+  stroke-width: 2px;
+}
+.frame .center .card .body .lines .data.blue {
+  stroke: #7ba2ff;
+}
+.frame .center .card .body .lines .data.red {
+  stroke: #fa7373;
+}
+.frame .center .card .body .lines .points {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.frame .center .card .body .lines .points .point {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.frame .center .card .body .lines .points .point:hover {
+  z-index: 999;
+}
+.frame .center .card .body .lines .points .point:hover .content {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.frame .center .card .body .lines .points .point .content {
+  opacity: 0;
+  position: absolute;
+  padding: 4px 5px;
+  bottom: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 12px;
+  transform: translate(-50%, -30%);
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+.frame .center .card .body .lines .points .point .content::before {
+  content: '';
+  bottom: -6px;
+  left: 50%;
+  position: absolute;
+  border-width: 6px 4px 0 4px;
+  border-style: solid;
+  transform: translate(-50%, 0);
+}
+.frame .center .card .body .lines .points .point-red .point {
+  background-color: #fa7373;
+}
+.frame .center .card .body .lines .points .point-red .point.point-1 {
+  left: 20px;
+  top: 28px;
+}
+.frame .center .card .body .lines .points .point-red .point.point-2 {
+  left: 60px;
+  top: 12px;
+}
+.frame .center .card .body .lines .points .point-red .point.point-3 {
+  left: 100px;
+  top: 23px;
+}
+.frame .center .card .body .lines .points .point-red .point.point-4 {
+  left: 140px;
+  top: 11px;
+}
+.frame .center .card .body .lines .points .point-red .point.point-5 {
+  left: 180px;
+  top: 38px;
+}
+.frame .center .card .body .lines .points .point-red .point.point-6 {
+  left: 220px;
+  top: 48px;
+}
+.frame .center .card .body .lines .points .point-red .point.point-7 {
+  left: 260px;
+  top: 19px;
+}
+.frame .center .card .body .lines .points .point-red .content {
+  background-color: #fa7373;
+}
+.frame .center .card .body .lines .points .point-red .content::before {
+  border-color: #fa7373 transparent transparent transparent;
+}
+.frame .center .card .body .lines .points .point-blue .point {
+  background-color: #7ba2ff;
+}
+.frame .center .card .body .lines .points .point-blue .point.point-1 {
+  left: 20px;
+  top: 48px;
+}
+.frame .center .card .body .lines .points .point-blue .point.point-2 {
+  left: 60px;
+  top: 22px;
+}
+.frame .center .card .body .lines .points .point-blue .point.point-3 {
+  left: 100px;
+  top: 13px;
+}
+.frame .center .card .body .lines .points .point-blue .point.point-4 {
+  left: 140px;
+  top: 21px;
+}
+.frame .center .card .body .lines .points .point-blue .point.point-5 {
+  left: 180px;
+  top: 18px;
+}
+.frame .center .card .body .lines .points .point-blue .point.point-6 {
+  left: 220px;
+  top: 28px;
+}
+.frame .center .card .body .lines .points .point-blue .point.point-7 {
+  left: 260px;
+  top: 22px;
+}
+.frame .center .card .body .lines .points .point-blue .content {
+  background-color: #7ba2ff;
+}
+.frame .center .card .body .lines .points .point-blue .content::before {
+  border-color: #7ba2ff transparent transparent transparent;
+}
+.frame .center .card .body .days {
+  display: flex;
+  flex-grow: 1;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: stretch;
+  color: #9e9d9d;
+}
