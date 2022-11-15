@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from 'react';
+import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import cn from 'classnames';
 
 import style from './index.module.less';
@@ -6,12 +6,13 @@ import Layout from '../../components/Layout';
 import _ from 'lodash';
 
 const Index = () => {
+  let timer = useRef(null);
+
   useLayoutEffect(() => {
     const swiperItem = Array.from(
       document.querySelectorAll(`.${style['swiper-item']}`)
     );
     let idx = 0;
-    let timer;
 
     eventInit();
     toggleClass();
@@ -19,7 +20,7 @@ const Index = () => {
 
     // 浏览器页面切换会有动画累积的效果，页面切换，动画停止，但是定时器还在运转；页面切回来，执行定时器的效果，就会突然页面的动画不规则甚至混乱
     window.onblur = () => {
-      clearInterval(timer);
+      clearInterval(timer.current);
     };
 
     window.onfocus = () => {
@@ -27,13 +28,15 @@ const Index = () => {
     };
 
     function addInterval() {
-      clearInterval(timer);
-      timer = setInterval(() => {
+      clearInterval(timer.current);
+      timer.current = setInterval(() => {
         if (idx === swiperItem.length - 1) {
           idx = 0;
         } else {
           idx++;
         }
+        console.log(idx);
+
         toggleClass();
       }, 3000);
     }
@@ -42,7 +45,7 @@ const Index = () => {
     function eventInit() {
       swiperItem.forEach((swiperNode, i) => {
         swiperNode.addEventListener('click', function (e) {
-          clearInterval(timer);
+          clearInterval(timer.current);
           const classList = this.classList;
           e.stopPropagation();
 
@@ -97,13 +100,11 @@ const Index = () => {
     <Layout className={style.frame}>
       <div className={style.center}>
         <div className={style.banner}>
-          <div className={style['swiper-box']}>
-            {_.range(1, 7).map((item) => (
-              <div key={item} className={style['swiper-item']}>
-                <img src={`img/${item}.jpg`} alt="" />
-              </div>
-            ))}
-          </div>
+          {_.range(1, 7).map((item) => (
+            <div key={item} className={style['swiper-item']}>
+              <img src={`img/${item}.jpg`} alt="" />
+            </div>
+          ))}
         </div>
       </div>
     </Layout>
