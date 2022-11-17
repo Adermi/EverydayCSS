@@ -1,69 +1,56 @@
-.frame {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-color: #12ec6d;
-}
-.frame .center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  height: 400px;
-  transform: translate(-50%, -50%);
-}
-.frame .center .button {
+.menuBtn .button {
   --width: calc(var(--x) * 1px);
   --height: calc(var(--y) * 1px);
   --lineHeight: calc(var(--height) / 7);
   --durTime: calc(var(--transitionDuringTime) * 1s);
+  --color: var(--color);
   position: relative;
   width: var(--width);
   height: var(--height);
   cursor: pointer;
   --translateV: calc(var(--lineHeight) * 3);
 }
-.frame .center .button.defaultStyle {
+.menuBtn .button.defaultStyle {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.frame .center .button .line {
+.menuBtn .button .line {
   position: absolute;
   width: var(--width);
   height: var(--lineHeight);
-  background-color: #fff;
+  background-color: var(--color);
   border-radius: 3px;
 }
-.frame .center .button .line-top {
+.menuBtn .button .line-top {
   top: 0;
   left: 0;
 }
-.frame .center .button .line-mid {
+.menuBtn .button .line-mid {
   top: calc(var(--lineHeight) * 3);
   left: 0;
 }
-.frame .center .button .line-bottom {
+.menuBtn .button .line-bottom {
   bottom: 0;
   left: 0;
 }
-.frame .center .button.open .line-top {
+.menuBtn .button.open .line-top {
   animation: line-top-open var(--durTime) forwards;
 }
-.frame .center .button.open .line-mid {
+.menuBtn .button.open .line-mid {
   animation: line-mid-open var(--durTime) forwards;
 }
-.frame .center .button.open .line-bottom {
+.menuBtn .button.open .line-bottom {
   animation: line-bottom-open var(--durTime) forwards;
 }
-.frame .center .button.close .line-top {
+.menuBtn .button.close .line-top {
   animation: line-top-close var(--durTime) forwards;
 }
-.frame .center .button.close .line-mid {
+.menuBtn .button.close .line-mid {
   animation: line-mid-close var(--durTime) forwards;
 }
-.frame .center .button.close .line-bottom {
+.menuBtn .button.close .line-bottom {
   animation: line-bottom-close var(--durTime) forwards;
 }
 @keyframes line-top-open {

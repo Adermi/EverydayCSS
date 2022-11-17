@@ -1,0 +1,239 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #eba2a2;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.frame .center .menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #05c7ce;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  transition: all 0.5s ease-out;
+  z-index: 9;
+}
+.frame .center .menu.menuActive {
+  transform: translate(130px, 0);
+}
+.frame .center .menu .head {
+  position: relative;
+  display: flex;
+  height: 60px;
+  background-color: #5f98cd;
+}
+.frame .center .menu .head .btn {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.3s ease-in-out;
+}
+.frame .center .menu .head .btn.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.frame .center .menu .head .centerTitle {
+  flex: 1;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.frame .center .menu .head .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+.frame .center .menu .head .searchIpt {
+  position: absolute;
+  width: 77%;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  padding: 0px 18px;
+  top: 50%;
+  left: 12px;
+  transform: translate(5%, -50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.frame .center .menu .head .searchIpt:focus {
+  outline: none;
+}
+.frame .center .menu .head .searchIpt.active {
+  opacity: 1;
+  transform: translate(0, -50%);
+  pointer-events: all;
+}
+.frame .center .menu .notifications {
+  flex: 1;
+  position: relative;
+  background-color: #fff;
+  color: #666;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.frame .center .menu .notifications .line {
+  position: absolute;
+  top: 0;
+  left: 27px;
+  width: 3px;
+  height: 400px;
+  background-color: #ebebeb;
+}
+.frame .center .menu .notifications .notification {
+  position: relative;
+  margin: 20px 0 20px 40px;
+  cursor: pointer;
+}
+.frame .center .menu .notifications .notification:hover {
+  color: #36afbe;
+}
+.frame .center .menu .notifications .notification:hover .circle {
+  border-color: #36afbe;
+}
+.frame .center .menu .notifications .notification .circle {
+  position: absolute;
+  left: -16.5px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #6666;
+  border-radius: 50%;
+}
+.frame .center .menu .notifications .notification .time {
+  font-size: 12px;
+  line-height: 12px;
+}
+.frame .center .menu .notifications .notification .plan .bold {
+  font-weight: bold;
+}
+.frame .center .menu .notifications .notification-0 {
+  transform: translate3d(0, 50px, 0);
+  opacity: 0;
+  animation: notification-0 0.5s 0s ease-in forwards;
+}
+@keyframes notification-0 {
+  from {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.frame .center .menu .notifications .notification-1 {
+  transform: translate3d(0, 50px, 0);
+  opacity: 0;
+  animation: notification-1 0.5s 0.3s ease-in forwards;
+}
+@keyframes notification-1 {
+  from {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.frame .center .menu .notifications .notification-2 {
+  transform: translate3d(0, 50px, 0);
+  opacity: 0;
+  animation: notification-2 0.5s 0.6s ease-in forwards;
+}
+@keyframes notification-2 {
+  from {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.frame .center .menu .notifications .notification-3 {
+  transform: translate3d(0, 50px, 0);
+  opacity: 0;
+  animation: notification-3 0.5s 0.9s ease-in forwards;
+}
+@keyframes notification-3 {
+  from {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.frame .center .menu .notifications .notification-4 {
+  transform: translate3d(0, 50px, 0);
+  opacity: 0;
+  animation: notification-4 0.5s 1.2s ease-in forwards;
+}
+@keyframes notification-4 {
+  from {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.frame .center .backMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 130px;
+  height: 260px;
+  padding: 10px 0;
+  background-color: #43627d;
+  transform: translate(30px, -50%);
+  transition: transform 0.5s ease-out;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  border-radius: 3px 0 0 3px;
+}
+.frame .center .backMenu.menuActive {
+  transform: translate(0, -50%);
+}
+.frame .center .backMenu .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  transition: background-color 0.3s linear;
+}
+.frame .center .backMenu .item:hover {
+  background-color: #34979b;
+}
