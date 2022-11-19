@@ -1,5 +1,7 @@
 # CSS 每日一练
 
+![](https://img-blog.csdnimg.cn/ab767d439b854536b296dab9e66b0591.gif)
+
 1. 每天一个 CSS 小 demo，精进自己 CSS 技术。
 2. 所有代码均在上方，可以自行下载改动。
 3. 每天持续更新, Day01~Day100 的案例是仿照这个 ->

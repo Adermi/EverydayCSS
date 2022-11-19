@@ -3,8 +3,6 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #9b59b6;
-  color: #fff;
   cursor: pointer;
 }
 .logo {

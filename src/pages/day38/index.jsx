@@ -17,7 +17,7 @@ const Index = () => {
           [style.big]: !state,
         })}
       >
-        <Icon style={{ color: '#fff' }} />
+        <Icon style={{ color: '#24eeee' }} />
       </div>
       <div
         className={cn(style.logo, {
@@ -25,7 +25,7 @@ const Index = () => {
           [style.normal]: !state,
         })}
       >
-        <Icon style={{ color: '#9b59b6' }} />
+        <Icon style={{ color: '#fff' }} />
       </div>
     </Layout>
   );
