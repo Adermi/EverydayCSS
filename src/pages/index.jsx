@@ -28,7 +28,6 @@ let days = [
   'Day47',
   'Day48',
   'Day49',
-  'Day49-2',
   'Day50',
   'Day51',
   'Day52',
@@ -89,7 +88,7 @@ let days = [
   'Demo',
 ];
 
-const unDone = ['Day51', 'Day57', 'Day90'];
+const unDone = ['Day03', 'Day51', 'Day57', 'Day90'];
 
 const Index = () => {
   return (
