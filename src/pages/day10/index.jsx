@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import cn from 'classnames';
 import _ from 'lodash';
 
@@ -31,8 +31,23 @@ function updateInfo() {
 }
 
 const Index = () => {
-  let [state, setInfo] = useState(updateInfo());
+  let [state, setInfo] = useState({
+    date: {
+      hour: '00',
+      minute: '00',
+      second: '00',
+    },
+    heathyInfo: {
+      heart: 60,
+      kal: 1000,
+    },
+  });
   const { date, heathyInfo } = state;
+
+  // 首次立刻执行
+  useEffect(() => {
+    setInfo(updateInfo());
+  }, []);
 
   useIntervalUP(() => {
     setInfo(updateInfo());
