@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 import style from './index.module.less';
 import Layout from '../../components/Layout';
-import useIntervalUP from '../../hooks/useIntervalUp';
+import useIntervalUP from '../../hooks/useIntervalUP';
 
 function handleZero(val) {
   if (val < 10) return '0' + val;
