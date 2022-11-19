@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-function useInterval(fn, delay, immediate, deps) {
+function useInterval(fn, delay, deps) {
   const fnRef = useRef(fn);
   const timeRef = useRef(null);
   const countRef = useRef(0);
@@ -9,8 +9,10 @@ function useInterval(fn, delay, immediate, deps) {
   let stopRef = useRef(false);
 
   useEffect(() => {
+    // 外部停止功能
     if (stopRef.current) return;
 
+    // 开始执行定时器前的时间戳
     if (startTimeRef.current == null) {
       startTimeRef.current = new Date().getTime();
     }

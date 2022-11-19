@@ -1,0 +1,153 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #32b6af;
+}
+.frame .center {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.frame .center .content {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  background-color: #2e6fc4;
+}
+.frame .center .content .moon {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f6edbd;
+  box-shadow: 0 0 8px #f6edbd, inset 0 0 3px 2px rgba(255, 255, 255, 0.5);
+}
+.frame .center .content .moon .house-big {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .content .moon .house-small {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .content .moon .house-0 {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .content .moon .house-1 {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .content .moon .house-2 {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .content .moon .house-3 {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .content .moon .house-4 {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .content .moon .house-5 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .content .moon .house-6 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .content .moon .house-7 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .content .moon .house-8 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .content .moon .house-9 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+}
+.frame .center .footer {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  background-color: #fdfdfd;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 0 20px;
+}
+.frame .center .footer .temp {
+  position: relative;
+  padding-right: 24px;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 6px;
+  line-height: 90px;
+}
+.frame .center .footer .temp::before {
+  position: absolute;
+  content: '';
+  top: 30px;
+  right: 14px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+.frame .center .footer .wind {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.frame .center .footer .tue {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+}
+.frame .center .footer .tue span {
+  font-weight: 600;
+}

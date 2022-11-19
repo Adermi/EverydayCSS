@@ -1,0 +1,151 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #34495e;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .watch {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+.frame .center .strap {
+  position: relative;
+  width: 100px;
+  height: 300px;
+  background-color: #ffff00;
+  border-radius: 3px;
+}
+.frame .center .strap .dial {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  border: 6px solid #666b7a;
+  background-color: #34495e;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .strap .dial .svg1 .svg-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .strap .dial .svg1 .svg-circle .circle {
+  stroke-width: 3px;
+  fill: none;
+  stroke-linecap: round;
+}
+.frame .center .strap .dial .svg1 .svg-circle .circle {
+  cx: 100;
+  cy: 100;
+  r: 85;
+  stroke: #2ecc71;
+  stroke-dasharray: 540.8;
+  animation: animate-circle 5s linear infinite;
+  transform-origin: center center;
+  transform: rotate(-90deg);
+}
+.frame .center .strap .dial .svg2 .svg-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .strap .dial .svg2 .svg-circle .circle {
+  stroke-width: 3px;
+  fill: none;
+  stroke-linecap: round;
+}
+.frame .center .strap .dial .svg2 .svg-circle .circle {
+  cx: 100;
+  cy: 100;
+  r: 73;
+  stroke: #95a5a6;
+  stroke-dasharray: 10px;
+}
+.frame .center .strap .dial .info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  width: 140px;
+  height: 140px;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  gap: 10px;
+}
+.frame .center .strap .dial .info .date {
+  display: flex;
+  font-size: 12px;
+  gap: 5px;
+  line-height: 20px;
+}
+.frame .center .strap .dial .info .time {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.frame .center .strap .dial .info .heart {
+  display: flex;
+  justify-self: center;
+  font-size: 5px;
+  line-height: 20px;
+  height: 20px;
+}
+.frame .center .strap .dial .info .heart .heartBreak {
+  animation: heartBreak 1s linear infinite;
+}
+.frame .center .strap .dial .info .heart .heartCount {
+  width: 25px;
+  text-align: start;
+}
+.frame .center .strap .dial .info .heart .kl {
+  margin-left: 5px;
+}
+@keyframes heartBreak {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes animate-circle {
+  0% {
+    transform: rotate(-90deg) scaleY(1);
+    stroke-dashoffset: 540.8;
+  }
+  50% {
+    transform: rotate(-90deg) scaleY(1);
+    stroke-dashoffset: 0;
+  }
+  50.001% {
+    transform: rotate(-90deg) scaleY(-1);
+    stroke-dashoffset: 0;
+  }
+  100% {
+    transform: rotate(-90deg) scaleY(-1);
+    stroke-dashoffset: 540.8;
+  }
+}
