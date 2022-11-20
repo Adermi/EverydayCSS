@@ -1,6 +1,6 @@
 # CSS 每日一练
 
-![](https://img-blog.csdnimg.cn/ab767d439b854536b296dab9e66b0591.gif)
+![](https://img-blog.csdnimg.cn/6f8be73cf0d1448c91dbe246e56838e6.gif#pic_center)
 
 1. 每天一个 CSS 小 demo，精进自己 CSS 技术。
 2. 所有代码均在上方，可以自行下载改动。
