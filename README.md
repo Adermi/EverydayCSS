@@ -9,3 +9,23 @@
    容是看到网上有趣的 CSS 特效重构的。
 
 - 体验网站：[点击此处](http://100daycss.xyb.cool)
+
+### 项目运行
+
+代码下载
+
+```shell
+  git clone git@github.com:Adermi/EverydayCSS.git
+```
+
+安装依赖
+
+```shell
+  pnpm install
+```
+
+运行项目
+
+```shell
+  pnpm run dev
+```
