@@ -1,13 +1,8 @@
-import React, {
-  useCallback,
-  useLayoutEffect,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+import React, { useCallback, useLayoutEffect, useState } from 'react';
 import cn from 'classnames';
 import _ from 'lodash';
 import { useInterval } from '../../hooks/useInterval';
+import useIntervalUP from '../../hooks/useIntervalUP';
 
 import style from './index.module.less';
 import Layout from '../../components/Layout';
@@ -37,8 +32,8 @@ const Index = () => {
     });
   });
 
-  useEffect(updateTime, []);
-  const clear = useInterval(updateTime, 1000, true, degrees);
+  useLayoutEffect(updateTime, []);
+  const clear = useIntervalUP(updateTime, 1000);
 
   return (
     <Layout className={style.frame}>
@@ -91,6 +86,7 @@ const Index = () => {
 
 export default Index;
 
+// 延迟补偿定时器
 function timer() {
   var speed = 500,
     counter = 1,

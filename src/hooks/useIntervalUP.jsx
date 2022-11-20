@@ -2,7 +2,7 @@ import { isNumber } from 'lodash';
 import React, { useRef, useEffect } from 'react';
 import useLatest from './useLatest';
 
-// 调用这个函数时，存入fn函数里的执行必须有状态更新语句。该函数是状态驱动的定时器函数
+// 调用这个函数时，存入fn函数里的执行必须有状态更新语句。该函数是状态驱动的补偿定时器函数
 export default function useIntervalUP(fn = () => {}, delay = 1000) {
   const fnRef = useLatest(fn);
 
