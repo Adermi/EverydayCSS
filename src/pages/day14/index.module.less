@@ -1,0 +1,175 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #4b4841;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    perspective: 800px;
+
+    &:hover {
+      .card {
+        transform: rotateX(180deg) translate3d(0, 0, 0);
+        box-shadow: 8px -10px 15px 0 rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .card {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: all 1s ease-in-out;
+      box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.5);
+
+      .front,
+      .back {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        backface-visibility: hidden; // TODO: 元素背面朝向观察者时是否可见.
+        background: #ffce4e;
+        border-radius: 5px;
+        perspective: 500px;
+        transform-style: preserve-3d;
+        overflow: hidden; //TODO: 添加后可以消除卡片翻转后svg图像叠加问题
+      }
+
+      .front {
+        background: #ffce4e;
+        z-index: 2;
+
+        img {
+          position: relative;
+          top: 54px;
+          animation: bike 0.6s ease-in-out infinite;
+          z-index: 1;
+          // backface-visibility: hidden; // 当元素背面朝向观察者时是否可见.
+        }
+
+        .street {
+          position: absolute;
+          width: 160px;
+          top: 130px;
+          height: 3px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          // background-color: #000;
+          overflow: hidden;
+
+          each(range(0, 9), {
+            .street-@{value} {
+              position: absolute;
+              right: -8px;
+              width: 8px;
+              height: 3px;
+              background-color: #4b4841;
+              @randomTime: `0.8 + Math.random() * 0.2`;
+              @randomDelay: `Math.random()`;
+              animation: street e('@{randomTime}s') e('@{randomDelay}s') linear infinite
+            }
+          });
+        }
+      }
+
+      .back {
+        transform: rotateX(
+          180deg
+        ); // 后面这个元素翻转180deg就是背面朝观察者，不可见
+
+        img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          animation: plane 1.5s linear infinite;
+          animation-fill-mode: both;
+          z-index: 1;
+          // backface-visibility: hidden; // 当元素背面朝向观察者时是否可见.
+        }
+
+        .cloud {
+          position: absolute;
+          width: 180px;
+          height: 100px;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+          // background-color: #fff;
+          overflow: hidden;
+
+          each(range(0, 10), {
+            .cloud-@{value} {
+              position: absolute;
+              @randomTop: `Math.floor(Math.random() * 110)`;
+              @randomWidth: `10 + Math.floor(Math.random() * 15)`;
+              
+              top: e('@{randomTop}px');
+              right: -10px;
+              width: e('@{randomWidth}px');
+              height: 3px;
+              border-radius: 3px;
+              background-color: #4b4841;
+              @randomDurTime: `0.6 + Math.random() * 0.2`;
+              @randomDelay: ` Math.random()`;
+              animation: cloud e('@{randomDurTime}s') linear  e('@{randomDelay}s') infinite;
+            }
+          });
+        }
+      }
+    }
+  }
+}
+
+@keyframes bike {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(1.04);
+  }
+}
+
+@keyframes street {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-160px);
+  }
+}
+
+@keyframes plane {
+  0%,
+  100% {
+    transform: translate(-50%, -60%);
+  }
+
+  50% {
+    transform: translate(-50%, -40%);
+  }
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-190px);
+  }
+}
