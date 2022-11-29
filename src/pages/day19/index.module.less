@@ -1,0 +1,91 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(78, 115, 117);
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    background-color: palegoldenrod;
+    border-radius: 3px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+    // 轮播图组件
+    .container {
+      position: relative;
+      @count: var(--count);
+      @width: calc(var(--width) * 1px);
+      @height: calc(var(--height) * 1px);
+      @transition:all calc(var(--transitionTime) * 1s) ease-in-out;
+
+      width: @width;
+      height: @height;
+
+      .showBox {
+        display: flex;
+        width: calc(300px * @count);
+        transition: @transition;
+
+        .slider {
+          width: @width;
+          height: @height;
+
+          &.slider-0 {
+            background-color: royalblue;
+          }
+
+          &.slider-1 {
+            background-color: rosybrown;
+          }
+
+          &.slider-2 {
+            background-color: rgb(212, 65, 225);
+          }
+
+          &.slider-3 {
+            background-color: rgb(225, 65, 86);
+          }
+        }
+      }
+
+      .circles {
+        @circleGap: calc(var(--circleGap) * 1px);
+        @circleR: calc(var(--circleR) * 1px);
+        @circleBorder: calc(var(--circleBorder) * 1px);
+        @activeR: calc(var(--activeR) * 1px);
+
+        display: flex;
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        gap: @circleGap;
+        transform: translate(-50%, 0);
+
+        .circle {
+          width: @circleR;
+          height: @circleR;
+          border: @circleBorder solid #fff;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+
+        .active {
+          position: absolute;
+          left: 0px;
+          top: 50%;
+          width: @activeR;
+          height: @activeR;
+          background-color: #fff;
+          border-radius: 50%;
+          transition: @transition;
+        }
+      }
+    }
+  }
+}

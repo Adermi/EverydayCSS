@@ -19,6 +19,8 @@ let days = [
   'Day13',
   'Day14',
   'Day15',
+  'Day19',
+  'Day20',
   'Day36',
   'Day37',
   'Day38',
