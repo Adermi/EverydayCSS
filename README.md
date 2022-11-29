@@ -13,17 +13,17 @@
 代码下载
 
 ```shell
-  git clone git@github.com:Adermi/EverydayCSS.git
+git clone git@github.com:Adermi/EverydayCSS.git
 ```
 
 安装依赖
 
 ```shell
-  pnpm install
+pnpm install
 ```
 
 运行项目
 
 ```shell
-  pnpm run dev
+pnpm run dev
 ```
