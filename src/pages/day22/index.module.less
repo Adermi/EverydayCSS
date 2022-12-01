@@ -1,0 +1,99 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #223642;
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+
+    .headLine {
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 300;
+
+      .secondTitle {
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+
+    .circle() {
+      position: relative;
+      width: 110px;
+      height: 110px;
+
+      .number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        .unit {
+          color: #648192;
+        }
+      }
+
+      .svg {
+        width: 100%;
+        height: 100%;
+        fill: none;
+        stroke-width: 10px;
+
+        .bg {
+          stroke: #1b2a33;
+        }
+
+        .process {
+          stroke: #27e1ae;
+          stroke-dasharray: 100px;
+          stroke-linecap: round;
+        }
+      }
+    }
+
+    .circleBig {
+      position: relative;
+      text-align: center;
+      .circle {
+        .circle();
+      }
+    }
+
+    .circleSmall {
+      display: flex;
+      gap: 50px;
+      .circle {
+        .circle();
+        width: 80px;
+        height: 80px;
+
+        .number {
+          font-size: 12px;
+        }
+
+        .svg {
+          stroke-width: 5px;
+
+          .process {
+            stroke: #5ce1ec;
+            stroke-dasharray: 80px;
+            stroke-linecap: round;
+          }
+        }
+      }
+    }
+  }
+}

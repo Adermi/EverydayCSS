@@ -1,0 +1,110 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #223642;
+}
+.frame .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .headLine {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+.frame .center .headLine .secondTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+.frame .center .circleBig {
+  position: relative;
+  text-align: center;
+}
+.frame .center .circleBig .circle {
+  position: relative;
+  width: 110px;
+  height: 110px;
+}
+.frame .center .circleBig .circle .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.frame .center .circleBig .circle .number .unit {
+  color: #648192;
+}
+.frame .center .circleBig .circle .svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10px;
+}
+.frame .center .circleBig .circle .svg .bg {
+  stroke: #1b2a33;
+}
+.frame .center .circleBig .circle .svg .process {
+  stroke: #27e1ae;
+  stroke-dasharray: 100px;
+  stroke-linecap: round;
+}
+.frame .center .circleSmall {
+  display: flex;
+  gap: 50px;
+}
+.frame .center .circleSmall .circle {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  width: 80px;
+  height: 80px;
+}
+.frame .center .circleSmall .circle .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.frame .center .circleSmall .circle .number .unit {
+  color: #648192;
+}
+.frame .center .circleSmall .circle .svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10px;
+}
+.frame .center .circleSmall .circle .svg .bg {
+  stroke: #1b2a33;
+}
+.frame .center .circleSmall .circle .svg .process {
+  stroke: #27e1ae;
+  stroke-dasharray: 100px;
+  stroke-linecap: round;
+}
+.frame .center .circleSmall .circle .number {
+  font-size: 12px;
+}
+.frame .center .circleSmall .circle .svg {
+  stroke-width: 5px;
+}
+.frame .center .circleSmall .circle .svg .process {
+  stroke: #5ce1ec;
+  stroke-dasharray: 80px;
+  stroke-linecap: round;
+}
