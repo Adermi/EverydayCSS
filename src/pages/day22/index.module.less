@@ -58,8 +58,11 @@
 
         .process {
           stroke: #27e1ae;
-          stroke-dasharray: 100px;
+          stroke-dasharray: 300px;
           stroke-linecap: round;
+          transform-origin: 50% 50%;
+          transform: rotate(-90deg);
+          animation: circle-big 2s ease-in-out both;
         }
       }
     }
@@ -89,11 +92,33 @@
 
           .process {
             stroke: #5ce1ec;
-            stroke-dasharray: 80px;
+            stroke-dasharray: 190px;
+            stroke-dashoffset: 190px;
             stroke-linecap: round;
+            animation: circle-small 2s ease-in-out both;
           }
         }
       }
     }
+  }
+}
+
+@keyframes circle-big {
+  0% {
+    stroke-dashoffset: 300px;
+  }
+
+  100% {
+    stroke-dashoffset: 96px;
+  }
+}
+
+@keyframes circle-small {
+  0% {
+    stroke-dashoffset: 186px;
+  }
+
+  100% {
+    stroke-dashoffset: 126px;
   }
 }
