@@ -1,8 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800,300);
+@lineWidth: 4px;
+@z-index: 10;
 .frame {
   width: 100vw;
   height: 100vh;
   position: relative;
   background-color: rgb(248, 201, 114);
+  font-family: 'Open Sans', Helvetica, sans-serif;
 
   .center {
     position: absolute;
@@ -23,6 +27,7 @@
       background-color: #fff;
       border-radius: 50%;
       animation: circle 1s ease-in-out forwards;
+      z-index: @z-index;
     }
 
     .line {
@@ -34,15 +39,135 @@
       background-color: #fff;
       transform: scaleX(0);
       transform-origin: 100% 50%;
+      z-index: @z-index;
 
       &.left {
         left: 0;
-        transform-origin: 100% 50%;
-        animation: lines 1s ease-in-out 0.8s, line-left 1s steps(1) 0.8s;
+        // TODO steps能够让我们的动画逐帧进行，而没有渐变的效果，就是瞬间从一个状态到达另外一个状态，想象下时钟的行走。
+        // 加深理解：https://hongkiat.github.io/css3-animation-steps/
+        // 加深理解：https://www.hongkiat.com/blog/css3-animation-steps/
+        animation: lines 1s ease-in-out 0.8s, line-left 1s steps(1) 0.8s both;
       }
 
       &.right {
         right: 0;
+        animation: lines 1s ease-in-out 0.8s, line-right 1s steps(1) 0.8s both;
+      }
+    }
+
+    .big {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 300px;
+      height: 70px;
+      line-height: 57px;
+      text-align: center;
+      font-weight: 900;
+      font-size: 50px;
+      color: #fff;
+      transform: translate(0, -50%);
+
+      .bigLine {
+        position: absolute;
+        width: @lineWidth;
+        height: 70px;
+        background-color: #fff;
+        animation: lineScaleY 1s 2s ease-in-out both;
+        z-index: @z-index;
+
+        .smallLine {
+          width: 20px;
+          height: @lineWidth;
+          background-color: #fff;
+          animation: lineScaleX 1s 3s ease-in-out both;
+          z-index: @z-index;
+        }
+
+        &.left {
+          top: 0;
+          left: 0;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            .smallLine();
+            transform-origin: 0% 50%;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            .smallLine();
+            transform-origin: 0% 50%;
+          }
+        }
+
+        &.right {
+          top: 0;
+          right: 0;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            .smallLine();
+            transform-origin: 100% 50%;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            .smallLine();
+            transform-origin: 100% 50%;
+          }
+        }
+      }
+
+      .smallFont {
+        position: absolute;
+        left: 0;
+        right: 0;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        z-index: @z-index;
+
+        &.top {
+          top: -30px;
+          animation: fontRight 1s 3s ease-in-out both;
+        }
+
+        &.bottom {
+          bottom: -30px;
+          animation: fontLeft 1s 3s ease-in-out both;
+        }
+      }
+
+      .mark {
+        position: absolute;
+        left: 0;
+        width: 300px;
+        height: 36px;
+        z-index: 1;
+        background-color: #f8c972;
+
+        &.markTop {
+          top: 0;
+          animation: markMoveTop 1s 2s ease-in-out both;
+        }
+
+        &.markBottom {
+          bottom: 0;
+          animation: markMoveBottom 1s 2s ease-in-out both;
+        }
       }
     }
   }
@@ -81,8 +206,76 @@
   0% {
     transform-origin: 100% 50%;
   }
+
   50%,
   100% {
     transform-origin: 0% 50%;
+  }
+}
+
+@keyframes line-right {
+  0% {
+    transform-origin: 0% 50%;
+  }
+
+  50%,
+  100% {
+    transform-origin: 100% 50%;
+  }
+}
+
+@keyframes lineScaleX {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes lineScaleY {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes fontLeft {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fontRight {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes markMoveTop {
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes markMoveBottom {
+  to {
+    transform: translateY(100%);
   }
 }

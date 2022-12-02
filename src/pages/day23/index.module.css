@@ -1,8 +1,23 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4gaVc.ttf) format('truetype');
+}
 .frame {
   width: 100vw;
   height: 100vh;
   position: relative;
   background-color: #f8c972;
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 .frame .center {
   position: absolute;
@@ -23,6 +38,7 @@
   background-color: #fff;
   border-radius: 50%;
   animation: circle 1s ease-in-out forwards;
+  z-index: 10;
 }
 .frame .center .line {
   position: absolute;
@@ -33,14 +49,132 @@
   background-color: #fff;
   transform: scaleX(0);
   transform-origin: 100% 50%;
+  z-index: 10;
 }
 .frame .center .line.left {
   left: 0;
-  transform-origin: 100% 50%;
-  animation: lines 1s ease-in-out 0.8s, line-left 1s steps(1) 0.8s;
+  animation: lines 1s ease-in-out 0.8s, line-left 1s steps(1) 0.8s both;
 }
 .frame .center .line.right {
   right: 0;
+  animation: lines 1s ease-in-out 0.8s, line-right 1s steps(1) 0.8s both;
+}
+.frame .center .big {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 300px;
+  height: 70px;
+  line-height: 57px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+  color: #fff;
+  transform: translate(0, -50%);
+}
+.frame .center .big .bigLine {
+  position: absolute;
+  width: 4px;
+  height: 70px;
+  background-color: #fff;
+  animation: lineScaleY 1s 2s ease-in-out both;
+  z-index: 10;
+}
+.frame .center .big .bigLine .smallLine {
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  animation: lineScaleX 1s 3s ease-in-out both;
+  z-index: 10;
+}
+.frame .center .big .bigLine.left {
+  top: 0;
+  left: 0;
+}
+.frame .center .big .bigLine.left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  animation: lineScaleX 1s 3s ease-in-out both;
+  z-index: 10;
+  transform-origin: 0% 50%;
+}
+.frame .center .big .bigLine.left::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  animation: lineScaleX 1s 3s ease-in-out both;
+  z-index: 10;
+  transform-origin: 0% 50%;
+}
+.frame .center .big .bigLine.right {
+  top: 0;
+  right: 0;
+}
+.frame .center .big .bigLine.right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  animation: lineScaleX 1s 3s ease-in-out both;
+  z-index: 10;
+  transform-origin: 100% 50%;
+}
+.frame .center .big .bigLine.right::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  animation: lineScaleX 1s 3s ease-in-out both;
+  z-index: 10;
+  transform-origin: 100% 50%;
+}
+.frame .center .big .smallFont {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  z-index: 10;
+}
+.frame .center .big .smallFont.top {
+  top: -30px;
+  animation: fontRight 1s 3s ease-in-out both;
+}
+.frame .center .big .smallFont.bottom {
+  bottom: -30px;
+  animation: fontLeft 1s 3s ease-in-out both;
+}
+.frame .center .big .mark {
+  position: absolute;
+  left: 0;
+  width: 300px;
+  height: 36px;
+  z-index: 1;
+  background-color: #f8c972;
+}
+.frame .center .big .mark.markTop {
+  top: 0;
+  animation: markMoveTop 1s 2s ease-in-out both;
+}
+.frame .center .big .mark.markBottom {
+  bottom: 0;
+  animation: markMoveBottom 1s 2s ease-in-out both;
 }
 @keyframes circle {
   0% {
@@ -72,5 +206,60 @@
   50%,
   100% {
     transform-origin: 0% 50%;
+  }
+}
+@keyframes line-right {
+  0% {
+    transform-origin: 0% 50%;
+  }
+  50%,
+  100% {
+    transform-origin: 100% 50%;
+  }
+}
+@keyframes lineScaleX {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes lineScaleY {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes fontLeft {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes fontRight {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes markMoveTop {
+  to {
+    transform: translateY(-100%);
+  }
+}
+@keyframes markMoveBottom {
+  to {
+    transform: translateY(100%);
   }
 }

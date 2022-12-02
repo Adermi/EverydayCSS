@@ -12,6 +12,15 @@ const Index = () => {
         <div className={style.circle}></div>
         <div className={cn(style.line, style.left)}></div>
         <div className={cn(style.line, style.right)}></div>
+        <div className={style.big}>
+          <div className={cn(style.bigLine, style.left)}></div>
+          <div className={cn(style.bigLine, style.right)}></div>
+          moments
+          <div className={cn(style.smallFont, style.top)}>COLLECT</div>
+          <div className={cn(style.smallFont, style.bottom)}>NOT THINGS</div>
+          <div className={cn(style.mark, style.markTop)}></div>
+          <div className={cn(style.mark, style.markBottom)}></div>
+        </div>
       </div>
     </Layout>
   );
