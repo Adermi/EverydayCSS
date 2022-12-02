@@ -37,14 +37,3 @@
 .frame .center .track-btn:hover::before {
   --size: 400px;
 }
-.frame .center .card {
-  position: absolute;
-  top: 100px;
-  left: -80px;
-  width: 400px;
-  height: 100px;
-  background-color: #000;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  transform-style: preserve-3d;
-}

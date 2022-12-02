@@ -9,7 +9,9 @@ const Index = () => {
   return (
     <Layout className={style.frame}>
       <div className={style.center}>
-        <div className={style.typingEffect}>i am batman haha!</div>
+        <div className={style.circle}></div>
+        <div className={cn(style.line, style.left)}></div>
+        <div className={cn(style.line, style.right)}></div>
       </div>
     </Layout>
   );

@@ -2,54 +2,42 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: #df7e7e;
+  background-color: #0e0c0c;
+  font-family: Consolas;
 }
 .frame .center {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   transform: translate(-50%, -50%);
 }
-.frame .center .bruce {
-  transform: perspective(800px);
-  transform-style: preserve-3d;
-}
-.frame .center .parallax-btn {
-  position: relative;
-  width: 400px;
-  height: 100px;
-  cursor: pointer;
-  user-select: none;
-  line-height: 50px;
-  text-align: center;
-  font-size: 18px;
-  color: #fff;
-}
-.frame .center .parallax-btn::before {
-  content: '';
+.frame .center .typingEffect {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 4px;
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  will-change: transform;
-  transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
-  transition: box-shadow 500ms ease, transform 200ms ease;
+  top: 50%;
+  width: 0;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 28px;
+  overflow: hidden;
+  border-right: 3px solid sandybrown;
+  letter-spacing: 6px;
+  font-size: 25px;
+  transform: translate(0, -50%);
+  animation: borderShake 0.5s infinite, typing 6s steps(17) forwards infinite;
 }
-.frame .center .parallax-btn::after {
-  display: inline-block;
-  position: relative;
-  font-weight: bold;
-  content: attr(data-name);
-  will-change: transform;
-  transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
-  transition: transform 200ms ease;
+@keyframes typing {
+  40%,
+  50% {
+    width: 325px;
+  }
 }
-.frame .center .parallax-btn:hover::before {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+@keyframes borderShake {
+  50% {
+    border-right-color: transparent;
+  }
 }

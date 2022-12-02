@@ -18,7 +18,6 @@ const Index = () => {
         >
           使用CSS变量，特效大大滴好
         </div>
-        <div className={style.card}>666</div>
       </div>
     </Layout>
   );
