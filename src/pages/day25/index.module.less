@@ -1,0 +1,146 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #fff;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: #2196f3;
+    transform: translate(-50%, -50%);
+    perspective: 600px;
+
+    .map {
+      fill: rgb(0, 38, 255);
+    }
+
+    .mark {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotateY(0deg);
+      cursor: pointer;
+      transition: all 0.5s ease-out 0.5s;
+
+      &.hidden {
+        transform: translate(-50%, -50%) rotateY(90deg); // TODO 关于rotateY/rotateX旋转顺时针逆时针问题：可以理解为站在x轴正右方，y轴正下方，z轴正前方看面向自己旋转
+        transition: all 0.5s ease-out;
+      }
+
+      svg {
+        animation: mark 1s ease-in-out infinite alternate;
+      }
+
+      .shadow {
+        width: 18px;
+        height: 4px;
+        background: #1b7ac7;
+        border-radius: 50%;
+        margin: 0 auto;
+        animation: shadow 1s ease-in-out infinite alternate;
+      }
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 240px;
+      height: 190px;
+      background-color: #fff;
+      transform: translate(-50%, -50%) rotateY(90deg);
+      border-radius: 5px;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.5s ease-out;
+
+      &.active {
+        transform: translate(-50%, -50%) rotateY(0deg);
+        pointer-events: all;
+        opacity: 1;
+        transition: all 0.5s ease-out 0.5s;
+      }
+
+      .img {
+        height: 55px;
+        background: url('https://100dayscss.com/codepen/surfshop.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        gap: 2px;
+
+        .gray {
+          color: gray;
+        }
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        height: 40px;
+
+        .line {
+          width: 1px;
+          height: 20px;
+          background-color: #2196f3;
+        }
+
+        .btnStyle() {
+          width: 100%;
+          height: 100%;
+          flex-grow: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+          color: #2196f3;
+          cursor: pointer;
+        }
+
+        .save {
+          .btnStyle();
+        }
+
+        .route {
+          .btnStyle();
+        }
+      }
+    }
+  }
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scaleX(1.26);
+  }
+}
+
+@keyframes mark {
+  0% {
+    transform: translate3d(0, 0 0);
+  }
+
+  100% {
+    transform: translate3d(0, -10px, 0);
+  }
+}

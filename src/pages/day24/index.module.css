@@ -1,0 +1,110 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #57d895;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+}
+.frame .center .button.active .finish {
+  animation: button 0.5s ease-out both, fill 0.5s 2.3s ease-out forwards;
+}
+.frame .center .button.active .okImg {
+  animation: imgShow 0.5s 2.3s ease-out forwards;
+}
+.frame .center .button.active .circle {
+  animation: circle 2s 0.5s ease-out both;
+}
+.frame .center .button .finish {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 250px;
+  height: 60px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: #57d895;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 56px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .button .finish:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.frame .center .button .finish .okImg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.frame .center .button .circle {
+  width: 60px;
+  height: 60px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-dasharray: 188 188;
+  stroke-dashoffset: 188;
+  transform: rotate(-90deg);
+  pointer-events: none;
+}
+@keyframes circle {
+  50%,
+  90% {
+    stroke-dasharray: 188;
+    stroke-dashoffset: 0;
+    transform: rotate(-90deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-90deg) scale(2);
+    stroke-dasharray: 500;
+    opacity: 0;
+  }
+}
+@keyframes button {
+  0% {
+    width: 250px;
+  }
+  100% {
+    width: 60px;
+    color: transparent;
+    background-color: transparent;
+    border-color: #45b078;
+  }
+}
+@keyframes fill {
+  100% {
+    background-color: #fff;
+  }
+}
+@keyframes imgShow {
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,131 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #fff;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: #2196f3;
+  transform: translate(-50%, -50%);
+  perspective: 600px;
+}
+.frame .center .map {
+  fill: #0026ff;
+}
+.frame .center .mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotateY(0deg);
+  cursor: pointer;
+  transition: all 0.5s ease-out 0.5s;
+}
+.frame .center .mark.hidden {
+  transform: translate(-50%, -50%) rotateY(90deg);
+  transition: all 0.5s ease-out;
+}
+.frame .center .mark svg {
+  animation: mark 1s ease-in-out infinite alternate;
+}
+.frame .center .mark .shadow {
+  width: 18px;
+  height: 4px;
+  background: #1b7ac7;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: shadow 1s ease-in-out infinite alternate;
+}
+.frame .center .card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 240px;
+  height: 190px;
+  background-color: #fff;
+  transform: translate(-50%, -50%) rotateY(90deg);
+  border-radius: 5px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+.frame .center .card.active {
+  transform: translate(-50%, -50%) rotateY(0deg);
+  pointer-events: all;
+  opacity: 1;
+  transition: all 0.5s ease-out 0.5s;
+}
+.frame .center .card .img {
+  height: 55px;
+  background: url('https://100dayscss.com/codepen/surfshop.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.frame .center .card .content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  gap: 2px;
+}
+.frame .center .card .content .gray {
+  color: gray;
+}
+.frame .center .card .btn {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.frame .center .card .btn .line {
+  width: 1px;
+  height: 20px;
+  background-color: #2196f3;
+}
+.frame .center .card .btn .save {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #2196f3;
+  cursor: pointer;
+}
+.frame .center .card .btn .route {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #2196f3;
+  cursor: pointer;
+}
+@keyframes shadow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scaleX(1.26);
+  }
+}
+@keyframes mark {
+  0% {
+    transform: translate3d(0, 0 0);
+  }
+  100% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
