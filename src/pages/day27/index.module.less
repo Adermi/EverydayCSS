@@ -1,0 +1,120 @@
+.frame {
+  --main-color: #497081;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top right, #fda231 0%, #fdca31 100%);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+
+    .dayList {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 240px;
+      height: auto;
+      padding: 25px 25px 0;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+      transform: translate(-50%, -50%);
+      color: var(--main-color);
+
+      .head {
+        text-align: center;
+
+        .date {
+          font-weight: bold;
+        }
+      }
+
+      .line {
+        width: 180px;
+        height: 1px;
+        background-color: #d4dce0;
+        margin-top: 20px;
+      }
+
+      .tasks {
+        font-size: 14px;
+        padding: 10px 0;
+        .task {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+          background-color: #fff;
+
+          .taskName {
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+          }
+
+          .circle {
+            position: absolute;
+            right: 10px;
+            width: 12px;
+            height: 12px;
+            border: 1px solid var(--main-color);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out 0.5s;
+          }
+
+          .checkMark {
+            fill: none;
+            stroke: var(--main-color);
+            cursor: pointer;
+            stroke-dasharray: 20 20;
+            stroke-dashoffset: 20;
+            transition: all 0.5s ease-in-out;
+          }
+
+          &.done {
+            color: #c8d4d9;
+
+            .taskName {
+              color: #c8d4d9;
+              text-decoration: line-through;
+            }
+
+            .circle {
+              transition: all 0.5s ease-in-out;
+              transform: scale(1.2);
+              opacity: 0;
+            }
+
+            .checkMark {
+              stroke-dashoffset: 0;
+              transition: all 0.5s ease-in-out 0.5s;
+              stroke: #c8d4d9;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes circleDis {
+  0% {
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
