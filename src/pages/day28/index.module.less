@@ -1,0 +1,110 @@
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #dd3c54;
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+
+    .bellBox {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      fill: #fff;
+
+      .bell {
+        animation: shake 2.5s ease infinite;
+      }
+
+      .line {
+        position: absolute;
+        top: 0;
+        fill: none;
+        stroke: #fff;
+        opacity: 0;
+
+        each(range(0, 2), {
+          &.line-@{value} {
+            @delay: (@value * 0.5s);
+            left: -10px;
+            animation: line 2.5s @delay ease infinite;
+          }
+        })
+
+        each(range(3, 5), {
+          &.line-@{value} {
+            @delay: ((@value - 3) * 0.5s);
+            right: -10px;
+            transform: rotate(180deg);
+            animation: line-reverse 2.5s @delay ease infinite;
+          }
+        });
+      }
+    }
+  }
+}
+
+@keyframes line {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(-60px, 0, 0) scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes line-reverse {
+  0% {
+    transform: rotate(180deg) translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(180deg) translate3d(-60px, 0, 0) scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes shake {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0);
+  }
+  5%,
+  10%,
+  15%,
+  20%,
+  25%,
+  30%,
+  35%,
+  40% {
+    transform: rotate(6deg);
+  }
+  45% {
+    transform: rotate(4deg);
+  }
+  7.5%,
+  12.5%,
+  17.5%,
+  22.5%,
+  27.5%,
+  32.5%,
+  37.5%,
+  42.5% {
+    transform: rotate(-6deg);
+  }
+  47.5% {
+    transform: rotate(-2deg);
+  }
+}

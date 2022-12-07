@@ -23,7 +23,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 240px;
+  width: 200px;
   height: auto;
   padding: 25px 25px 0;
   background-color: #fff;
@@ -39,10 +39,10 @@
   font-weight: bold;
 }
 .frame .center .dayList .line {
-  width: 180px;
+  width: 140px;
   height: 1px;
   background-color: #d4dce0;
-  margin-top: 20px;
+  margin: 20px auto 0;
 }
 .frame .center .dayList .tasks {
   font-size: 14px;
